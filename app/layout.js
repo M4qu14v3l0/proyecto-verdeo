@@ -1,5 +1,5 @@
-import Footer from './components/footer';
-import Navigation from './components/navigation';
+import Footer from './components/Footer.js';
+import Navigation from './components/Navigation.js';
 import './globals.css'
 
 export const metadata = {
@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className='flex flex-col h-screen'>
         <Navigation />
         {children}
         <Footer />

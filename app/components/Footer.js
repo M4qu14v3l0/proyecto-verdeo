@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import fotoPortada from "../assets/img/logo-negro.png";
 
-
 const links = [
     {
         label: 'Lo Que Hacemos',
@@ -42,16 +41,16 @@ const email = "verdeoinformes@gmail.com";
 
 export default function Footer() {
     return (
-        <footer className="mt-auto p-5 bg-oranges-50">
-            <div className="flex justify-around mb-8">
+        <footer className="mt-auto bg-oranges-50 border border-t-neutral-400">
+            <div className="flex justify-around pt-6 pb-6">
                 <Image className="w-auto h-16" src={fotoPortada} alt="Foto de Portada" />
-                <div>
+                <div className="my-auto">
                     <div className="flex flex-col"> 
-                        <ul className="flex gap-7 mx-auto">                        
+                        <ul className="flex gap-7 mb-2 mx-auto">                        
                             {redes.map(({label, route, img}) => (
                                 <li key={route}>
                                     <Link href={route}>
-                                        <Image width={500} height={500} className="w-5 h-5" src={img} alt={label} />
+                                        <Image width={500} height={500} className="w-4 h-4" src={img} alt={label} />
                                     </Link>
                                 </li>
                             ))}
@@ -60,7 +59,7 @@ export default function Footer() {
                     <p className="text-xs m-auto">{email}</p>
                 </div>
             </div>
-            <ul className="mt-8 rounded border border-t-black">
+            <ul className="pt-5 pb-5 w-11/12 mx-auto border-transparent border border-t-green-600">
                 {links.map(({label, route}) => (
                     <li key={route}>
                         <Link href={route} className="text-sm">

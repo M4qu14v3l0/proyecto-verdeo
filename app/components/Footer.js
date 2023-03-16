@@ -42,8 +42,8 @@ const email = "verdeoinformes@gmail.com";
 
 export default function Footer() {
     return (
-        <footer className="mt-auto p-5 bg-oranges-50 border-black">
-            <div className="flex justify-around mb-8 border-black">
+        <footer className="mt-auto p-5 bg-oranges-50">
+            <div className="flex justify-around mb-8">
                 <Image className="w-auto h-16" src={fotoPortada} alt="Foto de Portada" />
                 <div>
                     <div className="flex flex-col"> 

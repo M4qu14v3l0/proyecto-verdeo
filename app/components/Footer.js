@@ -43,7 +43,7 @@ export default function Footer() {
     return (
         <footer className="mt-auto bg-oranges-50 border border-t-neutral-400">
             <div className="flex justify-around pt-6 pb-6">
-                <Image className="w-auto h-16" src={fotoPortada} alt="Foto de Portada" />
+                <Image className="w-auto h-16" src={fotoPortada} alt="Foto de Portada" priority />
                 <div className="my-auto">
                     <div className="flex flex-col"> 
                         <ul className="flex gap-7 mb-2 mx-auto">                        

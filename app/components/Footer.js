@@ -61,7 +61,7 @@ export default function Footer() {
             </div>
             <ul className="pt-5 pb-5 w-11/12 mx-auto border-transparent border border-t-green-600">
                 {links.map(({label, route}) => (
-                    <li key={route}>
+                    <li key={label}>
                         <Link href={route} className="text-sm">
                             {label}
                         </Link>

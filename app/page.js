@@ -1,6 +1,12 @@
 'use client';
 import {useEffect, useState} from 'react';
 import { getArticle } from './api/api';
+import Image from 'next/image';
+import hero from './assets/img/bosque.jpg';
+import Hacemos from './components/Hacemos.js';
+import Nosotros from './components/Nosotros.js';
+import Directorio from './components/Directorio.js';
+import Ayuda from './components/Ayuda.js';
 
 export default function Home() {
   const [articulos, setArticulos] = useState({});
@@ -10,9 +16,13 @@ export default function Home() {
       })
   }, []);
   return (
-    <main className="flex flex-col">
-      <h1 className="text-center">Hola mundo</h1>
-      {articulos.length >= 1 ? 
+    <main className="flex flex-col mb-6">
+      <Image width={500} height={500} className="w-screen h-2/4" src={hero} alt="Foto Hero" />
+      <Hacemos />
+      <Nosotros />
+      <Ayuda />
+      <Directorio />
+      {/* {articulos.length >= 1 ? 
         <ul className="flex gap-7 mb-2 mx-auto">                        
           {articulos.map((articulo) => (
               <div key={articulo.titulo}>
@@ -22,7 +32,7 @@ export default function Home() {
               </div>
           ))}
       </ul>
-      : ""}
+      : ""} */}
     </main>
   )
 }

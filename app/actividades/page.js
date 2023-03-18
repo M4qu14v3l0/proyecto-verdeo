@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      <p>actividades</p>
+      <p className='text-center'>Actividades</p>
     </div>
   )
 }

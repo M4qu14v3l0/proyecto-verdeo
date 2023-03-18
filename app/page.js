@@ -16,7 +16,7 @@ export default function Home() {
       })
   }, []);
   return (
-    <main className="flex flex-col pb-6 bg-amber-50">
+    <main className="flex flex-col pb-6">
       <Image width={500} height={500} className="w-screen h-2/4" src={hero} alt="Foto Hero" />
       <Hacemos />
       <Nosotros />

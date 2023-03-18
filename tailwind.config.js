@@ -27,6 +27,9 @@ module.exports = {
         'donar': "url('/foto4.jpg')",
         'ayuda': "url('/foto5.jpg')",
       },
+      translate: {
+        'cursor': '.02rem',
+      }
     },
   plugins: [],
   }

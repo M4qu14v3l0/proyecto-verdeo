@@ -5,19 +5,19 @@ import fotoPortada from "../assets/img/logo-negro.png";
 const links = [
     {
         label: 'Lo Que Hacemos',
-        route: '/'
+        route: '/actividades'
     },
     {
         label: 'Nosotros',
-        route: '/'
+        route: '/nosotros'
     },
     {
         label: 'Como Ayudar',
-        route: '/'
+        route: '/ayuda'
     },
     {
         label: 'Directorio Ecosostenible',
-        route: '/'
+        route: '/directorio'
     },
 ]
 const redes = [
@@ -41,10 +41,10 @@ const email = "verdeoinformes@gmail.com";
 
 export default function Footer() {
     return (
-        <footer className="mt-auto bg-oranges-50 border border-t-neutral-400 bg-amber-50">
+        <footer className="mt-auto bg-oranges-50 border border-t-neutral-400">
             <div className="flex justify-around pt-6 pb-6">
                 <Link href="/">
-                    <Image className="w-auto h-16" src={fotoPortada} alt="Foto de Portada" priority />
+                    <Image className="w-auto h-16 hover:translate-y-cursor transition-all duration-300 ease-in-out" src={fotoPortada} alt="Foto de Portada" priority />
                 </Link>
                 <div className="my-auto">
                     <div className="flex flex-col"> 
@@ -52,7 +52,7 @@ export default function Footer() {
                             {redes.map(({label, route, img}) => (
                                 <li key={route}>
                                     <Link href={route}>
-                                        <Image width={500} height={500} className="w-4 h-4" src={img} alt={label} />
+                                        <Image width={500} height={500} className="w-4 h-4 hover:translate-x-cursor transition-all duration-300 ease-in-out" src={img} alt={label} />
                                     </Link>
                                 </li>
                             ))}
@@ -63,8 +63,8 @@ export default function Footer() {
             </div>
             <ul className="pt-5 pb-5 w-11/12 mx-auto border-transparent border border-t-green-600">
                 {links.map(({label, route}) => (
-                    <li key={label}>
-                        <Link href={route} className="text-sm">
+                    <li className="flex" key={label}>
+                        <Link href={route} className="text-sm hover:translate-y-cursor transition-all duration-150 ease-in-out">
                             {label}
                         </Link>
                     </li>

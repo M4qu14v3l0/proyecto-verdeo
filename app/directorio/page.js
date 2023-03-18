@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      <p>directorio</p>
+      <p className='text-center'>Directorio Ecosostenible</p>
     </div>
   )
 }

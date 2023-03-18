@@ -3,7 +3,7 @@ import React from 'react'
 const nosotros = () => {
   return (
     <div>
-      <p>nosotros</p>
+      <p className='text-center'>Nosotros</p>
     </div>
   )
 }

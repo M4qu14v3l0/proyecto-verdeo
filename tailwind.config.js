@@ -29,8 +29,17 @@ module.exports = {
       },
       translate: {
         'cursor': '.02rem',
-      }
-    },
+      },
+      keyframes: {
+        display: {
+          '0%': {
+              transform: 'translateY(-2rem)',
+          },
+        },
+      },
+      animation: {
+        display: 'display 1s ease-out',
+      },
   plugins: [],
   }
-}
+}}

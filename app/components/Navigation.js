@@ -43,7 +43,7 @@ export default function Header() {
                     </div>
                 </div>
                 {isNavOpen === false ?
-                    <ul className="flex flex-col h-auto mb-2">
+                    <ul className="flex flex-col h-auto mb-2 animate-display">
                         {links.map(({label, route}) => (
                             <li className="flex" key={label}>
                                 <Link onClick={() => setIsNavOpen(false)} href={route} className="my-2 ml-4 hover:translate-y-cursor transition-all duration-150 ease-in-out">

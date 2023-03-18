@@ -7,16 +7,13 @@ import Link from "next/link";
 export default function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
     return (
-        <nav className="flex">
-            <section className="MOBILE-MENU flex lg:hidden my-auto pl-4">
-                <div
-                    className="HAMBURGER-ICON space-y-2"
-                    onClick={() => setIsNavOpen((prev) => !prev)}
-                >
-                    <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                    <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                    <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                </div>
+        <nav className="flex items-center bg-amber-50">
+            <div className="pl-4 space-y-2 w-1/6 me-auto" onClick={() => setIsNavOpen((prev) => !prev)}>
+                <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            </div>
+            <section>
                 <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
                     <div
                     className="absolute top-0 right-0 px-8 py-8"
@@ -37,31 +34,25 @@ export default function Header() {
                     </div>
                     <ul className="flex flex-col items-center justify-between min-h-[250px]">
                         <li className="border-b border-gray-400 my-8 uppercase">
-                            <a href="/about">About</a>
+                            <Link onClick={() => setIsNavOpen(false)} href="/actividades">Actividades</Link>
                         </li>
                         <li className="border-b border-gray-400 my-8 uppercase">
-                            <a href="/portfolio">Portfolio</a>
+                            <Link onClick={() => setIsNavOpen(false)} href="/nosotros">Nosotros</Link>
                         </li>
                         <li className="border-b border-gray-400 my-8 uppercase">
-                            <a href="/contact">Contact</a>
+                            <Link onClick={() => setIsNavOpen(false)} href="/ayuda">Contacto</Link>
+                        </li>
+                        <li className="border-b border-gray-400 my-8 uppercase">
+                            <Link onClick={() => setIsNavOpen(false)} href="/directorio">Directorio</Link>
                         </li>
                     </ul>
                 </div>
             </section>
-            <Link className="flex h-24 w-24 mx-auto" href="/">
-                <Image className="my-auto" src={fotoPortada} alt="logo" />
-            </Link>
-            <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
-                <li>
-                    <a href="/about">About</a>
-                </li>
-                <li>
-                    <a href="/portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="/contact">Contact</a>
-                </li>
-            </ul>
+            <div className="w-4/6 flex">
+                <Link className="flex h-24 w-24 mx-auto" href="/">
+                    <Image className="my-auto" src={fotoPortada} alt="logo" priority />
+                </Link>
+            </div>
             <style>{`
             .hideMenuNav {
                 display: none;

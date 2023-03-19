@@ -13,7 +13,7 @@ const ayudas = [
         text: "Lorem ipsum dolor sit amet consectetur apore quo sapiente expedita velit incidunt aspernatur ut dolor eveniet.",
         route: '/donar',
         divclass: "flex bg-donar bg-cover bg-no-repeat bg-center h-80 rounded-xl mb-6",
-        linkclass:"flex mx-auto rounded-3xl bg-green-800 h-12 w-6/12 mb-3 hover:bg-green-700 transition-all duration-300 ease-in-out"
+        linkclass:"flex mx-auto rounded-3xl bg-red-700 h-12 w-6/12 mb-3 hover:bg-red-600 transition-all duration-300 ease-in-out"
     },
     {
         title: "Ayudar",

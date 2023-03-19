@@ -7,6 +7,7 @@ import Hacemos from './components/Hacemos.js';
 import Nosotros from './components/Nosotros.js';
 import Directorio from './components/Directorio.js';
 import Ayuda from './components/Ayuda.js';
+import ScrollButton from './components/ScrollButton';
 
 export default function Home() {
   const [articulos, setArticulos] = useState({});
@@ -17,7 +18,8 @@ export default function Home() {
   }, []);
   return (
     <main className="flex flex-col pb-6">
-      <Image width={500} height={500} className="w-screen h-2/4" src={hero} alt="Foto Hero" />
+      <ScrollButton />
+      <Image width={500} height={500} className="w-screen h-2/4" src={hero} alt="Foto Hero" priority />
       <Hacemos />
       <Nosotros />
       <Ayuda />

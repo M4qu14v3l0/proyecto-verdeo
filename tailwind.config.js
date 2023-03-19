@@ -36,9 +36,15 @@ module.exports = {
               transform: 'translateY(-2rem)',
           },
         },
+        display2: {
+          '0%': {
+              transform: 'translateY(-1rem)',
+          },
+        },
       },
       animation: {
-        display: 'display 1s ease-out',
+        display: 'display 500ms ease-out',
+        display2: 'display2 500ms ease-out',
       },
   plugins: [],
   }

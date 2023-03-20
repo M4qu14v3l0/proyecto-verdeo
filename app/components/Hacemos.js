@@ -6,18 +6,18 @@ const actividades = [
         subtitle: "Lo Que Hacemos",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod facilis sed suscipit omnis tempore quo sapiente expedita velit incidunt aspernatur ut dolor eveniet.",
         route: '/actividades',
-        divclass: "rounded-2xl border-2 border-green-600 p-6 flex flex-col mb-6",
-        titleclass: "text-center text-6xl font-bold text-green-800 mt-6 mb-5",
-        linkclass:"flex mx-auto rounded-2xl bg-green-800  w-4/12 h-8 mb-8 hover:bg-green-700 transition-all duration-300 ease-in-out"
+        divclass: "rounded-2xl border-2 border-verde p-6 flex flex-col mb-6",
+        titleclass: "text-center text-6xl font-bold text-verde mt-6 mb-5",
+        linkclass:"flex mx-auto rounded-2xl bg-verde w-4/12 h-8 mb-8 hover:bg-green-700 transition-all duration-300 ease-in-out"
     },
     {
         title: "TA",
         subtitle: "Proyecto Abedul",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod facilis sed suscipit omnis tempore quo sapiente expedita velit incidunt aspernatur ut dolor eveniet.",
         route: '/actividades',
-        divclass: "rounded-2xl border-2 border-red-600 p-6 flex flex-col",
-        titleclass: "text-center text-6xl font-bold text-red-800 mt-6 mb-5",
-        linkclass:"flex mx-auto rounded-2xl bg-red-800  w-4/12 h-8 mb-8 hover:bg-red-700 transition-all duration-300 ease-in-out"
+        divclass: "rounded-2xl border-2 border-rojo p-6 flex flex-col",
+        titleclass: "text-center text-6xl font-bold text-rojo mt-6 mb-5",
+        linkclass:"flex mx-auto rounded-2xl bg-rojo w-4/12 h-8 mb-8 hover:bg-red-700 transition-all duration-300 ease-in-out"
     },
 ]
 
@@ -32,7 +32,7 @@ const Hacemos = () => {
                     <h4 className="text-center font-bold mb-5">{subtitle}</h4>
                     <p className="text-center mb-3">{text}</p>
                     <Link href={route} className={linkclass}>
-                        <p className="text-white text-center m-auto text-sm">Ver más</p>
+                        <p className="font-botones text-white text-center m-auto text-sm">Ver más</p>
                     </Link>
                 </div>
             ))}

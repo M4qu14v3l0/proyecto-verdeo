@@ -117,7 +117,7 @@ export default function Header() {
                                 <ul className="animate-display2">
                                     {hacemos.map(({label, route}) => (
                                         <li className="flex" key={label}>
-                                            <Link onClick={() => setIsNavOpen(false)} href={route} className="ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                            <Link onClick={() => setIsNavOpen(false)} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
                                                 {label}
                                             </Link>
                                         </li>
@@ -147,7 +147,7 @@ export default function Header() {
                                 <ul className="animate-display2">
                                     {nosotros.map(({label, route}) => (
                                         <li className="flex" key={label}>
-                                            <Link onClick={() => setIsNavOpen(false)} href={route} className="ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                            <Link onClick={() => setIsNavOpen(false)} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
                                                 {label}
                                             </Link>
                                         </li>
@@ -177,7 +177,7 @@ export default function Header() {
                                 <ul className="animate-display2">
                                     {ayuda.map(({label, route}) => (
                                         <li className="flex" key={label}>
-                                            <Link onClick={() => setIsNavOpen(false)} href={route} className="ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                            <Link onClick={() => setIsNavOpen(false)} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
                                                 {label}
                                             </Link>
                                         </li>
@@ -207,7 +207,7 @@ export default function Header() {
                                 <ul className="animate-display2">
                                     {directorio.map(({label, route}) => (
                                         <li className="flex" key={label}>
-                                            <Link onClick={() => setIsNavOpen(false)} href={route} className="ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                            <Link onClick={() => setIsNavOpen(false)} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
                                                 {label}
                                             </Link>
                                         </li>

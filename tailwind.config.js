@@ -9,6 +9,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'titulos': 'DM Serif Text, serif',
+        'botones':'Noto Sans, sans-serif',
+      },
+      colors: {
+        'verde': '#175A34',
+        'verde2': '#56B87F',
+        'amarillo': '#F4B847',
+        'rojo': '#9F2E05',
+        'tipografia': '#161616',
+      },
       borderRadius: {
         'none': '0',
         'sm': '0.125rem',

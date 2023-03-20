@@ -22,7 +22,7 @@ const ScrollButton = () =>{
     };
     window.addEventListener('scroll', toggleVisible);
     return (
-        <button className='opacity-80 hover:animate-pulse text-xl rounded-xl fixed w-8 h-8 right-2 bottom-6 z-1 cursor-pointer bg-green-200' onClick={scrollToTop} style={{display: visible ? 'inline' : 'none'}}>
+        <button className='opacity-80 hover:animate-pulse text-xl rounded-xl fixed w-8 h-8 right-2 bottom-6 z-1 cursor-pointer bg-verde2' onClick={scrollToTop} style={{display: visible ? 'inline' : 'none'}}>
             <Image className='h-3 w-3 m-auto' src={arrowUp} alt="Flecha Subir" priority/>
         </button>
     );

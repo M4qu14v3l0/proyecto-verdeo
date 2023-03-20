@@ -89,6 +89,7 @@ export default function Header() {
                 </div>
                 {isNavOpen === true ?
                     <div className="flex flex-col justify-between h-auto mb-2 animate-display">
+                        
                         {/* inicio */}
                         <div className="flex w-4/6 my-2 ml-4">
                             <Link onClick={() => setIsNavOpen(false)} href='/' className="hover:translate-y-cursor font-bold transition-all duration-150 ease-in-out">
@@ -103,11 +104,11 @@ export default function Header() {
                             </div>
                             {isHacerOpen === true ? 
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">∧</p>
+                                    <p onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▲</p>
                                 </div>
                                 :
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">∨</p>
+                                    <p onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▼</p>
                                 </div>                             
                             }
                         </div>
@@ -133,11 +134,11 @@ export default function Header() {
                             </div>
                             {isNosOpen === true ? 
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">∧</p>
+                                    <p onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▲</p>
                                 </div>
                                 :
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">∨</p>
+                                    <p onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▼</p>
                                 </div> 
                             }
                         </div>
@@ -163,11 +164,11 @@ export default function Header() {
                             </div>
                             {isAyudaOpen === true ? 
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">∧</p>
+                                    <p onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▲</p>
                                 </div>
                                 :
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">∨</p>
+                                    <p onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▼</p>
                                 </div> 
                             }
                         </div>
@@ -193,11 +194,11 @@ export default function Header() {
                             </div>
                             {isDirecOpen === true ? 
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">∧</p>
+                                    <p onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▲</p>
                                 </div>
                                 :
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">∨</p>
+                                    <p onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▼</p>
                                 </div> 
                             }
                         </div>

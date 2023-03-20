@@ -1,13 +1,12 @@
 'use client';
 import {useEffect, useState} from 'react';
 import { getArticle } from './api/api';
-import Image from 'next/image';
-import hero from './assets/img/bosque.jpg';
 import Hacemos from './components/Hacemos.js';
 import Nosotros from './components/Nosotros.js';
 import Directorio from './components/Directorio.js';
 import Ayuda from './components/Ayuda.js';
 import ScrollButton from './components/ScrollButton';
+import Hero from './components/Hero';
 
 export default function Home() {
   const [articulos, setArticulos] = useState({});
@@ -19,7 +18,7 @@ export default function Home() {
   return (
     <main className="flex flex-col pb-6">
       <ScrollButton />
-      <Image width={500} height={500} className="w-screen h-2/4" src={hero} alt="Foto Hero" priority />
+      <Hero />
       <Hacemos />
       <Nosotros />
       <Ayuda />

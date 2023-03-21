@@ -33,8 +33,8 @@ const redes = [
     },
     {
         label: 'Logo de Twitter',
-        img: "/twitter.png",
-        route: 'https://www.twitter.com/'
+        img: "/telegram.png",
+        route: 'https://www.telegram.com/'
     }
 ]
 const email = "verdeoinformes@gmail.com";

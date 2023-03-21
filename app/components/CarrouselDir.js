@@ -7,14 +7,14 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const images = [
     {
-        src: '/bosque.jpg',
+        src: '/foto2.jpg',
         alt: 'Foto 1',
-        href: '/nosotros'
+        href: '/directorio'
     },
     {
-        src: '/comunidad.jpg',
+        src: '/foto3.jpg',
         alt: 'Foto 2',
-        href: '/nosotros'
+        href: '/directorio'
     },
 ]
 export default function Carosusel() {
@@ -59,7 +59,7 @@ export default function Carosusel() {
                 </Swipe>
             </div>
             <div className="col-start-1 col-end-2 row-start-1 row-end-2 mt-auto mx-auto mb-6 flex flex-col z-30">
-                <h4 className="text-center text-white font-bold text-lg px-8">Nuestro Equipo</h4>
+                <h4 className="text-center text-white font-bold text-lg px-8">Directorio Ecosostenible</h4>
                 <p className="text-center text-white text-sm px-8 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.</p>
             </div>
             <AiOutlineRight

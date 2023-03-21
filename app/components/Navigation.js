@@ -3,6 +3,8 @@ import Image from "next/image";
 import { useState } from "react";
 import fotoPortada from "../assets/img/logo-negro.png";
 import Link from "next/link";
+import arrowUp from '../assets/img/arrowUp.svg';
+import arrowDown from '../assets/img/arrowDown.svg';
 
 const hacemos = [
     {
@@ -82,7 +84,7 @@ export default function Header() {
                     </div>
                     }
                     <div className="flex w-4/6 mr-auto">
-                        <Link className="flex h-24 w-24 mx-auto" href="/" onClick={() => setIsNavOpen(false)}>
+                        <Link className="flex h-24 w-24 mx-auto lg:h-36 lg:w-36" href="/" onClick={() => setIsNavOpen(false)}>
                             <Image className="my-auto hover:translate-y-cursor transition-all duration-300 ease-in-out" src={fotoPortada} alt="logo" priority />
                         </Link>
                     </div>
@@ -104,11 +106,11 @@ export default function Header() {
                             </div>
                             {isHacerOpen === true ? 
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▲</p>
+                                    <Image src={arrowDown} alt='Desplegar' onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
                                 </div>
                                 :
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▼</p>
+                                    <Image src={arrowUp} alt='Desplegar' onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
                                 </div>                             
                             }
                         </div>
@@ -134,11 +136,11 @@ export default function Header() {
                             </div>
                             {isNosOpen === true ? 
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▲</p>
+                                    <Image src={arrowDown} alt='Desplegar' onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
                                 </div>
                                 :
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▼</p>
+                                    <Image src={arrowUp} alt='Desplegar' onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
                                 </div> 
                             }
                         </div>
@@ -164,11 +166,11 @@ export default function Header() {
                             </div>
                             {isAyudaOpen === true ? 
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▲</p>
+                                    <Image src={arrowDown} alt='Desplegar' onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
                                 </div>
                                 :
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▼</p>
+                                    <Image src={arrowUp} alt='Desplegar' onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
                                 </div> 
                             }
                         </div>
@@ -194,11 +196,11 @@ export default function Header() {
                             </div>
                             {isDirecOpen === true ? 
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▲</p>
+                                    <Image src={arrowDown} alt='Desplegar' onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
                                 </div>
                                 :
                                 <div className="flex w-3/6">
-                                    <p onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer font-bold mr-auto">▼</p>
+                                    <Image src={arrowUp} alt='Desplegar' onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
                                 </div> 
                             }
                         </div>

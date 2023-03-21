@@ -37,7 +37,8 @@ module.exports = {
         'voluntario': "url('/foto3.jpg')",
         'donar': "url('/foto4.jpg')",
         'ayuda': "url('/foto5.jpg')",
-        'hero': "url('/hero.jpg')"
+        'hero': "url('/hero.jpg')",
+        'abedul':"url('/abedul.png')"
       },
       translate: {
         'cursor': '.02rem',

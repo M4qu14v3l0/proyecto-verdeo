@@ -1,10 +1,10 @@
-import Carrousel from '../../components/Carrousel.js'
+import Carrousel from '../../components/CarrouselNos.js'
 
 
 const consejos = () => {
     return (
         <div>
-            <Carrousel />
+            <p className='text-center'>Consejos</p>
         </div>
     )
 }

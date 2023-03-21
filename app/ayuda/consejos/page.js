@@ -1,9 +1,10 @@
-import React from 'react'
+import Carrousel from '../../components/Carrousel.js'
+
 
 const consejos = () => {
     return (
         <div>
-            <p className='text-center'>Consejos</p>
+            <Carrousel />
         </div>
     )
 }

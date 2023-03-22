@@ -5,7 +5,6 @@ import Hacemos from './components/Hacemos.js';
 import Nosotros from './components/Nosotros.js';
 import Directorio from './components/Directorio.js';
 import Ayuda from './components/Ayuda.js';
-import ScrollButton from './components/ScrollButton';
 import Hero from './components/Hero';
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
   }, []);
   return (
     <main className="flex flex-col pb-6">
-      <ScrollButton />
       <Hero />
       <Hacemos />
       <Nosotros />

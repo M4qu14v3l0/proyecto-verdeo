@@ -1,5 +1,6 @@
 import Footer from './components/Footer.js';
 import Navigation from './components/Navigation.js';
+import ScrollButton from './components/ScrollButton.js';
 import './globals.css'
 
 export const metadata = {
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       <body className='flex flex-col h-screen bg-amber-50'>
         <Navigation />
         {children}
+        <ScrollButton />
         <Footer />
       </body>
     </html>

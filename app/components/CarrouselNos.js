@@ -9,12 +9,16 @@ const images = [
     {
         src: '/bosque.jpg',
         alt: 'Foto 1',
-        href: '/nosotros'
+        href: '/nosotros/equipo',
+        titulo: "Nuestro equipo",
+        texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.",
     },
     {
         src: '/comunidad.jpg',
         alt: 'Foto 2',
-        href: '/nosotros'
+        href: '/nosotros/mision',
+        titulo: "Mision",
+        texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.",
     },
 ]
 export default function Carosusel() {
@@ -45,22 +49,24 @@ export default function Carosusel() {
                 {images?.map((image, index) => {
                     if (index === currentSlide) {
                     return (
-                        <Link key={image.id} href={image.href} className="w-full h-full animate-fadeIn object-cover">
-                            <Image width={150000}
-                            height={150000}
-                            alt={image.alt}
-                            src={image.src}
-                            className="w-full h-full animate-fadeIn object-cover"
-                            />
-                        </Link>
+                        <div key={image.index} className="w-full h-full grid grid-cols-1 grid-rows-1 animate-fadeIn object-cover col-start-1 col-end-2 row-start-1 row-end-2">
+                            <Link className="col-start-1 col-end-2 row-start-1 row-end-2" href={image.href} >
+                                <Image width={150000}
+                                height={150000}
+                                alt={image.alt}
+                                src={image.src}
+                                className="w-full h-full animate-fadeIn object-cover"
+                                />
+                            </Link>
+                            <div className="col-start-1 col-end-2 row-start-1 row-end-2 mt-auto mx-auto mb-6 flex flex-col z-30">
+                                <h4 className="text-center text-white font-bold text-xl px-8">{image.titulo}</h4>
+                                <p className="text-center text-white text-sm px-8 mt-3">{image.texto}</p>
+                            </div>
+                        </div>
                     );
                     }
                 })}
                 </Swipe>
-            </div>
-            <div className="col-start-1 col-end-2 row-start-1 row-end-2 mt-auto mx-auto mb-6 flex flex-col z-30">
-                <h4 className="text-center text-white font-bold text-lg px-8">Nuestro Equipo</h4>
-                <p className="text-center text-white text-sm px-8 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.</p>
             </div>
             <AiOutlineRight
                 onClick={handleNextSlide}

@@ -5,7 +5,7 @@ const actividades = [
         title: "PA",
         subtitle: "Lo Que Hacemos",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod facilis sed suscipit omnis tempore quo sapiente expedita velit incidunt aspernatur ut dolor eveniet.",
-        route: '/actividades',
+        route: '/actividades/talleres',
         divclass: "rounded-2xl border-2 border-verde p-6 flex flex-col mb-6",
         titleclass: "text-center text-6xl font-bold text-verde mt-6 mb-5",
         linkclass:"flex mx-auto rounded-2xl bg-verde w-4/12 h-8 mb-8 hover:bg-green-700 transition-all duration-300 ease-in-out"
@@ -14,7 +14,7 @@ const actividades = [
         title: "TA",
         subtitle: "Proyecto Abedul",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod facilis sed suscipit omnis tempore quo sapiente expedita velit incidunt aspernatur ut dolor eveniet.",
-        route: '/actividades',
+        route: '/actividades/proyectos',
         divclass: "rounded-2xl border-2 border-rojo p-6 flex flex-col",
         titleclass: "text-center text-6xl font-bold text-rojo mt-6 mb-5",
         linkclass:"flex mx-auto rounded-2xl bg-rojo w-4/12 h-8 mb-8 hover:bg-red-700 transition-all duration-300 ease-in-out"

@@ -38,7 +38,7 @@ export default function Carosusel() {
         <div className="w-screen h-full grid grid-cols-1 grid-rows-1">
             <AiOutlineLeft
                 onClick={handlePrevSlide}
-                className="col-start-1 col-end-2 row-start-1 row-end-2 mr-auto my-auto text-5xl cursor-pointer text-white z-20"
+                className="col-start-1 col-end-2 row-start-1 row-end-2 ml-1 mr-auto my-auto text-5xl cursor-pointer text-white z-20"
             /> 
             <div className="col-start-1 col-end-2 row-start-1 row-end-2 w-screen h-full flex overflow-hidden">
                 <Swipe

@@ -39,6 +39,9 @@ module.exports = {
         'ayuda': "url('/foto5.jpg')",
         'hero': "url('/hero.jpg')"
       },
+      gridTemplateRows: {
+        '16': 'repeat(3, auto)',
+      },
       translate: {
         'cursor': '.02rem',
       },

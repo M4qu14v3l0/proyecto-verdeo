@@ -1,11 +1,14 @@
-import React from 'react'
+import NuestroEquipo from "./components/nuestroEquipo/NuestroEquipo"
+import NuestrosValores from "./components/nuestrosValores/NuestrosValores"
 
-const nosotros = () => {
+
+const Nosotros = () => {
   return (
-    <div>
-      <p className='text-center'>Nosotros</p>
-    </div>
+    <main>
+      <NuestroEquipo />
+      <NuestrosValores />
+    </main>
   )
 }
 
-export default nosotros
+export default Nosotros

@@ -38,7 +38,8 @@ module.exports = {
         'donar': "url('/foto4.jpg')",
         'ayuda': "url('/foto5.jpg')",
         'hero': "url('/hero.jpg')",
-        'abedul':"url('/abedul.png')"
+        'abedul':"url('/abedul.png')",
+        'alpaca':"url('/alpaca.svg')"
       },
       translate: {
         'cursor': '.02rem',
@@ -59,6 +60,9 @@ module.exports = {
         display: 'display 500ms ease-out',
         display2: 'display2 500ms ease-out',
       },
-  plugins: [],
-  }
-}}
+    }
+  },
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+  ],
+}

@@ -37,7 +37,7 @@ const AyudaFull = () => {
             </div>
             <div className='flex w-9/12 h-auto mx-auto justify-around gap-x-12'>
                 {images.map ((image) => (
-                    <div key={image.index} className="h-auto w-auto flex flex-col">
+                    <div key={image.titulo} className="h-auto w-auto flex flex-col">
                         <div className="h-56 w-3/9 grid mb-5 grid-cols-1 grid-rows-1">
                             <a className="col-start-1 col-end-1 row-start-1 row-end-1" href={image.href} >
                                 <Image width={150000}

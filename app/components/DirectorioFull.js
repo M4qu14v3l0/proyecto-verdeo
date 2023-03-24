@@ -34,7 +34,7 @@ const DirectorioFull = () => {
             </div>
             <div className='flex w-9/12 h-auto mx-auto justify-around gap-x-12'>
                 {images.map ((image) => (
-                    <div key={image.index} className="h-96 w-30 grid grid-cols-1 grid-rows-1">
+                    <div key={image.alt} className="h-96 w-30 grid grid-cols-1 grid-rows-1">
                         <Link className="col-start-1 col-end-1 row-start-1 row-end-1" href={image.href} >
                             <Image width={150000}
                             height={150000}

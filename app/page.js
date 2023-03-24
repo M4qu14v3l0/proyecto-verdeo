@@ -13,7 +13,11 @@ import useWindowSize from "@rooks/use-window-size";
 
 
 export default function Home() {
+  const [ outerWidtha , setOuterWitha ] = useState();
   const { outerWidth } = useWindowSize();
+  useEffect ( () => {
+      setOuterWitha(outerWidth)
+  }, [outerWidth])
   const [articulos, setArticulos] = useState({});
   useEffect(() => {
       getArticle().then(data => {
@@ -24,9 +28,9 @@ export default function Home() {
     <main className="flex flex-col pb-6">
       <Hero />
       <Hacemos />
-      {outerWidth >= 1024 ? <NosotrosFull /> : <Nosotros />}
-      {outerWidth >= 1024 ? <AyudaFull /> : <Ayuda />}
-      {outerWidth >= 1024 ? <DirectorioFull /> : <Directorio />}
+      {outerWidtha >= 1024 ? <NosotrosFull /> : <Nosotros />}
+      {outerWidtha >= 1024 ? <AyudaFull /> : <Ayuda />}
+      {outerWidtha >= 1024 ? <DirectorioFull /> : <Directorio />}
       {/* {articulos.length >= 1 ? 
         <ul className="flex gap-7 mb-2 mx-auto">                        
           {articulos.map((articulo) => (

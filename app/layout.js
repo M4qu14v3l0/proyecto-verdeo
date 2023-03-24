@@ -13,8 +13,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className='flex flex-col h-screen bg-amber-50'>
         <Navigation />
-        {children}
         <ScrollButton />
+        {children}
         <Footer />
       </body>
     </html>

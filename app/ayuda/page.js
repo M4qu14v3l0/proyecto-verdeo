@@ -1,9 +1,13 @@
-import React from 'react'
+import Consejos from './components/consejos.js';
+import Donaciones from './components/donaciones.js';
+import Voluntariado from './components/voluntariado.js';
 
 const ayuda = () => {
   return (
-    <div>
-      <p className='text-center'>Ayuda</p>
+    <div className='flex flex-col'>
+      <Voluntariado />
+      <Donaciones />
+      <Consejos />
     </div>
   )
 }

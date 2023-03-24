@@ -55,7 +55,7 @@ const tips= [
 
 const consejos = () => {
     return (
-        <div className='flex flex-col w-screen'>
+        <div id="consejos" className='flex flex-col'>
             <h2 className='text-3xl text-center mt-2 mb-5 font-bold px-2'>10 formas de ayudar</h2>
             <p className='mb-6 text-lg text-center px-4'>Existen muchas formas de ayudar desde el lugar que te encuentres. A continuación te contamos 10 formas de las que también te puedes involucrar.</p>
             {tips.map(({img, titulo, texto}) => (

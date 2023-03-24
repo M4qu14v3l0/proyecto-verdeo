@@ -29,8 +29,8 @@ const DirectorioFull = () => {
     return (
         <div className="flex flex-col h-auto pb-16 px-10 bg-verde">
             <div className="w-9/12 h-2/10 mt-8 flex mx-auto flex-col mb-12">
-                <h2 className="text-center text-white font-bold text-4xl mb-6 mt-3">Directorio Ecosostenible</h2>
-                <p className="text-center text-white text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aperiam quod, quam excepturi consequuntur voluptates recusandae quia. Necessitatibus vitae quaerat consequuntur beatae porro autem id commodi est illum veritatis. Provident.</p>
+                <h2 className="text-center text-blanco font-bold text-4xl mb-6 mt-3">Directorio Ecosostenible</h2>
+                <p className="text-center text-blanco text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aperiam quod, quam excepturi consequuntur voluptates recusandae quia. Necessitatibus vitae quaerat consequuntur beatae porro autem id commodi est illum veritatis. Provident.</p>
             </div>
             <div className='flex w-9/12 h-auto mx-auto justify-around gap-x-12'>
                 {images.map ((image) => (
@@ -44,8 +44,8 @@ const DirectorioFull = () => {
                             />
                         </Link>
                         <div className="col-start-1 col-end-1 row-start-1 row-end-1 mt-auto mx-auto mb-6 flex flex-col z-30">
-                            <h4 className="text-center text-white font-bold text-xl px-8">{image.titulo}</h4>
-                            <p className="text-center text-white text-sm px-8 pt-6">{image.texto}</p>
+                            <h4 className="text-center text-blanco font-bold text-xl px-8">{image.titulo}</h4>
+                            <p className="text-center text-blanco text-sm px-8 pt-6">{image.texto}</p>
                         </div>
                     </div>
                 ))}

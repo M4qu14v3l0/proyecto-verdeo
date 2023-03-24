@@ -38,7 +38,7 @@ export default function Carosusel() {
         <div className="w-screen h-full grid grid-cols-1 grid-rows-1">
             <AiOutlineLeft
                 onClick={handlePrevSlide}
-                className="col-start-1 col-end-2 row-start-1 row-end-2 ml-1 mr-auto my-auto text-5xl cursor-pointer text-white z-20"
+                className="col-start-1 col-end-2 row-start-1 row-end-2 ml-1 mr-auto my-auto text-5xl cursor-pointer text-blanco z-20"
             /> 
             <div className="col-start-1 col-end-2 row-start-1 row-end-2 w-screen h-full flex overflow-hidden">
                 <Swipe
@@ -49,7 +49,7 @@ export default function Carosusel() {
                 {images?.map((image, index) => {
                     if (index === currentSlide) {
                     return (
-                        <div key={image.index} className="w-full h-full grid grid-cols-1 grid-rows-1 animate-fadeIn object-cover col-start-1 col-end-2 row-start-1 row-end-2">
+                        <div key={image.titulo} className="w-full h-full grid grid-cols-1 grid-rows-1 animate-fadeIn object-cover col-start-1 col-end-2 row-start-1 row-end-2">
                             <Link className="col-start-1 col-end-2 row-start-1 row-end-2" href={image.href} >
                                 <Image width={150000}
                                 height={150000}
@@ -59,8 +59,8 @@ export default function Carosusel() {
                                 />
                             </Link>
                             <div className="col-start-1 col-end-2 row-start-1 row-end-2 mt-auto mx-auto mb-6 flex flex-col z-30">
-                                <h4 className="text-center text-white font-bold text-xl px-8">{image.titulo}</h4>
-                                <p className="text-center text-white text-sm px-8 mt-3">{image.texto}</p>
+                                <h4 className="text-center text-blanco font-bold text-xl px-8">{image.titulo}</h4>
+                                <p className="text-center text-blanco text-sm px-8 mt-3">{image.texto}</p>
                             </div>
                         </div>
                     );
@@ -70,7 +70,7 @@ export default function Carosusel() {
             </div>
             <AiOutlineRight
                 onClick={handleNextSlide}
-                className="col-start-1 col-end-2 row-start-1 row-end-2 ml-auto my-auto text-5xl cursor-pointer text-white z-20"
+                className="col-start-1 col-end-2 row-start-1 row-end-2 ml-auto my-auto text-5xl cursor-pointer text-blanco z-20"
             />
         </div>
     );

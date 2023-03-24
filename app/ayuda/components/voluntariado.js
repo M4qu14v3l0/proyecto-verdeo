@@ -18,7 +18,7 @@ const ejes= [
 
 const voluntariado = () => {
     return (
-        <div className='flex flex-col h-screen'>
+        <div id="voluntariado" className='flex flex-col'>
             <h2 className='text-3xl text-center mt-2 mb-4 font-bold'>Cómo ayudar</h2>
             <h3 className='text-center text-2xl mb-4 font-bold'>Ser voluntario</h3>
             <div className='bg-verde2 h-auto mb-5 w-11/12 mx-auto px-4 rounded-xl flex flex-col'>
@@ -32,7 +32,7 @@ const voluntariado = () => {
                     </div>
                 ))}
             </div>
-            <Link href='/' className='mx-auto mb-5 bg-verde text-white text-lg py-1 px-3 rounded-xl'>Quiero ser voluntario</Link>
+            <Link href='/' className='mx-auto mb-5 bg-verde text-blanco text-lg py-1 px-3 rounded-xl'>Quiero ser voluntario</Link>
         </div>
     )
 }

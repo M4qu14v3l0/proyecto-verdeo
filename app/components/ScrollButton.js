@@ -15,12 +15,16 @@ const ScrollButton = () =>{
         }
     };
     const scrollToTop = () =>{
-        window.scrollTo({
-        top: 0, 
-        behavior: 'smooth'
-        });
+        if (typeof window !== "undefined") {
+            window.scrollTo({
+                top: 0, 
+                behavior: 'smooth'
+                });
+        }
     };
-    window.addEventListener('scroll', toggleVisible);
+    if (typeof window !== "undefined") {
+        window.addEventListener('scroll', toggleVisible);
+    }
     return (
             <Image className='m-auto hover:animate-pulse fixed w-8 h-8 right-2 bottom-6 z-40 cursor-pointer' onClick={scrollToTop} style={{display: visible ? 'inline' : 'none'}} src={arrowUp} alt="Flecha Subir" priority/>
     );

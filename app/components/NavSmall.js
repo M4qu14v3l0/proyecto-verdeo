@@ -29,15 +29,15 @@ const nosotros = [
 const ayuda = [
     {
         label: 'Ser Voluntario',
-        route: '/ayuda/voluntariado'
+        route: 'ayuda/#voluntariado'
     },
     {
         label: 'Donar',
-        route: '/ayuda/donaciones'
+        route: 'ayuda/#donaciones'
     },
     {
         label: '10 Formas de ayudar',
-        route: '/ayuda/consejos' 
+        route: 'ayuda/#consejos' 
     },
 ];
 const directorio = [
@@ -53,6 +53,15 @@ const NavSmall = () => {
     const [isNosOpen, setIsNosOpen] = useState(false);
     const [isAyudaOpen, setIsAyudaOpen] = useState(false);
     const [isDirecOpen, setIsDirecOpen] = useState(false);
+    function cerrar () {
+        if(isHacerOpen === true || isNosOpen === true || isAyudaOpen === true || isDirecOpen === true){
+            setIsHacerOpen(false);
+            setIsNosOpen(false);
+            setIsAyudaOpen(false);
+            setIsDirecOpen(false);
+            setIsNavOpen(false);
+        };
+    }
     return (
         <nav className="flex flex-col">
             <div className="flex items-center">
@@ -82,7 +91,7 @@ const NavSmall = () => {
                 </div>
                 }
                 <div className="flex w-4/6 mr-auto">
-                    <Link className="flex h-24 w-24 mx-auto" href="/" onClick={() => setIsNavOpen(false)}>
+                    <Link className="flex h-24 w-24 mx-auto" href="/" onClick={() => cerrar()}>
                         <Image className="my-auto hover:translate-y-cursor transition-all duration-300 ease-in-out" src={fotoPortada} alt="logo" priority />
                     </Link>
                 </div>
@@ -117,9 +126,9 @@ const NavSmall = () => {
                             <ul className="animate-display2">
                                 {hacemos.map(({label, route}) => (
                                     <li className="flex" key={label}>
-                                        <Link onClick={() => setIsNavOpen(false)} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                        <a onClick={() => cerrar()} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
                                             {label}
-                                        </Link>
+                                        </a>
                                     </li>
                                 ))}
                             </ul>
@@ -147,9 +156,9 @@ const NavSmall = () => {
                             <ul className="animate-display2">
                                 {nosotros.map(({label, route}) => (
                                     <li className="flex" key={label}>
-                                        <Link onClick={() => setIsNavOpen(false)} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                        <a onClick={() => cerrar()} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
                                             {label}
-                                        </Link>
+                                        </a>
                                     </li>
                                 ))}
                             </ul>
@@ -177,9 +186,9 @@ const NavSmall = () => {
                             <ul className="animate-display2">
                                 {ayuda.map(({label, route}) => (
                                     <li className="flex" key={label}>
-                                        <Link onClick={() => setIsNavOpen(false)} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                        <a onClick={() => cerrar()} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
                                             {label}
-                                        </Link>
+                                        </a>
                                     </li>
                                 ))}
                             </ul>
@@ -207,9 +216,9 @@ const NavSmall = () => {
                             <ul className="animate-display2">
                                 {directorio.map(({label, route}) => (
                                     <li className="flex" key={label}>
-                                        <Link onClick={() => setIsNavOpen(false)} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                        <a onClick={() => cerrar()} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
                                             {label}
-                                        </Link>
+                                        </a>
                                     </li>
                                 ))}
                             </ul>

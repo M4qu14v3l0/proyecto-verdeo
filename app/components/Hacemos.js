@@ -33,7 +33,7 @@ const Hacemos = () => {
                     <h4 className="text-center font-bold mb-5">{subtitle}</h4>
                     <p className="text-center mb-3">{text}</p>
                     <Link href={route} className={linkclass}>
-                        <p className="font-botones text-white text-center m-auto text-sm">Ver más</p>
+                        <p className="font-botones text-blanco text-center m-auto text-sm">Ver más</p>
                     </Link>
                 </div>
             ))}

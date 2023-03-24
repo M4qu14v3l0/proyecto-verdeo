@@ -19,6 +19,7 @@ module.exports = {
         'amarillo': '#F4B847',
         'rojo': '#9F2E05',
         'tipografia': '#161616',
+        'blanco': '#FFFFFF'
       },
       borderRadius: {
         'none': '0',

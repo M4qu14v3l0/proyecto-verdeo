@@ -12,7 +12,7 @@ export default function Footer() {
         setOuterWitha(outerWidth)
     }, [outerWidth])
     return (
-        <div>
+        <div className="mt-auto">
             {outerWidtha >= 1024 ? <FooterFull /> : <FooterSmall />}
         </div>
     )

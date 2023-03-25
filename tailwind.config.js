@@ -40,7 +40,8 @@ module.exports = {
         'ayuda': "url('/foto5.jpg')",
         'hero': "url('/hero.jpg')",
         'abedul':"url('/abedul.png')",
-        'alpaca':"url('/alpaca.svg')"
+        'alpaca':"url('/alpaca.svg')",
+        'comunidad': "url('/comunidad.jpg')"
       },
       gridTemplateRows: {
         '16': 'repeat(3, auto)',

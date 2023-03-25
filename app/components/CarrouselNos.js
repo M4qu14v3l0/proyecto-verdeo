@@ -9,14 +9,14 @@ const images = [
     {
         src: '/bosque.jpg',
         alt: 'Foto 1',
-        href: '/nosotros/equipo',
+        href: '/nosotros',
         titulo: "Nuestro equipo",
         texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.",
     },
     {
         src: '/comunidad.jpg',
         alt: 'Foto 2',
-        href: '/nosotros/mision',
+        href: '/nosotros',
         titulo: "Mision",
         texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.",
     },
@@ -35,7 +35,7 @@ export default function Carosusel() {
     };
 
     return (
-        <div className="w-screen h-full grid grid-cols-1 grid-rows-1">
+        <div className="h-full grid grid-cols-1 grid-rows-1">
             <AiOutlineLeft
                 onClick={handlePrevSlide}
                 className="col-start-1 col-end-2 row-start-1 row-end-2 ml-1 mr-auto my-auto text-5xl cursor-pointer text-blanco z-20"

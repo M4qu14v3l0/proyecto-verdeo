@@ -5,19 +5,19 @@ const actividades = [
         title: "PA",
         subtitle: "Lo Que Hacemos",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod facilis sed suscipit omnis tempore quo sapiente expedita velit incidunt aspernatur ut dolor eveniet.",
-        route: '/actividades/talleres',
-        divclass: "rounded-2xl border-2 border-verde p-6 flex flex-col mb-6 lg:h-[50vh] lg:mb-0 lg:w-[30vw] lg:mr-4",
+        route: '/actividades',
+        divclass: "rounded-2xl border-2 border-verde p-6 flex flex-col mb-6 lg:min-h-[50vh] lg:mb-0 lg:w-[30vw] lg:mr-4",
         titleclass: "text-center text-6xl font-bold text-verde mt-6 mb-5",
-        linkclass:"flex mx-auto rounded-2xl bg-verde w-4/12 h-8 hover:bg-green-700 transition-all duration-300 ease-in-out"
+        linkclass:"flex mx-auto rounded-2xl bg-verde w-4/12 h-8 hover:bg-green-700 transition-all duration-300 ease-in-out lg:mb-6"
     },
     {
         title: "TA",
         subtitle: "Proyecto Abedul",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod facilis sed suscipit omnis tempore quo sapiente expedita velit incidunt aspernatur ut dolor eveniet.",
-        route: '/actividades/proyectos',
-        divclass: "rounded-2xl border-2 border-rojo p-6 flex flex-col lg:h-[50vh] lg:w-[30vw] lg:ml-4",
+        route: '/actividades',
+        divclass: "rounded-2xl border-2 border-rojo p-6 flex flex-col lg:min-h-[50vh] lg:w-[30vw] lg:ml-4",
         titleclass: "text-center text-6xl font-bold text-rojo mt-6 mb-5",
-        linkclass:"flex mx-auto rounded-2xl bg-rojo w-4/12 h-8 hover:bg-red-700 transition-all duration-300 ease-in-out"
+        linkclass:"flex mx-auto rounded-2xl bg-rojo w-4/12 h-8 hover:bg-red-700 transition-all duration-300 ease-in-out lg:mb-6"
     },
 ]
 
@@ -31,7 +31,7 @@ const Hacemos = () => {
                 <div className={divclass} key={title}>
                     <h3 className={titleclass}>{title}</h3>
                     <h4 className="text-center font-bold mb-5">{subtitle}</h4>
-                    <p className="text-center mb-3">{text}</p>
+                    <p className="text-center pb-6">{text}</p>
                     <Link href={route} className={linkclass}>
                         <p className="font-botones text-blanco text-center m-auto text-sm">Ver más</p>
                     </Link>

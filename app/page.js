@@ -1,7 +1,7 @@
 'use client';
 import {useEffect, useState} from 'react';
 import { getArticle } from './api/api';
-import Hacemos from './components/Hacemos.js';
+import Actividades from './components/Actividades.js';
 import Nosotros from './components/Nosotros.js';
 import NosotrosFull from './components/NosotrosFull';
 import Directorio from './components/Directorio.js';
@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <main className="flex flex-col pb-6">
       <Hero />
-      <Hacemos />
+      <Actividades />
       {outerWidtha >= 1024 ? <NosotrosFull /> : <Nosotros />}
       {outerWidtha >= 1024 ? <AyudaFull /> : <Ayuda />}
       {outerWidtha >= 1024 ? <DirectorioFull /> : <Directorio />}

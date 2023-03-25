@@ -9,21 +9,21 @@ import arrowDown from '../assets/img/arrowDown.svg';
 const hacemos = [
     {
         label: 'Talleres',
-        route: '/actividades/talleres'
+        route: '/actividades'
     },
     {
         label: 'Proyectos',
-        route: '/actividades/proyectos'
+        route: '/actividades'
     },
 ];
 const nosotros = [
     {
         label: 'Nuestro equipo',
-        route: '/nosotros/equipo'
+        route: '/nosotros'
     },
     {
         label: 'Nuestra Mision',
-        route: '/nosotros/mision'
+        route: '/nosotros'
     },
 ];
 const ayuda = [
@@ -97,7 +97,7 @@ const NavSmall = () => {
                 </div>
             </div>
             {isNavOpen === true ?
-                <div className="flex flex-col justify-between h-auto mb-2 animate-display">
+                <div className="flex flex-col justify-between h-auto mb-3 animate-display">
                     
                     {/* inicio */}
                     <div className="flex w-4/6 my-2 ml-4">
@@ -107,20 +107,25 @@ const NavSmall = () => {
                     </div>
 
                     {/* actividades */}
-                    <div className="flex justify-between items-center">
-                        <div onClick={() => setIsNavOpen(true)} href='/' className="mr-2 flex flex-col my-2 ml-4 w-3/6">
-                            <h4 onClick={() => setIsHacerOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Lo que hacemos</h4>
-                        </div>
-                        {isHacerOpen === true ? 
+                    {isHacerOpen === true ? 
+                        <div className="flex justify-between items-center">
+                            <div onClick={() => setIsNavOpen(true)} href='/' className="mr-2 flex flex-col my-2 ml-4 w-3/6">
+                                <h4 onClick={() => setIsHacerOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Lo que hacemos</h4>
+                            </div>
                             <div className="flex w-3/6">
                                 <Image src={arrowDown} alt='Replegar' onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
                             </div>
-                            :
+                        </div>  
+                        :
+                        <div className="flex justify-between items-center">
+                            <div onClick={() => setIsNavOpen(true)} href='/' className="mr-2 flex flex-col my-2 ml-4 w-3/6">
+                                <h4 onClick={() => setIsHacerOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Lo que hacemos</h4>
+                            </div>
                             <div className="flex w-3/6">
-                                <Image src={arrowUp} alt='Desplegar' onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
-                            </div>                             
-                        }
-                    </div>
+                                <Image src={arrowUp} alt='Replegar' onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
+                            </div>
+                        </div>  
+                    }
                     <div className="ml-4 mb-1">
                         {isHacerOpen === true ?
                             <ul className="animate-display2">
@@ -137,20 +142,25 @@ const NavSmall = () => {
                     </div>
 
                     {/* nosotros */}
-                    <div className="flex justify-between items-center">
-                        <div className="mr-2 flex flex-col my-2 ml-4 w-3/6">
-                            <h4 onClick={() => setIsNosOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Nosotros</h4>
-                        </div>
-                        {isNosOpen === true ? 
-                            <div className="flex w-3/6">
-                                <Image src={arrowDown} alt='Desplegar' onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
+                    {isNosOpen === true ? 
+                        <div className="flex justify-between items-center">
+                            <div onClick={() => setIsNavOpen(true)} href='/' className="mr-2 flex flex-col my-2 ml-4 w-3/6">
+                                <h4 onClick={() => setIsNosOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Nosotros</h4>
                             </div>
-                            :
                             <div className="flex w-3/6">
-                                <Image src={arrowUp} alt='Desplegar' onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
-                            </div> 
-                        }
-                    </div>
+                                <Image src={arrowDown} alt='Replegar' onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
+                            </div>
+                        </div>  
+                        :
+                        <div className="flex justify-between items-center">
+                            <div onClick={() => setIsNavOpen(true)} href='/' className="mr-2 flex flex-col my-2 ml-4 w-3/6">
+                                <h4 onClick={() => setIsNosOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Nosotros</h4>
+                            </div>
+                            <div className="flex w-3/6">
+                                <Image src={arrowUp} alt='Replegar' onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
+                            </div>
+                        </div>  
+                    }
                     <div className="ml-4 mb-1">
                         {isNosOpen === true ?
                             <ul className="animate-display2">
@@ -167,20 +177,25 @@ const NavSmall = () => {
                     </div>
 
                     {/* ayuda */}
-                    <div className="flex justify-between items-center">
-                        <div className="mr-2 flex flex-col my-2 ml-4 w-3/6">
-                            <h4 onClick={() => setIsAyudaOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Cómo ayudar</h4>
-                        </div>
-                        {isAyudaOpen === true ? 
-                            <div className="flex w-3/6">
-                                <Image src={arrowDown} alt='Desplegar' onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
+                    {isAyudaOpen === true ? 
+                        <div className="flex justify-between items-center">
+                            <div onClick={() => setIsNavOpen(true)} href='/' className="mr-2 flex flex-col my-2 ml-4 w-3/6">
+                                <h4 onClick={() => setIsAyudaOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Cómo ayudar</h4>
                             </div>
-                            :
                             <div className="flex w-3/6">
-                                <Image src={arrowUp} alt='Desplegar' onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
-                            </div> 
-                        }
-                    </div>
+                                <Image src={arrowDown} alt='Replegar' onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
+                            </div>
+                        </div>  
+                        :
+                        <div className="flex justify-between items-center">
+                            <div onClick={() => setIsNavOpen(true)} href='/' className="mr-2 flex flex-col my-2 ml-4 w-3/6">
+                                <h4 onClick={() => setIsAyudaOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Cómo ayudar</h4>
+                            </div>
+                            <div className="flex w-3/6">
+                                <Image src={arrowUp} alt='Replegar' onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
+                            </div>
+                        </div>  
+                    }
                     <div className="ml-4 mb-1">
                         {isAyudaOpen === true ?
                             <ul className="animate-display2">
@@ -197,20 +212,25 @@ const NavSmall = () => {
                     </div>
 
                     {/* directorio */}
-                    <div className="flex justify-between items-center">
-                        <div className="mr-2 flex flex-col my-2 ml-4 w-3/6">
-                            <h4 onClick={() => setIsDirecOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Directorio Ecosostenible</h4>
-                        </div>
-                        {isDirecOpen === true ? 
-                            <div className="flex w-3/6">
-                                <Image src={arrowDown} alt='Desplegar' onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
+                    {isDirecOpen === true ? 
+                        <div className="flex justify-between items-center">
+                            <div onClick={() => setIsNavOpen(true)} href='/' className="mr-2 flex flex-col my-2 ml-4 w-3/6">
+                                <h4 onClick={() => setIsDirecOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Directorio ecosostenible</h4>
                             </div>
-                            :
                             <div className="flex w-3/6">
-                                <Image src={arrowUp} alt='Desplegar' onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
-                            </div> 
-                        }
-                    </div>
+                                <Image src={arrowDown} alt='Replegar' onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
+                            </div>
+                        </div>  
+                        :
+                        <div className="flex justify-between items-center">
+                            <div onClick={() => setIsNavOpen(true)} href='/' className="mr-2 flex flex-col my-2 ml-4 w-3/6">
+                                <h4 onClick={() => setIsDirecOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Directorio ecosostenible</h4>
+                            </div>
+                            <div className="flex w-3/6">
+                                <Image src={arrowUp} alt='Replegar' onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
+                            </div>
+                        </div>  
+                    }
                     <div className="ml-4 mb-1">
                         {isDirecOpen === true ?
                             <ul className="animate-display2">

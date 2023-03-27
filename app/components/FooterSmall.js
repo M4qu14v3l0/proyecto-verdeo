@@ -41,7 +41,7 @@ const email = "verdeoinformes@gmail.com";
 
 export default function Footer() {
     return (
-        <div className="mt-auto border border-t-neutral-400">
+        <div className="lg:hidden mt-auto border border-t-neutral-400">
             <div className="flex justify-around pt-6 pb-6">
                 <Link href="/">
                     <Image className="w-auto h-16 hover:translate-y-cursor transition-all duration-200 ease-in-out" src={fotoPortada} alt="Foto de Portada" priority />

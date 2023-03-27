@@ -61,7 +61,7 @@ const NavFull = () => {
         };
     }
     return (
-        <nav className="flex">
+        <nav className="hidden lg:flex">
             <Link className="w-1/6 py-2 mx-auto flex" href="/">
                 <Image className="mx-auto h-16 w-auto hover:translate-y-cursor transition-all duration-300 ease-in-out" src={fotoPortada} onClick={() => cerrar()} alt="logo" priority />
             </Link>

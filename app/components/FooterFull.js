@@ -41,7 +41,7 @@ const email = "verdeoinformes@gmail.com";
 
 const FooterFull = () => {
     return (
-        <div className="flex items-end justify-evenly border border-t-neutral-400 mt-10">
+        <div className="hidden lg:flex items-end justify-evenly border border-t-neutral-400 mt-10">
             <Link className="my-3 ml-4" href="/">
                 <Image width={500} height={500} className="w-auto h-20 hover:translate-y-cursor transition-all duration-200 ease-in-out" src={fotoPortada} alt="Foto de Portada" priority />
             </Link>

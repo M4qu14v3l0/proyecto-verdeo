@@ -27,7 +27,7 @@ const images = [
 
 const DirectorioFull = () => {
     return (
-        <div className="flex flex-col h-auto pb-16 px-10 bg-verde">
+        <div className="hidden lg:flex flex-col h-auto pb-16 px-10 bg-verde">
             <div className="w-9/12 h-2/10 mt-8 flex mx-auto flex-col mb-12">
                 <h2 className="text-center text-blanco font-bold text-4xl mb-6 mt-3">Directorio Ecosostenible</h2>
                 <p className="text-center text-blanco text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aperiam quod, quam excepturi consequuntur voluptates recusandae quia. Necessitatibus vitae quaerat consequuntur beatae porro autem id commodi est illum veritatis. Provident.</p>

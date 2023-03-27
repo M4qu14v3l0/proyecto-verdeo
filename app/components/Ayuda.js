@@ -25,7 +25,7 @@ const ayudas = [
 
 const Ayuda = () => {
     return (
-        <div className="w-11/12 flex mx-auto flex-col my-6">
+        <div className="lg:hidden w-11/12 flex mx-auto flex-col my-6">
             <h2 className="text-center font-bold text-xl mb-4">Cómo Ayudar</h2>
             <p className="text-center text-sm mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil minus aspernatur modi nulla explicabo at quasi optio nisi laboriosam commodi, ratione voluptatibus natus dolorem nesciunt vel accusantium? Aspernatur, optio excepturi!</p>
             {ayudas.map(({title, text, route, divclass, linkclass}) => (

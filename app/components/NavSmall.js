@@ -63,7 +63,7 @@ const NavSmall = () => {
         };
     }
     return (
-        <nav className="flex flex-col">
+        <nav className="flex lg:hidden flex-col">
             <div className="flex items-center">
                 {isNavOpen === false ?
                 <div className="flex flex-col w-1/6 pl-4">

@@ -1,5 +1,5 @@
 'use client';
-import {useEffect, useState} from 'react';
+import {useEffect} from 'react';
 import { getArticle } from './api/api';
 import Actividades from './components/Actividades.js';
 import Nosotros from './components/Nosotros.js';
@@ -9,16 +9,8 @@ import DirectorioFull from './components/DirectorioFull.js';
 import Ayuda from './components/Ayuda.js';
 import AyudaFull from './components/AyudaFull';
 import Hero from './components/Hero';
-import useWindowSize from "@rooks/use-window-size";
-
 
 export default function Home() {
-  const [ outerWidtha , setOuterWitha ] = useState();
-  const { outerWidth } = useWindowSize();
-  useEffect ( () => {
-      setOuterWitha(outerWidth)
-  }, [outerWidth])
-  const [articulos, setArticulos] = useState({});
   useEffect(() => {
       getArticle().then(data => {
           setArticulos(data)
@@ -28,9 +20,12 @@ export default function Home() {
     <main className="flex flex-col pb-6">
       <Hero />
       <Actividades />
-      {outerWidtha >= 1024 ? <NosotrosFull /> : <Nosotros />}
-      {outerWidtha >= 1024 ? <AyudaFull /> : <Ayuda />}
-      {outerWidtha >= 1024 ? <DirectorioFull /> : <Directorio />}
+      <NosotrosFull />
+      <Nosotros />
+      <AyudaFull />
+      <Ayuda />
+      <DirectorioFull />
+      <Directorio />
       {/* {articulos.length >= 1 ? 
         <ul className="flex gap-7 mb-2 mx-auto">                        
           {articulos.map((articulo) => (

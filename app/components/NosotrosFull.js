@@ -27,7 +27,7 @@ const images = [
 
 const NosotrosFull = () => {
     return (
-        <div className="flex flex-col h-auto pb-16 px-10 bg-verde">
+        <div className="hidden lg:flex flex-col h-auto pb-16 px-10 bg-verde">
             <div className="w-9/12 h-2/10 mt-8 flex mx-auto flex-col mb-12">
                 <h2 className="text-center text-blanco font-bold text-4xl mb-6 mt-3">Nosotros</h2>
                 <p className="text-center text-blanco text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum laboriosam possimus assumenda, quia soluta ex consequuntur iusto facere voluptas quam vel praesentium quibusdam nisi asperiores a aliquid perspiciatis ratione beatae?</p>

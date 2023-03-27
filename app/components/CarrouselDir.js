@@ -31,7 +31,7 @@ export default function Carosusel() {
     };
 
     return (
-        <div className="h-full grid grid-cols-1 grid-rows-1">
+        <div className="lg:hidden h-full grid grid-cols-1 grid-rows-1">
             <AiOutlineLeft
                 onClick={handlePrevSlide}
                 className="col-start-1 col-end-2 row-start-1 row-end-2 ml-1 mr-auto my-auto text-5xl cursor-pointer text-blanco z-20"

@@ -2,6 +2,7 @@
 import useWindowSize from "@rooks/use-window-size";
 import NavSmall from "./NavSmall";
 import NavFull from "./NavFull";
+import { useEffect , useState} from "react";
 
 const hacemos = [
     {
@@ -46,10 +47,17 @@ const directorio = [
 
 
 export default function Header() {
-    const { outerWidth } = useWindowSize();
+
+
+    // const [outerWidtha , setOuterWidtha] = useState(false)
+    // const {outerWidth} = useWindowSize()
+    // useEffect( () => {
+    //     setOuterWidtha(outerWidth)
+    // } , [outerWidth])
+    //const { outerWidth } = useWindowSize();
     return (
         <header>
-            {outerWidth >= 1024 ? <NavFull /> : <NavSmall />}
+            {/* {outerWidtha >= 1024 ? <NavFull /> : <NavSmall />} */}
         </header>
     );
 }

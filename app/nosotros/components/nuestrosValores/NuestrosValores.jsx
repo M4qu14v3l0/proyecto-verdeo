@@ -1,4 +1,9 @@
+
 import Image from "next/image";
+import Carousel from "./Carousel";
+import Gallery from "./Gallery";
+
+
 
 export default function NuestrosValores() {
   return (
@@ -14,7 +19,12 @@ export default function NuestrosValores() {
             </div>
             <div className="h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px] w-full bg-[#F4B847] flex justify-center items-center"><h1 className="font-bold text-black text-2xl">Nuestros valores</h1></div>
         </div>
-        
+        <div className="md:hidden">
+          <Carousel />
+        </div>
+        <div className="hidden md:block">
+          <Gallery />
+        </div>
     </section>
   )
 }

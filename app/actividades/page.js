@@ -1,10 +1,13 @@
 import React from 'react'
+import Proyectos from './components/proyectos/Proyectos'
+import Talleres from './components/talleres/Talleres'
 
 const page = () => {
   return (
-    <div>
-      <p className='text-center'>Actividades</p>
-    </div>
+    <main>
+      <Proyectos />
+      <Talleres />
+    </main>
   )
 }
 

@@ -1,3 +1,5 @@
+import Anuario from "./components/anuario/Anuario"
+import MisionVision from "./components/misionVision/MisionVision"
 import NuestroEquipo from "./components/nuestroEquipo/NuestroEquipo"
 import NuestrosValores from "./components/nuestrosValores/NuestrosValores"
 
@@ -7,6 +9,8 @@ const Nosotros = () => {
     <main>
       <NuestroEquipo />
       <NuestrosValores />
+      <MisionVision />
+      <Anuario />
     </main>
   )
 }

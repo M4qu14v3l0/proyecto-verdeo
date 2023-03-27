@@ -12,10 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className='flex flex-col h-screen bg-amber-50'>
-        <Navigation />
+        {/* <Navigation /> */}
         {children}
-        <ScrollButton />
-        <Footer />
+        {/* <ScrollButton /> */}
+        {/* <Footer /> */}
       </body>
     </html>
   )

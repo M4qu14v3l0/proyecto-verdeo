@@ -92,7 +92,7 @@ const NavFull = () => {
                         <ul className="animate-display2 pb-3">
                             {hacemos.map(({label, route}) => (
                                 <li className="flex" key={label}>
-                                    <a href={route} onClick={() => cerrar()} className="mb-1 font-thin hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                    <a href={route} onClick={() => cerrar()} className="mb-1 font-thin hover:translate-y-cursor transition-all duration-250 ease-in-out">
                                         {label}
                                     </a>
                                 </li>
@@ -127,7 +127,7 @@ const NavFull = () => {
                         <ul className="animate-display2 pb-3">
                             {nosotros.map(({label, route}) => (
                                 <li className="flex" key={label}>
-                                    <a href={route} onClick={() => cerrar()} className="mb-1 font-thin hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                    <a href={route} onClick={() => cerrar()} className="mb-1 font-thin hover:translate-y-cursor transition-all duration-250 ease-in-out">
                                         {label}
                                     </a>
                                 </li>
@@ -162,7 +162,7 @@ const NavFull = () => {
                         <ul className="animate-display2 pb-3">
                             {ayuda.map(({label, route}) => (
                                 <li className="flex" key={label}>
-                                    <a href={route} onClick={() => cerrar()} className="mb-1 font-thin hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                    <a href={route} onClick={() => cerrar()} className="mb-1 font-thin hover:translate-y-cursor transition-all duration-250 ease-in-out">
                                         {label}
                                     </a>
                                 </li>
@@ -197,7 +197,7 @@ const NavFull = () => {
                         <ul className="animate-display2 pb-5">
                             {directorio.map(({label, route}) => (
                                 <li className="flex" key={label}>
-                                    <Link href={route} onClick={() => cerrar()} className="font-thin hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                    <Link href={route} onClick={() => cerrar()} className="font-thin hover:translate-y-cursor transition-all duration-250 ease-in-out">
                                         {label}
                                     </Link>
                                 </li>

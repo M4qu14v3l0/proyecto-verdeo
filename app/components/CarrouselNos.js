@@ -11,14 +11,21 @@ const images = [
         alt: 'Foto 1',
         href: '/nosotros',
         titulo: "Nuestro equipo",
-        texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.",
+        texto: "Somos un equipo de personas que buscamos compartir el conocimiento y el amor por la naturaleza y una vida en armonía.",
     },
     {
         src: '/comunidad.jpg',
         alt: 'Foto 2',
         href: '/nosotros',
-        titulo: "Mision",
-        texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.",
+        titulo: "Nuestros valores",
+        texto: '"La integridad es hacer lo correcto aunque nadie te esté mirando".',
+    },
+    {
+        src: '/bosque.jpg',
+        alt: 'Foto 1',
+        href: '/nosotros',
+        titulo: "Misión/Visión",
+        texto: "Queremos llegar a ser uno de los proyectos líderes y referentes en educacion ambiental y preservación.",
     },
 ]
 export default function Carosusel() {

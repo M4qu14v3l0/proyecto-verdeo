@@ -14,12 +14,14 @@ module.exports = {
         'botones':'Noto Sans, sans-serif',
       },
       colors: {
+        'fondo': '#EDEDED',
         'verde': '#175A34',
         'verde2': '#56B87F',
         'amarillo': '#F4B847',
         'rojo': '#9F2E05',
         'tipografia': '#161616',
-        'blanco': '#FFFFFF'
+        'blanco': '#FFFFFF',
+        'rosa': '#F5A88C',
       },
       borderRadius: {
         'none': '0',

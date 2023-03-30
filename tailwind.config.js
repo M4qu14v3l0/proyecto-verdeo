@@ -14,12 +14,14 @@ module.exports = {
         'botones':'Noto Sans, sans-serif',
       },
       colors: {
+        'fondo': '#EDEDED',
         'verde': '#175A34',
         'verde2': '#56B87F',
         'amarillo': '#F4B847',
         'rojo': '#9F2E05',
         'tipografia': '#161616',
-        'blanco': '#FFFFFF'
+        'blanco': '#FFFFFF',
+        'rosa': '#F5A88C',
       },
       borderRadius: {
         'none': '0',
@@ -40,7 +42,8 @@ module.exports = {
         'ayuda': "url('/foto5.jpg')",
         'hero': "url('/hero.jpg')",
         'abedul':"url('/abedul.png')",
-        'alpaca':"url('/alpaca.svg')"
+        'alpaca':"url('/alpaca.svg')",
+        'comunidad': "url('/comunidad.jpg')"
       },
       gridTemplateRows: {
         '16': 'repeat(3, auto)',

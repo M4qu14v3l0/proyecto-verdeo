@@ -9,16 +9,23 @@ const images = [
     {
         src: '/bosque.jpg',
         alt: 'Foto 1',
-        href: '/nosotros/equipo',
+        href: '/nosotros',
         titulo: "Nuestro equipo",
-        texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.",
+        texto: "Somos un equipo de personas que buscamos compartir el conocimiento y el amor por la naturaleza y una vida en armonía.",
     },
     {
         src: '/comunidad.jpg',
         alt: 'Foto 2',
-        href: '/nosotros/mision',
-        titulo: "Mision",
-        texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.",
+        href: '/nosotros',
+        titulo: "Nuestros valores",
+        texto: '"La integridad es hacer lo correcto aunque nadie te esté mirando".',
+    },
+    {
+        src: '/bosque.jpg',
+        alt: 'Foto 1',
+        href: '/nosotros',
+        titulo: "Misión/Visión",
+        texto: "Queremos llegar a ser uno de los proyectos líderes y referentes en educacion ambiental y preservación.",
     },
 ]
 export default function Carosusel() {
@@ -35,12 +42,12 @@ export default function Carosusel() {
     };
 
     return (
-        <div className="w-screen h-full grid grid-cols-1 grid-rows-1">
+        <div className="h-full grid grid-cols-1 grid-rows-1">
             <AiOutlineLeft
                 onClick={handlePrevSlide}
                 className="col-start-1 col-end-2 row-start-1 row-end-2 ml-1 mr-auto my-auto text-5xl cursor-pointer text-blanco z-20"
             /> 
-            <div className="col-start-1 col-end-2 row-start-1 row-end-2 w-screen h-full flex overflow-hidden">
+            <div className="col-start-1 col-end-2 row-start-1 row-end-2 w-full h-full flex overflow-hidden">
                 <Swipe
                 onSwipeLeft={handleNextSlide}
                 onSwipeRight={handlePrevSlide}

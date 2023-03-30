@@ -178,10 +178,10 @@ const consejos = () => {
                         <h3 className="text-center font-bold text-xl mb-3">{tip.titulo}</h3>
                         <p className="text-center text-lg lg:px-6">{tip.texto}</p>
                         {tip.data?
-                        <div>
-                            {tip.data}
-                        </div>
-                    : ""}
+                            <div>
+                                {tip.data}
+                            </div>
+                        : ""}
                     </div>
                 </div>
             ))}

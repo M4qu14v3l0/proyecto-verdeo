@@ -9,22 +9,26 @@ import arrowDown from '../assets/img/arrowDown.svg';
 const hacemos = [
     {
         label: 'Talleres',
-        route: '/actividades'
+        route: '/actividades/#talleres'
     },
     {
         label: 'Proyectos',
-        route: '/actividades'
+        route: '/actividades/#proyectos'
     },
 ];
 const nosotros = [
     {
         label: 'Nuestro equipo',
-        route: '/nosotros'
+        route: '/nosotros/#equipo'
     },
     {
-        label: 'Nuestra Mision',
-        route: '/nosotros'
+        label: 'Nuestra mision',
+        route: '/nosotros/#mision'
     },
+    {
+        label: 'Nuestros valores',
+        route: '/nosotros/#valores'
+    }
 ];
 const ayuda = [
     {

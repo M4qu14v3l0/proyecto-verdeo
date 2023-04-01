@@ -8,34 +8,34 @@ const verdeoTeam = [
 ]
 
 export default function NuestroEquipo() {
-  return (
-    <section className='mb-32'>
-        <div className='flex flex-col text-center gap-10 mb-10'>
-            <h2 className='text-3xl font-bold'>
-                Nosotros
-            </h2>
-            <h2 className='text-3xl font-bold'>
-                Nuestro Equipo
-            </h2>
-        </div>
-        <div className='max-w-[90%] md:max-w-3xl m-auto flex flex-col gap-5 md:flex-row'>
-            {
-                verdeoTeam.map(person => (
-                    <div key={person.id} className={`border-solid border-2 ${person.borderColor} rounded-xl p-4 flex flex-col gap-5 relative w-full`}>
-                        <div className='w-full h-[220px] relative'>
-                            <Image 
-                            src={person.img}
-                            alt={person.name}
-                            fill
-                            className='rounded-xl'
-                            />
+    return (
+        <section id='equipo' className='mb-32'>
+            <div className='flex flex-col text-center gap-10 mb-10'>
+                <h2 className='text-3xl font-bold'>
+                    Nosotros
+                </h2>
+                <h2 className='text-3xl font-bold'>
+                    Nuestro Equipo
+                </h2>
+            </div>
+            <div className='max-w-[90%] md:max-w-3xl m-auto flex flex-col gap-5 md:flex-row'>
+                {
+                    verdeoTeam.map(person => (
+                        <div key={person.id} className={`border-solid border-2 ${person.borderColor} rounded-xl p-4 flex flex-col gap-5 relative w-full`}>
+                            <div className='w-full h-[220px] relative'>
+                                <Image 
+                                src={person.img}
+                                alt={person.name}
+                                fill
+                                className='rounded-xl'
+                                />
+                            </div>
+                            <h1 className='text-center text-xl font-semibold'>{person.name}</h1>
+                            <p className='text-center '>{person.description}</p>
                         </div>
-                        <h1 className='text-center text-xl font-semibold'>{person.name}</h1>
-                        <p className='text-center '>{person.description}</p>
-                    </div>
-                ))
-            }
-        </div>
-    </section>
-  )
+                    ))
+                }
+            </div>
+        </section>
+    )
 }

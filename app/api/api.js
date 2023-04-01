@@ -10,7 +10,7 @@ export const createArticle = async(obj) => {
 
 // READ
 export const getArticle = async ()  => {
-    const colRef = collection(db, 'articulos');
+    const colRef = collection(db, 'empresas');
     const result = await getDocs(query(colRef));
     return getArrayFromCollection(result);
 }

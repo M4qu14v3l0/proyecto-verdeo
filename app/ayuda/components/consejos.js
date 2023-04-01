@@ -1,16 +1,18 @@
 import Image from "next/image";
-import TituloConsejos from "./tituloConsejos";
+import TituloConsejos from "./TituloConsejos";
 
 const tips= [
     {
         divClass: "flex flex-col lg:flex-row mb-6 lg:mb-12 lg:h-auto",
         img: "/espiritu.jpg",
+        svg: "/corazon.svg",
         titulo: "Cultiva tu espíritu y actúa",
         texto: "La mejor forma de ayudar a la naturaleza es siendo mejores seres humanos, y esto se logra haciéndonos una autobservación, analizando, reflexionando y cuestionando todo lo que esta a nuestro alrededor para encontrar por nosotros mismos las respuestas. Recuerda que todo está en tu interior, no busques afuera. Cuando empecemos a ser y no solo hacer, podremos descubrir todo lo que hay al otro lado de la mirada humana de la sociedad y empezar a vivir en armonía, empatía, bondad y respeto hacia todas las criaturas del planeta tierra. Y si ya has empezado a cultivar tu espíritu, comparte lo que sabes con los que quieran escuchar y únete a los que están en el mismo camino que tú.",
     },
     {
         divClass: "flex flex-col lg:flex-row-reverse mb-6 lg:mb-12 lg:h-auto",
         img: "/ropa.jpg",
+        svg: "/ropa.svg",
         titulo: "Ropa y calzado",
         texto: "Vuestra ropa esconde mucho de vuestra belleza y, sin embargo, no cubre lo que no es bello”- Khalil Gibran La compra compulsiva de ropa se debe en gran parte a la obsesión por la moda y la necesidad de tener muchas opciones de outfit inspiradas por los medios y tendencias. La moda rápida solo es una parte de una de las formas más terribles del consumismo. 1. Intercambia ropa con alguien Para alargar la vida de una prenda, puedes regalarla o donarla a alguien que la necesite en lugar de desecharla si ya no te queda o no te gusta. Investiga de donde viene tu ropa La moda puede involucrar explotación y agotamiento de recursos en la producción. Al investigar la procedencia y materiales de tu ropa, puedes tomar conciencia y elegir mejor. Busca noticias de fábricas ilegales donde asilan a personas para producir ropa de bajo costo para grandes marcas. Te recomendamos el documental “The true cost”. Quiere tu ropa Reparar y reutilizar ropa es una alternativa en la moda para reducir emisiones de CO2 y ahorrar recursos como agua y materias primas. Conservar ropa por 1 o 2 años más reduce sus emisiones de CO2 en un 24%. Hacer una camiseta de algodón requiere aproximadamente 2700 litros de agua. No compres pieles ni nada de origen animal La moda utiliza animales en prendas como abrigos de piel, lo que representa una práctica cruel y aberrante. Antiguamente se consideraba lujo, pero hoy se reconoce su crueldad. Te presentamos una lista de cómo se utilizan los animales en la moda. Compra en tiendas de segunda mano, artesanía o ferias locales Estás ayudando a la localidad de tu entorno (pequeños emprendedores), reduciendo que se produzca más ropa y ayudando al planeta. No todo lo nuevo tiene significado de belleza. No caigas en la publicidad La publicidad engañosa de grandes campañas como Black Friday incentivan el consumismo sin conciencia de lo que queda atrás. La vida no se trata solo de consumir, sino de descubrir su esencia.",
         data:                            
@@ -44,6 +46,7 @@ const tips= [
     {
         divClass: "flex flex-col lg:flex-row mb-6 lg:mb-12 lg:h-auto",
         img: "/plastico.jpg",
+        svg: "/botella.svg",
         titulo: "El uso del plástico",
         texto: "En millones de años cuando el humano se extinga (posiblemente) quizá... lo único que habremos dejado será el plástico como muestra de nuestra existencia.",
         data:                            
@@ -76,6 +79,7 @@ const tips= [
     {
         divClass: "flex flex-col lg:flex-row-reverse mb-6 lg:mb-12 lg:h-auto",
         img: "/alimentacion.jpg",
+        svg: "/fruta.svg",
         titulo: "Alimentación",
         texto: '“Que tu alimentación sea tu alimento” - Hipócrates',
         data:                            
@@ -105,6 +109,7 @@ const tips= [
     {
         divClass: "flex flex-col lg:flex-row mb-6 lg:mb-12 lg:h-auto",
         img: "/agua.jpg",
+        svg: "/agua.svg",
         titulo: "Agua",
         texto: "El 97.5% del agua en la tierra se encuentra en los océanos y mares de agua salada , únicamente el restante 2.5% es agua dulce, agua que consumimos.",
         data:                            
@@ -130,6 +135,7 @@ const tips= [
     {
         divClass: "flex flex-col lg:flex-row-reverse mb-6 lg:mb-12 lg:h-auto",
         img: "/tierra.jpg",
+        svg: "/planta.svg",
         titulo: "Tierra",
         texto: "Todo, absolutamente todo tiene vida en nuestro planeta.",
         data:                            
@@ -147,6 +153,7 @@ const tips= [
     {
         divClass: "flex flex-col lg:flex-row mb-6 lg:mb-12 lg:h-auto",
         img: "/arboles.jpg",
+        svg: "/arbol.svg",
         titulo: "Arboles",
         texto: "Todo, absolutamente todo tiene vida en nuestro planeta.",
         data:                            
@@ -175,6 +182,7 @@ const consejos = () => {
                         <Image width={500} height={500} src={tip.img} className="h-full w-full object-cover lg:rounded-lg" alt={tip.titulo}/>
                     </div>
                     <div className="flex flex-col px-4 lg:w-6/12 lg:mx-auto">
+                        <Image width={500} height={500} src={tip.svg} className="hidden lg:inline w-1/12 mx-auto" alt={tip.titulo}/>
                         <h3 className="text-center font-bold text-xl mb-3">{tip.titulo}</h3>
                         <p className="text-center text-lg lg:px-6">{tip.texto}</p>
                         {tip.data?

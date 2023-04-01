@@ -34,7 +34,7 @@ const voluntariado = () => {
                     </div>
                 ))}
             </div>
-            <Link href='/' className='lg:w-2/6 mx-auto mb-5 lg:mb-8 bg-verde text-blanco text-lg lg:text-center py-1 lg:py-2 px-3 rounded-xl'>Quiero ser voluntario</Link>
+            <Link href='/' className='lg:w-2/6 mx-auto mb-5 lg:mb-8 bg-verde hover:bg-green-700 text-blanco text-lg lg:text-center py-1 lg:py-2 px-3 rounded-xl'>Quiero ser voluntario</Link>
         </div>
     )
 }

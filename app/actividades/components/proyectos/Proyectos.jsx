@@ -12,7 +12,7 @@ const imgs = [
 const Proyectos = () => {
 
     return (
-        <section className=''>
+        <section id="proyectos" className=''>
             {/* <div className='grid grid-cols-1 grid-rows-3 h-[100vh]'>
                 <div className='col-start-1 col-end-1 row-start-1 row-end-2'>
                     <div className='bg-abedul bg-no-repeat w-full bg-cover h-[40vh] p-5'>
@@ -77,7 +77,7 @@ const Proyectos = () => {
                     <div className="flex space-x-3 md:justify-around items-center overflow-scroll scrollbar-hide w-5/6 m-auto">
                         {
                             imgs.map(item => (
-                                <div className="w-[180px] h-[232px] flex flex-col items-center gap-8">
+                                <div key={item.title} className="w-[180px] h-[232px] flex flex-col items-center gap-8">
                                     <div className="flex flex-col gap-1 item-center text-center bg-[#75C495] rounded-xl w-[160px] py-5">
                                         <div className="w-full h-[80px] relative">
                                             <Image

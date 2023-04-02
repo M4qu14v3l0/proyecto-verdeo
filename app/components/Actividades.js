@@ -9,7 +9,7 @@ const actividades = [
         divclass: "rounded-2xl bg-verde p-10 flex flex-col mb-6 lg:min-h-[50vh] lg:mb-0 lg:w-[30vw] lg:mr-4",
         titleclass: "text-center text-blanco text-8xl font-bold mt-6",
         textClass: "font-botones text-verde text-center m-auto text-sm",
-        linkclass:"mt-auto flex mx-auto rounded-2xl bg-verde2 w-4/12 h-8 hover:bg-green-200 transition-all duration-300 ease-in-out lg:mb-6"
+        linkclass:"mt-auto flex mx-auto rounded-2xl bg-verde2 w-4/12 h-8 hover:bg-[#2F9D5F] transition-all duration-300 ease-in-out lg:mb-6"
     },
     {
         title: "PA",
@@ -19,7 +19,7 @@ const actividades = [
         divclass: "rounded-2xl bg-rojo p-10 flex flex-col lg:min-h-[50vh] lg:w-[30vw] lg:ml-4",
         titleclass: "text-center text-blanco text-8xl font-bold mt-6",
         textClass: "font-botones text-rojo text-center m-auto text-sm",
-        linkclass:"mt-auto flex mx-auto rounded-2xl bg-rosa w-4/12 h-8 hover:bg-red-200 transition-all duration-300 ease-in-out lg:mb-6"
+        linkclass:"mt-auto flex mx-auto rounded-2xl bg-rosa w-4/12 h-8 hover:bg-[#CF6842] transition-all duration-300 ease-in-out lg:mb-6"
     },
 ]
 

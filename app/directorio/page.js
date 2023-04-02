@@ -45,7 +45,7 @@ export default function Page() {
       : ""}
       {alimentos.length >= 1 ? 
         <div id='alimentos' className='flex flex-col bg-amber-50'>
-          <h3 className='text-bold text-3xl text-center mt-6 mb-10'>Alimentos y nutrición</h3>  
+          <h3 className='text-bold text-3xl text-center mt-6 mb-10'>Alimentación y nutrición</h3>  
           <div className="flex justify-center gap-4 mb-2 flex-wrap pb-10">                  
             {alimentos.map((empresa) => (
               <div key={empresa.titulo} className="flex flex-col rounded-xl shadow-lg bg-amber-50 w-64 h-64 mx-8 my-6">
@@ -65,7 +65,7 @@ export default function Page() {
         </div>
       : ""}
       {sociales.length >= 1 ? 
-        <div id='social' className='flex flex-col bg-verde2'>
+        <div id='sociales' className='flex flex-col bg-verde2'>
           <h3 className='text-bold text-3xl text-center text-blanco mt-6 mb-10'>Proyectos Sociales</h3>  
           <div className="flex justify-center gap-4 mb-2 flex-wrap pb-10">                  
             {sociales.map((empresa) => (
@@ -108,7 +108,7 @@ export default function Page() {
       : ""}
       {personal.length >= 1 ? 
         <div id='personal' className='flex flex-col bg-gray-400'>
-          <h3 className='text-bold text-3xl text-center mt-6 mb-10'>Básicos para el hogar</h3>  
+          <h3 className='text-bold text-3xl text-center mt-6 mb-10'>Cuidado personal y cosmético</h3>  
           <div className="flex justify-center gap-4 mb-2 flex-wrap pb-10">                  
             {personal.map((empresa) => (
               <div key={empresa.titulo} className="flex flex-col rounded-xl shadow-lg bg-amber-50 w-64 h-64 mx-8 my-6">

@@ -5,23 +5,32 @@ const images = [
     {
         src: '/foto3.jpg',
         alt: 'Foto 3',
-        href: '/directorio',
-        titulo: "Ejemplo",
-        texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.",
+        href: '/directorio/#moda',
+        titulo: "Moda y accesorios",
     },
     {
         src: '/foto1.jpg',
         alt: 'Foto 1',
-        href: '/directorio',
-        titulo: "Ejemplo",
-        texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.",
+        href: '/directorio/#alimentacion',
+        titulo: "Alimentación y nutrición",
     },
     {
         src: '/foto4.jpg',
         alt: 'Foto 4',
-        href: '/directorio',
-        titulo: "Ejemplo",
-        texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.",
+        href: '/directorio/#social',
+        titulo: "Proyectos sociales",
+    },
+    {
+        src: '/foto4.jpg',
+        alt: 'Foto 4',
+        href: '/directorio/#hogar',
+        titulo: "Básicos para el hogar",
+    },
+    {
+        src: '/foto4.jpg',
+        alt: 'Foto 4',
+        href: '/directorio/#social',
+        titulo: "Cuidado personal y cosmético",
     },
 ]
 
@@ -30,22 +39,22 @@ const DirectorioFull = () => {
         <div className="hidden lg:flex flex-col h-auto pb-16 px-10 bg-verde">
             <div className="w-9/12 h-2/10 mt-8 flex mx-auto flex-col mb-12">
                 <h2 className="text-center text-blanco font-bold text-4xl mb-6 mt-3">Directorio Ecosostenible</h2>
-                <p className="text-center text-blanco text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aperiam quod, quam excepturi consequuntur voluptates recusandae quia. Necessitatibus vitae quaerat consequuntur beatae porro autem id commodi est illum veritatis. Provident.</p>
+                <p className="text-center text-blanco text-sm">¿Sabías que cambiar la forma en cómo vives puede ayudar al planeta?</p>
+                <p className="text-center text-blanco text-sm mt-6">Acá podrás ver diferentes categorías.</p>
             </div>
-            <div className='flex w-9/12 h-auto mx-auto justify-around gap-x-12'>
+            <div className='flex w-full h-auto mx-auto px-6 gap-x-8'>
                 {images.map ((image) => (
-                    <Link href={image.href} key={image.alt} className="h-96 w-30 grid grid-cols-1 grid-rows-1">
-                        <div className="col-start-1 col-end-1 row-start-1 row-end-1" >
+                    <Link href={image.href} key={image.titulo} className="h-50 w-30 flex flex-col rounded-xl bg-blanco">
+                        <div className="h-4/6 w-30 mb-auto" >
                             <Image width={150000}
                             height={150000}
                             alt={image.alt}
                             src={image.src}
-                            className="h-full w-auto rounded-xl object-cover"
+                            className="h-full w-30 object-cover rounded-t-xl"
                             />
                         </div>
-                        <div className="col-start-1 col-end-1 row-start-1 row-end-1 mt-auto mx-auto mb-6 flex flex-col z-30">
-                            <h4 className="text-center text-blanco font-bold text-xl px-8">{image.titulo}</h4>
-                            <p className="text-center text-blanco text-sm px-8 pt-6">{image.texto}</p>
+                        <div className='flex w-full h-2/6 px-2 items-center justify-center'>
+                            <h4 className="text-center font-bold text-sm my-auto">{image.titulo}</h4>
                         </div>
                     </Link>
                 ))}

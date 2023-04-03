@@ -5,7 +5,7 @@ import Image from 'next/image.js';
 import Link from 'next/link.js';
 import face from '../assets/img/facebook.png';
 import inst from '../assets/img/instagram.png';
-import web from '../assets/img/telegram.png';
+import web from '../assets/img/web.svg';
 
 export default function Page() {
   const [empresas, setEmpresas] = useState([]);

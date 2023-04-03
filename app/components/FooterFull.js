@@ -32,8 +32,8 @@ const redes = [
         route: 'https://www.instagram.com/'
     },
     {
-        label: 'Logo de Twitter',
-        img: "/telegram.png",
+        label: 'Logo de Linktree',
+        img: "/linktree.svg",
         route: 'https://www.telegram.com/'
     }
 ]

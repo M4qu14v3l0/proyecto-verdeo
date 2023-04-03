@@ -33,7 +33,7 @@ const redes = [
     },
     {
         label: 'Logo de Linktree',
-        img: "/linktree.svg",
+        img: "/linktree.png",
         route: 'https://www.telegram.com/'
     }
 ]

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const images = [
     {
-        src: '/foto3.jpg',
+        src: '/comunidad.jpg',
         alt: 'Foto 3',
         href: '/ayuda/#voluntariado',
         titulo: "¡Quiero ser voluntario!",
@@ -10,7 +10,7 @@ const images = [
         linkClass: "flex mx-auto rounded-3xl bg-verde h-12 w-10/12 hover:bg-green-400 transition-all duration-300 ease-in-out"
     },
     {
-        src: '/foto1.jpg',
+        src: '/donar3.jpg',
         alt: 'Foto 1',
         href: '/ayuda/#donaciones',
         titulo: "Donar",
@@ -18,7 +18,7 @@ const images = [
         linkClass: "flex mx-auto rounded-3xl bg-rojo h-12 w-10/12 hover:bg-red-400 transition-all duration-300 ease-in-out"
     },
     {
-        src: '/foto4.jpg',
+        src: '/tips.jpg',
         alt: 'Foto 4',
         href: '/ayuda/#consejos',
         titulo: "Ayudar",

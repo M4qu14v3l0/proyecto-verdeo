@@ -3,32 +3,32 @@ import Link from 'next/link';
 
 const images = [
     {
-        src: '/foto3.jpg',
-        alt: 'Foto 3',
+        src: '/moda.jpg',
+        alt: 'Foto de Moda',
         href: '/directorio/#moda',
         titulo: "Moda y accesorios",
     },
     {
-        src: '/foto1.jpg',
-        alt: 'Foto 1',
+        src: '/alimentacion.jpg',
+        alt: 'Foto de Alimentacion',
         href: '/directorio/#alimentacion',
         titulo: "Alimentación y nutrición",
     },
     {
-        src: '/foto4.jpg',
-        alt: 'Foto 4',
+        src: '/social.jpg',
+        alt: 'Foto de Proyectos Sociales',
         href: '/directorio/#social',
         titulo: "Proyectos sociales",
     },
     {
-        src: '/foto4.jpg',
-        alt: 'Foto 4',
+        src: '/hogar.jpg',
+        alt: 'Foto de Agricultura',
         href: '/directorio/#hogar',
-        titulo: "Básicos para el hogar",
+        titulo: "Agricultura",
     },
     {
-        src: '/foto4.jpg',
-        alt: 'Foto 4',
+        src: '/personal.jpg',
+        alt: 'Foto de Cuidado Personal',
         href: '/directorio/#social',
         titulo: "Cuidado personal y cosmético",
     },

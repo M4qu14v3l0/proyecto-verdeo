@@ -4,21 +4,21 @@ const ayudas = [
         title: "¡Quiero ser voluntario!",
         text: "¿Encontrar el propósito de nuestras vidas a través de la preservación de la madre tierra?",
         route: '/ayuda/#voluntariado',
-        divclass: "flex flex-col justify-center bg-voluntario bg-cover bg-no-repeat bg-center h-80 rounded-xl mb-4",
+        divclass: "flex flex-col justify-center bg-comunidad bg-cover bg-no-repeat bg-center h-80 rounded-xl mb-4",
         linkclass:"flex mx-auto rounded-3xl bg-verde h-8 w-6/12 mb-3 hover:bg-green-700 transition-all duration-300 ease-in-out mb-8"
     },
     {
         title: "Donar",
         text: "Materiales de trabajo para los talleres e inversión monetaria para implementar nuestros proyectos.",
         route: '/ayuda/#donaciones',
-        divclass: "flex flex-col justify-center bg-donar bg-cover bg-no-repeat bg-center h-80 rounded-xl mb-4",
+        divclass: "flex flex-col justify-center bg-donar3 bg-cover bg-no-repeat bg-center h-80 rounded-xl mb-4",
         linkclass:"flex mx-auto rounded-3xl bg-rojo h-8 w-6/12 mb-3 hover:bg-red-600 transition-all duration-300 ease-in-out mb-8"
     },
     {
         title: "Ayudar",
         text: "Dedicación, disciplina y compromiso. ¡Únete para ser parte de Proyecto Verdeo!",
         route: '/ayuda/#consejos',
-        divclass: "flex flex-col justify-center bg-nos bg-cover bg-no-repeat bg-center h-80 rounded-xl mb-4",
+        divclass: "flex flex-col justify-center bg-tips bg-cover bg-no-repeat bg-center h-80 rounded-xl mb-4",
         linkclass:"flex mx-auto rounded-3xl bg-amarillo h-8 w-6/12 mb-3 hover:bg-yellow-400 transition-all duration-300 ease-in-out"
     },
 ]

@@ -3,21 +3,21 @@ import Link from 'next/link';
 
 const images = [
     {
-        src: '/foto3.jpg',
+        src: '/equipo.jpeg',
         alt: 'Foto 3',
         href: '/nosotros/#equipo',
         titulo: "Nuestro Equipo",
         texto: "Somos un equipo de personas que buscamos compartir el conocimiento y el amor por la naturaleza y una vida en armonía.",
     },
     {
-        src: '/foto1.jpg',
+        src: '/valores.jpg',
         alt: 'Foto 1',
         href: '/nosotros/#valores',
         titulo: "Nuestros Valores",
         texto: '"La integridad es hacer lo correcto aunque nadie te esté mirando".',
     },
     {
-        src: '/foto4.jpg',
+        src: '/mision.jpeg',
         alt: 'Foto 4',
         href: '/nosotros/#mision',
         titulo: "Misión/Visión",

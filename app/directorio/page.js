@@ -34,9 +34,9 @@ export default function Page() {
                   <p className="text-center text-sm">{empresa.descripcion}</p>
                 </div>
                 <div className="flex justify-center gap-6 mt-auto mb-4">
-                  {empresa.facebook?<Link href={empresa.facebook}><Image width={100} height={100} className='w-4 h-4' src={face} alt='Logo de Facebook' /></Link>:""}
-                  {empresa.instagram?<Link href={empresa.instagram}><Image width={100} height={100} className='w-4 h-4' src={inst} alt='Logo de Instagram' /></Link>:""}
-                  {empresa.web?<Link href={empresa.web}><Image width={100} height={100} className='w-4 h-4' src={web} alt='Logo de Web width={100} height={100}' /></Link>:""}
+                  {empresa.facebook?<Link href={empresa.facebook} target='_blank'><Image width={100} height={100} className='w-4 h-4' src={face} alt='Logo de Facebook' /></Link>:""}
+                  {empresa.instagram?<Link href={empresa.instagram} target='_blank'><Image width={100} height={100} className='w-4 h-4' src={inst} alt='Logo de Instagram' /></Link>:""}
+                  {empresa.web?<Link href={empresa.web} target='_blank'><Image width={100} height={100} className='w-4 h-4' src={web} alt='Logo de Web width={100} height={100}' /></Link>:""}
                 </div>
               </div>
             ))}
@@ -55,9 +55,9 @@ export default function Page() {
                   <p className="text-center text-sm">{empresa.descripcion}</p>
                 </div>
                 <div className="flex justify-center gap-6 mt-auto mb-4">
-                  {empresa.facebook?<Link href={empresa.facebook}><Image width={100} height={100} className='w-4 h-4' src={face} alt='Logo de Facebook' /></Link>:""}
-                  {empresa.instagram?<Link href={empresa.instagram}><Image width={100} height={100} className='w-4 h-4' src={inst} alt='Logo de Instagram' /></Link>:""}
-                  {empresa.web?<Link href={empresa.web}><Image width={100} height={100} className='w-4 h-4' src={web} alt='Logo de Web width={100} height={100}' /></Link>:""}
+                  {empresa.facebook?<Link href={empresa.facebook} target='_blank'><Image width={100} height={100} className='w-4 h-4' src={face} alt='Logo de Facebook' /></Link>:""}
+                  {empresa.instagram?<Link href={empresa.instagram} target='_blank'><Image width={100} height={100} className='w-4 h-4' src={inst} alt='Logo de Instagram' /></Link>:""}
+                  {empresa.web?<Link href={empresa.web} target='_blank'><Image width={100} height={100} className='w-4 h-4' src={web} alt='Logo de Web width={100} height={100}' /></Link>:""}
                 </div>
               </div>
             ))}
@@ -76,9 +76,9 @@ export default function Page() {
                   <p className="text-center text-sm">{empresa.descripcion}</p>
                 </div>
                 <div className="flex justify-center gap-6 mt-auto mb-4">
-                  {empresa.facebook?<Link href={empresa.facebook}><Image width={100} height={100} className='w-4 h-4' src={face} alt='Logo de Facebook' /></Link>:""}
-                  {empresa.instagram?<Link href={empresa.instagram}><Image width={100} height={100} className='w-4 h-4' src={inst} alt='Logo de Instagram' /></Link>:""}
-                  {empresa.web?<Link href={empresa.web}><Image width={100} height={100} className='w-4 h-4' src={web} alt='Logo de Web width={100} height={100}' /></Link>:""}
+                  {empresa.facebook?<Link href={empresa.facebook} target='_blank'><Image width={100} height={100} className='w-4 h-4' src={face} alt='Logo de Facebook' /></Link>:""}
+                  {empresa.instagram?<Link href={empresa.instagram} target='_blank'><Image width={100} height={100} className='w-4 h-4' src={inst} alt='Logo de Instagram' /></Link>:""}
+                  {empresa.web?<Link href={empresa.web} target='_blank'><Image width={100} height={100} className='w-4 h-4' src={web} alt='Logo de Web width={100} height={100}' /></Link>:""}
                 </div>
               </div>
             ))}
@@ -97,9 +97,9 @@ export default function Page() {
                   <p className="text-center text-sm">{empresa.descripcion}</p>
                 </div>
                 <div className="flex justify-center gap-6 mt-auto mb-4">
-                  {empresa.facebook?<Link href={empresa.facebook}><Image width={100} height={100} className='w-4 h-4' src={face} alt='Logo de Facebook' /></Link>:""}
-                  {empresa.instagram?<Link href={empresa.instagram}><Image width={100} height={100} className='w-4 h-4' src={inst} alt='Logo de Instagram' /></Link>:""}
-                  {empresa.web?<Link href={empresa.web}><Image width={100} height={100} className='w-4 h-4' src={web} alt='Logo de Web width={100} height={100}' /></Link>:""}
+                  {empresa.facebook?<Link href={empresa.facebook} target='_blank'><Image width={100} height={100} className='w-4 h-4' src={face} alt='Logo de Facebook' /></Link>:""}
+                  {empresa.instagram?<Link href={empresa.instagram} target='_blank'><Image width={100} height={100} className='w-4 h-4' src={inst} alt='Logo de Instagram' /></Link>:""}
+                  {empresa.web?<Link href={empresa.web} target='_blank'><Image width={100} height={100} className='w-4 h-4' src={web} alt='Logo de Web width={100} height={100}' /></Link>:""}
                 </div>
               </div>
             ))}
@@ -118,9 +118,9 @@ export default function Page() {
                   <p className="text-center text-sm">{empresa.descripcion}</p>
                 </div>
                 <div className="flex justify-center gap-6 mt-auto mb-4">
-                  {empresa.facebook?<Link href={empresa.facebook}><Image width={100} height={100} className='w-4 h-4' src={face} alt='Logo de Facebook' /></Link>:""}
-                  {empresa.instagram?<Link href={empresa.instagram}><Image width={100} height={100} className='w-4 h-4' src={inst} alt='Logo de Instagram' /></Link>:""}
-                  {empresa.web?<Link href={empresa.web}><Image width={100} height={100} className='w-4 h-4' src={web} alt='Logo de Web width={100} height={100}' /></Link>:""}
+                  {empresa.facebook?<Link href={empresa.facebook} target='_blank'><Image width={100} height={100} className='w-4 h-4' src={face} alt='Logo de Facebook' /></Link>:""}
+                  {empresa.instagram?<Link href={empresa.instagram} target='_blank'><Image width={100} height={100} className='w-4 h-4' src={inst} alt='Logo de Instagram' /></Link>:""}
+                  {empresa.web?<Link href={empresa.web} target='_blank'><Image width={100} height={100} className='w-4 h-4' src={web} alt='Logo de Web width={100} height={100}' /></Link>:""}
                 </div>
               </div>
             ))}

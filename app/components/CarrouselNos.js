@@ -7,21 +7,21 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const images = [
     {
-        src: '/bosque.jpg',
+        src: '/equipo.jpeg',
         alt: 'Foto 1',
         href: '/nosotros/#equipo',
         titulo: "Nuestro equipo",
         texto: "Somos un equipo de personas que buscamos compartir el conocimiento y el amor por la naturaleza y una vida en armonía.",
     },
     {
-        src: '/comunidad.jpg',
+        src: '/valores.jpg',
         alt: 'Foto 2',
         href: '/nosotros/#valores',
         titulo: "Nuestros valores",
         texto: '"La integridad es hacer lo correcto aunque nadie te esté mirando".',
     },
     {
-        src: '/bosque.jpg',
+        src: '/mision.jpeg',
         alt: 'Foto 1',
         href: '/nosotros/#mision',
         titulo: "Misión/Visión",

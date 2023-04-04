@@ -24,19 +24,19 @@ const redes = [
     {
         label: 'Logo de Facebook',
         img: "/facebook.png",
-        route: 'https://www.facebook.com/',
+        route: 'https://www.facebook.com/ProyectoVerdeo/',
         linkClass: 'w-4 h-4 hover:translate-y-cursor transition-all duration-150 ease-in-out'
     },
     {
         label: 'Logo de Instagram',
         img: "/instagram.png",
-        route: 'https://www.instagram.com/',
+        route: 'https://www.instagram.com/proyectoverdeo/',
         linkClass: 'w-4 h-4 hover:translate-y-cursor transition-all duration-150 ease-in-out'
     },
     {
         label: 'Logo de Linktree',
         img: "/linktree.png",
-        route: 'https://www.telegram.com/',
+        route: 'https://linktr.ee/proyectoverdeo',
         linkClass: 'w-4 h-4 hover:translate-y-cursor transition-all duration-150 ease-in-out'
     }
 ]
@@ -54,7 +54,7 @@ export default function Footer() {
                         <ul className="flex gap-7 mb-2 mx-auto">                        
                             {redes.map(({label, route, img, linkClass}) => (
                                 <li key={route}>
-                                    <Link href={route}>
+                                    <Link href={route} target='_blank'>
                                         <Image width={500} height={500} className={linkClass} src={img} alt={label} />
                                     </Link>
                                 </li>

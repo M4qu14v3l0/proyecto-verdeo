@@ -7,32 +7,32 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const images = [
     {
-        src: '/foto2.jpg',
-        alt: 'Foto 1',
+        src: '/moda.jpg',
+        alt: 'Foto de Moda',
         href: '/directorio/#moda',
         titulo: "Moda y accesorios",
     },
     {
-        src: '/foto3.jpg',
-        alt: 'Foto 2',
+        src: '/alimentacion.jpg',
+        alt: 'Foto de Alimentacion',
         href: '/directorio/#alimentacion',
         titulo: "Alimentación y nutrición",
     },
     {
-        src: '/foto2.jpg',
-        alt: 'Foto 1',
+        src: '/social.jpg',
+        alt: 'Foto de Proyectos Sociales',
         href: '/directorio/#social',
         titulo: "Proyectos sociales",
     },
     {
-        src: '/foto3.jpg',
-        alt: 'Foto 2',
+        src: '/hogar.jpg',
+        alt: 'Foto de Agricultura',
         href: '/directorio/#hogar',
-        titulo: "Básicos para el hogar",
+        titulo: "Agricultura",
     },
     {
-        src: '/foto2.jpg',
-        alt: 'Foto 1',
+        src: '/personal.jpg',
+        alt: 'Foto de Cuidado Personal',
         href: '/directorio/#social',
         titulo: "Cuidado personal y cosmético",
     },

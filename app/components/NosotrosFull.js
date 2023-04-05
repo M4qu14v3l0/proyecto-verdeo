@@ -34,7 +34,7 @@ const NosotrosFull = () => {
             </div>
             <div className='flex w-9/12 mx-auto justify-around gap-x-12'>
                 {images.map ((image) => (
-                    <Link href={image.href} key={image.alt} className="h-96 w-96 grid grid-cols-1 grid-rows-1">
+                    <Link href={image.href} key={image.alt} className="min-[1200px]:h-96 min-[1200px]:w-96 h-80 w-80 grid grid-cols-1 grid-rows-1">
                         <div className="col-start-1 col-end-1 row-start-1 row-end-1" >
                             <Image width={150000}
                             height={150000}

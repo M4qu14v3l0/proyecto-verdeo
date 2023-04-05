@@ -25,19 +25,19 @@ const redes = [
         label: 'Logo de Facebook',
         img: "/facebook.png",
         route: 'https://www.facebook.com/ProyectoVerdeo/',
-        linkClass: 'w-4 h-4 hover:translate-y-cursor transition-all duration-150 ease-in-out'
+        linkClass: 'w-6 h-6 hover:translate-y-cursor transition-all duration-150 ease-in-out'
     },
     {
         label: 'Logo de Instagram',
         img: "/instagram.png",
         route: 'https://www.instagram.com/proyectoverdeo/',
-        linkClass: 'w-4 h-4 hover:translate-y-cursor transition-all duration-150 ease-in-out'
+        linkClass: 'w-6 h-6 hover:translate-y-cursor transition-all duration-150 ease-in-out'
     },
     {
         label: 'Logo de Linktree',
         img: "/linktree.png",
         route: 'https://linktr.ee/proyectoverdeo',
-        linkClass: 'w-4 h-4 hover:translate-y-cursor transition-all duration-150 ease-in-out'
+        linkClass: 'w-6 h-6 hover:translate-y-cursor transition-all duration-150 ease-in-out'
     }
 ]
 const email = "verdeoinformes@gmail.com";
@@ -61,7 +61,7 @@ export default function Footer() {
                             ))}
                         </ul>
                     </div>
-                    <p className="text-xs m-auto">{email}</p>
+                    <a href="mailto:verdeoinformes@gmail.com" className="text-xs m-auto">{email}</a>
                 </div>
             </div>
             <ul className="grid grid-cols-2 gap-3 pt-5 pb-5 w-11/12 mx-auto border-transparent border border-t-verde">

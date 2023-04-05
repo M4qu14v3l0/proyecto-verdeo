@@ -39,7 +39,7 @@ module.exports = {
         'dir': "url('/foto2.jpg')",
         'voluntario': "url('/foto3.jpg')",
         'donar': "url('/foto4.jpg')",
-        'donar2': "url('/donar2.jpg')",
+        'donar2': "url('/donacion.jpg')",
         'donar3': "url('/donar3.jpg')",
         'tips': "url('/tips.jpg')",
         'ayuda': "url('/foto5.jpg')",

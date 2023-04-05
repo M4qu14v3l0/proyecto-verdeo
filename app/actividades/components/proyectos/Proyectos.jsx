@@ -74,7 +74,7 @@ const Proyectos = () => {
                     <h2 className="text-center font-semibold">
                         Consta de 3 ejes
                     </h2>
-                    <div className="flex space-x-3 md:justify-around items-center overflow-scroll scrollbar-hide w-5/6 m-auto">
+                    <div className="flex space-x-3 justify-around overflow-scroll scrollbar-hide w-5/6 m-auto">
                         {
                             imgs.map(item => (
                                 <div key={item.title} className="w-[180px] h-[232px] flex flex-col items-center gap-8">

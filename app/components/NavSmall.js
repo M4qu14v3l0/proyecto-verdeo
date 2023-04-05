@@ -67,7 +67,7 @@ const NavSmall = () => {
         };
     }
     return (
-        <nav className="flex lg:hidden flex-col">
+        <nav className="flex lg:hidden flex-col fixed top-0 left-0 right-0 bg-amber-50">
             <div className="flex items-center">
                 {isNavOpen === false ?
                 <div className="flex flex-col w-1/6 pl-4">
@@ -95,7 +95,7 @@ const NavSmall = () => {
                 </div>
                 }
                 <div className="flex w-4/6 mr-auto">
-                    <Link className="flex h-24 w-24 mx-auto" href="/" onClick={() => cerrar()}>
+                    <Link className="flex h-20 w-20 mx-auto" href="/" onClick={() => cerrar()}>
                         <Image className="my-auto hover:translate-y-cursor transition-all duration-300 ease-in-out" src={fotoPortada} alt="logo" priority />
                     </Link>
                 </div>
@@ -249,6 +249,12 @@ const NavSmall = () => {
                         : ""
                         }
                     </div>
+                    {/* contactanos */}
+                    <div className="flex justify-between items-center">
+                            <div className="mr-2 flex flex-col my-2 ml-4 w-3/6">
+                                <a href="/#footer"><h4 onClick={() => cerrar()} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Contactanos</h4></a>
+                            </div>
+                        </div>  
                 </div>
             : ""}
         </nav>

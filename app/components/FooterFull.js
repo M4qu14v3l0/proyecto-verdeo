@@ -50,12 +50,12 @@ const FooterFull = () => {
                     {redes.map(({label, route, img}) => (
                         <li key={route}>
                             <Link href={route} target='_blank'>
-                                <Image width={500} height={500} className="w-4 h-4 hover:translate-y-cursor transition-all duration-150 ease-in-out" src={img} alt={label} />
+                                <Image width={500} height={500} className="w-6 h-6 hover:translate-y-cursor transition-all duration-150 ease-in-out" src={img} alt={label} />
                             </Link>
                         </li>
                     ))}
                 </ul>
-                <p className="text-xs m-auto">{email}</p>
+                <a href="mailto:verdeoinformes@gmail.com" className="text-xs m-auto">{email}</a>
             </div>
             <ul className="flex pt-5 pb-7">
                 {links.map(({label, route}) => (

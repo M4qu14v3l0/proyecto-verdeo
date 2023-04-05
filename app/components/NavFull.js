@@ -65,14 +65,14 @@ const NavFull = () => {
         };
     }
     return (
-        <nav className="hidden lg:flex">
-            <Link className="w-1/6 py-2 mx-auto flex" href="/">
+        <nav className="hidden lg:flex fixed top-0 left-0 right-0 bg-amber-50">
+            <Link className="w-1/6 py-2 flex" href="/">
                 <Image className="mx-auto h-16 w-auto hover:translate-y-cursor transition-all duration-300 ease-in-out" src={fotoPortada} onClick={() => cerrar()} alt="logo" priority />
             </Link>
-            <div className="flex w-4/6 h-auto mx-auto">
+            <div className="flex min-[1200px]:w-4/6 h-auto min-[1120px]:justify-center">
                 
                 {/* actividades */}
-                <div className="flex flex-col mr-3">
+                <div className="flex flex-col mr-2">
                     {isHacerOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
@@ -107,7 +107,7 @@ const NavFull = () => {
                 </div>
 
                 {/* nosotros */}
-                <div className="flex flex-col mx-3">
+                <div className="flex flex-col mx-2">
                     {isNosOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
@@ -142,7 +142,7 @@ const NavFull = () => {
                 </div>
 
                 {/* ayuda */}
-                <div className="flex flex-col mx-3">
+                <div className="flex flex-col mx-2">
                     {isAyudaOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
@@ -177,7 +177,7 @@ const NavFull = () => {
                 </div>
 
                 {/* directorio */}
-                <div className="flex flex-col ml-3">
+                <div className="flex flex-col mx-2">
                     {isDirecOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
@@ -209,6 +209,15 @@ const NavFull = () => {
                         </ul>
                     : ""
                     }
+                </div>
+
+                {/* contactanos */}
+                <div className="flex flex-col ml-2">
+                    <div className="flex mt-7">
+                        <div href='/' className="flex my-auto">
+                            <a onClick={() => cerrar()} href="/#footer"><h4 className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Contactanos</h4></a>
+                        </div>
+                    </div>
                 </div>
             </div>
     </nav>

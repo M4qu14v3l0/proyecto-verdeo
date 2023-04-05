@@ -184,7 +184,7 @@ const consejos = () => {
                     </div>
                     <div className="flex flex-col px-4 lg:w-6/12 lg:mx-auto">
                         <Image width={500} height={500} src={tip.svg} className="hidden lg:inline w-1/12 mx-auto" alt={tip.titulo}/>
-                        <h3 className="text-center font-bosld text-xl mb-3">{tip.titulo}</h3>
+                        <h3 className="text-center font-bold text-2xl mb-3 py-3">{tip.titulo}</h3>
                         {tip.texto}
                         {tip.data?
                             <div>

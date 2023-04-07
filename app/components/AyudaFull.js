@@ -7,7 +7,7 @@ const images = [
         href: '/ayuda/#voluntariado',
         titulo: "¡Quiero ser voluntario!",
         texto: "¿Encontrar el propósito de nuestras vidas a través de la preservación de la madre tierra?",
-        linkClass: "flex mx-auto rounded-3xl bg-verde h-12 w-10/12 hover:bg-green-400 transition-all duration-300 ease-in-out"
+        linkClass: "flex mx-auto rounded-3xl bg-verde h-10 w-10/12 hover:bg-green-400 transition-all duration-300 ease-in-out"
     },
     {
         src: '/donar3.jpg',
@@ -15,7 +15,7 @@ const images = [
         href: '/ayuda/#donaciones',
         titulo: "Donar",
         texto: "Materiales de trabajo para los talleres e inversión monetaria para implementar nuestros proyectos.",
-        linkClass: "flex mx-auto rounded-3xl bg-rojo h-12 w-10/12 hover:bg-red-400 transition-all duration-300 ease-in-out"
+        linkClass: "flex mx-auto rounded-3xl bg-rojo h-10 w-10/12 hover:bg-red-400 transition-all duration-300 ease-in-out"
     },
     {
         src: '/tips.jpg',
@@ -23,7 +23,7 @@ const images = [
         href: '/ayuda/#consejos',
         titulo: "Ayudar",
         texto: "Dedicación, disciplina y compromiso. ¡Únete para ser parte de Proyecto Verdeo!",
-        linkClass: "flex mx-auto rounded-3xl bg-amarillo h-12 w-10/12 hover:bg-yellow-400 transition-all duration-300 ease-in-out"
+        linkClass: "flex mx-auto rounded-3xl bg-amarillo h-10 w-10/12 hover:bg-yellow-400 transition-all duration-300 ease-in-out"
     },
 ]
 
@@ -32,7 +32,8 @@ const AyudaFull = () => {
         <div className="hidden lg:flex flex-col h-auto pb-16 px-10">
             <div className="w-9/12 h-2/10 mt-8 flex mx-auto flex-col mb-12">
                 <h2 className="text-center font-bold text-4xl mb-6 mt-3">Cómo Ayudar</h2>
-                <p className="text-center text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aperiam quod, quam excepturi consequuntur voluptates recusandae quia. Necessitatibus vitae quaerat consequuntur beatae porro autem id commodi est illum veritatis. Provident.</p>
+                <p className="text-center text-sm">Queremos que lo que difundimos y hacemos llegue a muchas más personas en todo el mundo, por eso tu apoyo siendo nuestro embajador de las redes sociales es importante en nuestra labor.</p>
+                <p className="text-center text-sm mt-6">¡Habla de la naturaleza y comparte!</p>
             </div>
             <div className='flex w-9/12 h-auto mx-auto justify-around gap-x-12'>
                 {images.map ((image) => (

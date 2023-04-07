@@ -68,7 +68,7 @@ export default function Footer() {
                 {links.map(({label, route}) => (
                     <li className="flex mx-auto" key={label}>
                         <Link href={route} className="text-sm hover:translate-y-cursor transition-all duration-150 ease-in-out">
-                            {label}
+                            <p className="text-xs min-[360px]:text-sm">{label}</p>
                         </Link>
                     </li>
                 ))}

@@ -27,7 +27,8 @@ const Ayuda = () => {
     return (
         <div className="lg:hidden w-11/12 flex mx-auto flex-col my-6">
             <h2 className="text-center font-bold text-xl mb-4">Cómo Ayudar</h2>
-            <p className="text-center text-sm mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil minus aspernatur modi nulla explicabo at quasi optio nisi laboriosam commodi, ratione voluptatibus natus dolorem nesciunt vel accusantium? Aspernatur, optio excepturi!</p>
+            <p className="text-center text-sm">Queremos que lo que difundimos y hacemos llegue a muchas más personas en todo el mundo, por eso tu apoyo siendo nuestro embajador de las redes sociales es importante en nuestra labor.</p>
+            <p className="text-center text-sm my-6">¡Habla de la naturaleza y comparte!</p>
             {ayudas.map(({title, text, route, divclass, linkclass}) => (
                 <div className="flex flex-col justify-center" key={title}>
                     <div className={divclass}>
@@ -36,7 +37,7 @@ const Ayuda = () => {
                         </div>
                     </div>
                     <a href={route} className={linkclass}>
-                        <p className="text-blanco text-center font-botones font-bold m-auto text-xs sm:text-sm">{title}</p>
+                        <p className="text-blanco text-center font-botones font-bold m-auto text-xs">{title}</p>
                     </a>
                 </div>
             ))}

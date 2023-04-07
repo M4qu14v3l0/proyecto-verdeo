@@ -40,7 +40,7 @@ const ayuda = [
         route: '/ayuda/#donaciones'
     },
     {
-        label: '10 Formas de ayudar',
+        label: '7 Formas de ayudar',
         route: '/ayuda/#consejos' 
     },
 ];

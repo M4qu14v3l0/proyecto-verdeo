@@ -2,12 +2,12 @@
 import Actividades from './components/Actividades';
 import Nosotros from './components/Nosotros';
 import NosotrosFull from './components/NosotrosFull';
-
 import DirectorioFull from './components/DirectorioFull';
 import Ayuda from './components/Ayuda';
 import AyudaFull from './components/AyudaFull';
 import Hero from './components/Hero';
-import Directorio from './components/Directorio';
+import Direc from './components/Direc';
+
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <AyudaFull />
       <Ayuda />
       <DirectorioFull />
-      <Directorio />
+      <Direc />
     </main>
     // comment
   )

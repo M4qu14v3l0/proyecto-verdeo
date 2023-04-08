@@ -1,6 +1,6 @@
 import CarrouselDir from './CarrouselDir.js'
 
-const Directorio = () => {
+const Direc = () => {
     return (
         <div className="lg:hidden bg-verde flex flex-col py-8">
             <h2 className="text-center text-blanco font-bold text-xl mb-4 lg:mb-6 lg:text-3xl">Directorio ecosostenible</h2>
@@ -10,4 +10,4 @@ const Directorio = () => {
     )
 }
 
-export default Directorio;
+export default Direc;

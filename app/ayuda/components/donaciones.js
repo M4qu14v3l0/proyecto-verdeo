@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const donaciones = () => {
+const Donaciones = () => {
     return (
         <div id="donaciones" className='flex flex-col bg-rosa mt-6'>
             <div className='bg-donar2 bg-center bg-no-repeat bg-cover h-[40vh] flex lg:mb-8'>
@@ -15,4 +15,4 @@ const donaciones = () => {
     )
 }
 
-export default donaciones
+export default Donaciones

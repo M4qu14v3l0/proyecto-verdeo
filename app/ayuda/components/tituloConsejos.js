@@ -38,7 +38,7 @@ const items= [
     },
 ]
 
-const tituloConsejos = () => {
+const TituloConsejos = () => {
     return (
         <div className="grid grid-cols-3 grid-rows-3 px-6 mb-6 lg:mb-10">
             {items.map((item) => (
@@ -51,4 +51,4 @@ const tituloConsejos = () => {
     )
 }
 
-export default tituloConsejos
+export default TituloConsejos

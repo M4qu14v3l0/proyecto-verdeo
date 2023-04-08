@@ -9,30 +9,30 @@ const verdeoTeam = [
 ]
 
 export default function NuestroEquipo() {
-  return (
-    <section  id='equipo' className='mb-32'>
-        <div className='flex flex-col text-center gap-10 mb-10'>
-            <h2 className='text-3xl font-bold'>
-                Nosotros
-            </h2>
-            <h2 className='text-3xl font-bold'>
-                Nuestro Equipo
-            </h2>
-        </div>
-        <div className='max-w-[90%] md:max-w-3xl m-auto flex flex-col gap-5 md:flex-row'>
-            {
-                verdeoTeam.map(person => (
-                    <div key={person.id} className={`border-solid border-2 border-[#175A34] rounded-xl p-4 flex flex-col gap-5 relative w-full shadow-xl`}>
-                        <div className='w-full h-[220px] relative'>
-                            <Image 
-                            src={person.img}
-                            alt={person.name}
-                            fill
-                            className='rounded-xl'
-                            />
-                        </div>
-                        <h1 className='text-center text-3xl font-semibold'>{person.name}</h1>
-                        <p className='text-center '>{person.description.split('\n').map((description , index) => (
+    return (
+        <section id='equipo' className='mb-32'>
+            <div className='flex flex-col text-center gap-10 mb-10'>
+                <h2 className='text-3xl font-bold'>
+                    Nosotros
+                </h2>
+                <h2 className='text-3xl font-bold'>
+                    Nuestro Equipo
+                </h2>
+            </div>
+            <div className='max-w-[90%] md:max-w-3xl m-auto flex flex-col gap-5 md:flex-row'>
+                {
+                    verdeoTeam.map(person => (
+                        <div key={person.id} className={`border-solid border-2 border-[#175A34] rounded-xl p-4 flex flex-col gap-5 relative w-full shadow-xl`}>
+                            <div className='w-full h-[220px] relative'>
+                                <Image 
+                                src={person.img}
+                                alt={person.name}
+                                fill
+                                className='rounded-xl'
+                                />
+                            </div>
+                            <h1 className='text-center text-3xl font-semibold'>{person.name}</h1>
+                            <p className='text-center '>{person.description.split('\n').map((description , index) => (
                             <span key={index}>
                                 {description}
                                 <br />
@@ -46,10 +46,10 @@ export default function NuestroEquipo() {
                             <BsLinkedin className='text-[#175A34] text-[25px]'/>
                             <p className='text-[12px] font-semibold'>Ver perfil en Linkedin</p>
                         </Link>
-                    </div>
-                ))
-            }
-        </div>
-    </section>
-  )
+                        </div>
+                    ))
+                }
+            </div>
+        </section>
+    )
 }

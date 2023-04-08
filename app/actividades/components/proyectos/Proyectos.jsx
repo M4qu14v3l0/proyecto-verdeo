@@ -12,7 +12,7 @@ const imgs = [
 const Proyectos = () => {
 
     return (
-        <section className=''>
+        <section id="proyectos" className=''>
             <div className='relative'>
                 <div className='bg-hacemosPortada bg-no-repeat w-full bg-cover h-[40vh] p-5'>
                     <h2 className='text-center text-3xl text-white'>Lo que hacemos</h2>

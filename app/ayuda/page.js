@@ -9,6 +9,7 @@ const ayuda = () => {
       <Donaciones />
       <Consejos />
     </div>
+    //comment
   )
 }
 

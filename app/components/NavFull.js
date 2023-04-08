@@ -76,7 +76,7 @@ const NavFull = () => {
                     {isHacerOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
-                                <h4 onClick={() => setIsHacerOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Lo que hacemos</h4>
+                                <h4 onClick={() => setIsHacerOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Lo que hacemos</h4>
                             </div>
                             <div className="flex my-auto">
                                 <Image src={arrowDown} alt='Replegar' onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
@@ -111,7 +111,7 @@ const NavFull = () => {
                     {isNosOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
-                                <h4 onClick={() => setIsNosOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Nosotros</h4>
+                                <h4 onClick={() => setIsNosOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Nosotros</h4>
                             </div>
                             <div className="flex my-auto">
                                 <Image src={arrowDown} alt='Replegar' onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
@@ -146,7 +146,7 @@ const NavFull = () => {
                     {isAyudaOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
-                                <h4 onClick={() => setIsAyudaOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Cómo Ayudar</h4>
+                                <h4 onClick={() => setIsAyudaOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Cómo Ayudar</h4>
                             </div>
                             <div className="flex my-auto">
                                 <Image src={arrowDown} alt='Replegar' onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
@@ -181,7 +181,7 @@ const NavFull = () => {
                     {isDirecOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
-                                <h4 onClick={() => setIsDirecOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Directorio Ecosostenible</h4>
+                                <h4 onClick={() => setIsDirecOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Directorio Ecosostenible</h4>
                             </div>
                             <div className="flex my-auto">
                                 <Image src={arrowDown} alt='Replegar' onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />

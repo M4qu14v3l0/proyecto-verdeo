@@ -48,7 +48,7 @@ const Directorio = () => {
                 <p className="text-center text-blanco text-sm">¿Sabías que cambiar la forma en cómo vives puede ayudar al planeta?</p>
                 <p className="text-center text-blanco text-sm mt-6">Acá podrás ver diferentes categorías.</p>
             </div>
-            <div className='flex w-full h-48 px-4 gap-x-8 items-center overflow-x-scroll'>
+            <div className='flex w-full h-48 px-4 gap-x-8 items-center overflow-x-scroll overflow-y-hidden'>
                 {images.map ((image) => (
                     <Link href={image.href} key={image.titulo} className="h-full w-44 flex flex-col rounded-xl">
                         <div className="h-full w-44">

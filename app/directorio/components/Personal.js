@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import face from '../../assets/img/facebook.png';
-import inst from '../../assets/img/instagram.png';
-import web from '../../assets/img/web.svg';
+import face from '../../assets/img/facebook.svg';
+import inst from '../../assets/img/instagram.svg';
+import web from '../../assets/img/web2.svg';
 import personales from '../../assets/img/personal.svg';
 import {useState, useEffect} from 'react';
 import {getArticle} from '../../api/api.js';
@@ -37,13 +37,13 @@ const Personal = () => {
                                 <div key={empresa.titulo} className="flex flex-col rounded-xl shadow-lg bg-amber-50 w-64 h-64 mx-2 my-2">
                                     <Image width={100} height={100} className="rounded-xl w-10 h-10 mx-auto mt-3" src={empresa.img} alt={empresa.titulo}/>
                                     <div className="flex flex-col mx-auto px-3 py-2 items-center">
-                                    <p className="font-bold text-center text-sm mb-2">{empresa.titulo}</p>
-                                    <p className="text-center text-sm">{empresa.descripcion}</p>
+                                        <p className="font-bold text-center text-sm mb-2">{empresa.titulo}</p>
+                                        <p className="text-center text-xs mt-4">{empresa.descripcion}</p>
                                     </div>
-                                    <div className="flex justify-center gap-6 mt-auto mb-4">
-                                    {empresa.facebook?<Link href={empresa.facebook} target='_blank'><Image width={200} height={200} className='h-6 w-6 lg:w-4 lg:h-4' src={face} alt='Logo de Facebook' /></Link>:""}
-                                    {empresa.instagram?<Link href={empresa.instagram} target='_blank'><Image width={200} height={200} className='h-6 w-6 lg:w-4 lg:h-4' src={inst} alt='Logo de Instagram' /></Link>:""}
-                                    {empresa.web?<Link href={empresa.web} target='_blank'><Image width={200} height={200} className='h-6 w-6 lg:w-4 lg:h-4' src={web} alt='Logo de Web width={100} height={100}' /></Link>:""}
+                                    <div className="flex justify-center items-center gap-x-4 mt-auto mb-4">
+                                        {empresa.facebook?<Link href={empresa.facebook} target='_blank'><Image width={200} height={200} className='h-12 w-12' src={face} alt='Logo de Facebook' /></Link>:""}
+                                        {empresa.instagram?<Link href={empresa.instagram} target='_blank'><Image width={200} height={200} className='h-12 w-12' src={inst} alt='Logo de Instagram' /></Link>:""}
+                                        {empresa.web?<Link href={empresa.web} target='_blank'><Image width={200} height={200} className='h-6 w-6 mx-2' src={web} alt='Logo de Web width={100} height={100}' /></Link>:""}
                                     </div>
                                 </div>
                             ))}
@@ -54,13 +54,13 @@ const Personal = () => {
                                 <div key={empresa.titulo} className="flex flex-col rounded-xl shadow-lg bg-amber-50 w-64 h-64 mx-2 my-2">
                                     <Image width={100} height={100} className="rounded-xl w-10 h-10 mx-auto mt-3" src={empresa.img} alt={empresa.titulo}/>
                                     <div className="flex flex-col mx-auto px-3 py-2 items-center">
-                                    <p className="font-bold text-center text-sm mb-2">{empresa.titulo}</p>
-                                    <p className="text-center text-sm">{empresa.descripcion}</p>
+                                        <p className="font-bold text-center text-sm mb-2">{empresa.titulo}</p>
+                                        <p className="text-center text-xs mt-4">{empresa.descripcion}</p>
                                     </div>
-                                    <div className="flex justify-center gap-6 mt-auto mb-4">
-                                    {empresa.facebook?<Link href={empresa.facebook} target='_blank'><Image width={200} height={200} className='h-6 w-6 lg:w-4 lg:h-4' src={face} alt='Logo de Facebook' /></Link>:""}
-                                    {empresa.instagram?<Link href={empresa.instagram} target='_blank'><Image width={200} height={200} className='h-6 w-6 lg:w-4 lg:h-4' src={inst} alt='Logo de Instagram' /></Link>:""}
-                                    {empresa.web?<Link href={empresa.web} target='_blank'><Image width={200} height={200} className='h-6 w-6 lg:w-4 lg:h-4' src={web} alt='Logo de Web width={100} height={100}' /></Link>:""}
+                                    <div className="flex justify-center items-center gap-x-4 mt-auto mb-4">
+                                        {empresa.facebook?<Link href={empresa.facebook} target='_blank'><Image width={200} height={200} className='h-12 w-12' src={face} alt='Logo de Facebook' /></Link>:""}
+                                        {empresa.instagram?<Link href={empresa.instagram} target='_blank'><Image width={200} height={200} className='h-12 w-12' src={inst} alt='Logo de Instagram' /></Link>:""}
+                                        {empresa.web?<Link href={empresa.web} target='_blank'><Image width={200} height={200} className='h-6 w-6 mx-2' src={web} alt='Logo de Web width={100} height={100}' /></Link>:""}
                                     </div>
                                 </div>
                             ))}

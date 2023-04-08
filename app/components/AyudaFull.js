@@ -7,7 +7,7 @@ const images = [
         href: '/ayuda/#voluntariado',
         titulo: "¡Quiero ser voluntario!",
         texto: "¿Encontrar el propósito de nuestras vidas a través de la preservación de la madre tierra?",
-        linkClass: "flex mx-auto rounded-3xl bg-verde h-10 w-10/12 hover:bg-green-400 transition-all duration-300 ease-in-out"
+        linkClass: "flex mx-auto rounded-3xl bg-verde h-10 w-10/12 hover:bg-[#2F9D5F] transition-all duration-300 ease-in-out"
     },
     {
         src: '/donar3.jpg',
@@ -15,7 +15,7 @@ const images = [
         href: '/ayuda/#donaciones',
         titulo: "Donar",
         texto: "Materiales de trabajo para los talleres e inversión monetaria para implementar nuestros proyectos.",
-        linkClass: "flex mx-auto rounded-3xl bg-rojo h-10 w-10/12 hover:bg-red-400 transition-all duration-300 ease-in-out"
+        linkClass: "flex mx-auto rounded-3xl bg-rojo h-10 w-10/12 hover:bg-[#CF6842] transition-all duration-300 ease-in-out"
     },
     {
         src: '/tips.jpg',

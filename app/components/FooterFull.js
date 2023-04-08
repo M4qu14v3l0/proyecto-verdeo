@@ -57,7 +57,7 @@ const FooterFull = () => {
                 </ul>
                 <a href="mailto:verdeoinformes@gmail.com" className="text-xs m-auto">{email}</a>
             </div>
-            <ul className="flex pt-5 pb-7">
+            <ul className="flex pt-5 pb-10">
                 {links.map(({label, route}) => (
                     <li className="flex mx-8" key={label}>
                         <Link href={route} className="text-sm hover:translate-y-cursor transition-all duration-150 ease-in-out">

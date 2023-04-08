@@ -2,11 +2,12 @@
 import Actividades from './components/Actividades';
 import Nosotros from './components/Nosotros';
 import NosotrosFull from './components/NosotrosFull';
-import Directorio from './components/Directorio';
+
 import DirectorioFull from './components/DirectorioFull';
 import Ayuda from './components/Ayuda';
 import AyudaFull from './components/AyudaFull';
 import Hero from './components/Hero';
+import Directorio from './components/Directorio';
 
 export default function Home() {
   return (

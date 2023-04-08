@@ -7,14 +7,34 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const images = [
     {
-        src: '/foto2.jpg',
-        alt: 'Foto 1',
-        href: '/directorio'
+        src: '/moda.jpg',
+        alt: 'Foto de Moda',
+        href: '/directorio/#moda',
+        titulo: "Moda y accesorios",
     },
     {
-        src: '/foto3.jpg',
-        alt: 'Foto 2',
-        href: '/directorio'
+        src: '/alimentacion.jpg',
+        alt: 'Foto de Alimentacion',
+        href: '/directorio/#alimentacion',
+        titulo: "Alimentación y nutrición",
+    },
+    {
+        src: '/social.jpg',
+        alt: 'Foto de Proyectos Sociales',
+        href: '/directorio/#social',
+        titulo: "Proyectos sociales",
+    },
+    {
+        src: '/hogar.jpg',
+        alt: 'Foto de Agricultura',
+        href: '/directorio/#hogar',
+        titulo: "Agricultura",
+    },
+    {
+        src: '/personal.jpg',
+        alt: 'Foto de Cuidado Personal',
+        href: '/directorio/#social',
+        titulo: "Cuidado personal y cosmético",
     },
 ]
 export default function Carosusel() {
@@ -36,7 +56,7 @@ export default function Carosusel() {
                 onClick={handlePrevSlide}
                 className="col-start-1 col-end-2 row-start-1 row-end-2 ml-1 mr-auto my-auto text-5xl cursor-pointer text-blanco z-20"
             /> 
-            <div className="col-start-1 col-end-2 row-start-1 row-end-2 w-screen h-full flex overflow-hidden">
+            <div className="col-start-1 col-end-2 row-start-1 row-end-2 w-full h-full flex overflow-hidden">
                 <Swipe
                 onSwipeLeft={handleNextSlide}
                 onSwipeRight={handlePrevSlide}
@@ -45,22 +65,23 @@ export default function Carosusel() {
                 {images?.map((image, index) => {
                     if (index === currentSlide) {
                     return (
-                        <Link key={image.alt} href={image.href} className="w-full h-full animate-fadeIn object-cover">
-                            <Image width={150000}
-                            height={150000}
-                            alt={image.alt}
-                            src={image.src}
-                            className="w-full h-full animate-fadeIn object-cover"
-                            />
-                        </Link>
+                        <div key={image.titulo} className="w-full h-full grid grid-cols-1 grid-rows-1 animate-fadeIn object-cover col-start-1 col-end-2 row-start-1 row-end-2">
+                            <Link className="col-start-1 col-end-2 row-start-1 row-end-2" href={image.href} >
+                                <Image width={150000}
+                                height={150000}
+                                alt={image.alt}
+                                src={image.src}
+                                className="w-full h-full animate-fadeIn object-cover"
+                                />
+                            </Link>
+                            <Link className="col-start-1 col-end-2 row-start-1 row-end-2 mt-auto mx-auto mb-6 flex flex-col z-30" href={image.href}>
+                                <h4 className="text-center text-blanco font-bold text-xl px-8">{image.titulo}</h4>
+                            </Link>
+                        </div>
                     );
                     }
                 })}
                 </Swipe>
-            </div>
-            <div className="col-start-1 col-end-2 row-start-1 row-end-2 mt-auto mx-auto mb-6 flex flex-col z-30">
-                <h4 className="text-center text-blanco font-bold text-lg px-8">Directorio Ecosostenible</h4>
-                <p className="text-center text-blanco text-sm px-8 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.</p>
             </div>
             <AiOutlineRight
                 onClick={handleNextSlide}

@@ -4,7 +4,7 @@ import FooterFull from "./FooterFull";
 
 export default function Footer() {
     return (
-        <div className="mt-auto">
+        <div id="footer" className="mt-auto">
             <FooterFull />
             <FooterSmall />
         </div>

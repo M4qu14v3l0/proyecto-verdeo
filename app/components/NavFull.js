@@ -9,22 +9,26 @@ import arrowDown from '../assets/img/arrowDown.svg';
 const hacemos = [
     {
         label: 'Talleres',
-        route: '/actividades'
+        route: '/actividades/#talleres'
     },
     {
         label: 'Proyectos',
-        route: '/actividades'
+        route: '/actividades/#proyectos'
     },
 ];
 const nosotros = [
     {
         label: 'Nuestro equipo',
-        route: '/nosotros'
+        route: '/nosotros/#equipo'
     },
     {
-        label: 'Nuestra Mision',
-        route: '/nosotros'
+        label: 'Nuestra mision',
+        route: '/nosotros/#mision'
     },
+    {
+        label: 'Nuestros valores',
+        route: '/nosotros/#valores'
+    }
 ];
 const ayuda = [
     {
@@ -36,7 +40,7 @@ const ayuda = [
         route: '/ayuda/#donaciones'
     },
     {
-        label: '10 Formas de ayudar',
+        label: '7 Formas de ayudar',
         route: '/ayuda/#consejos' 
     },
 ];
@@ -61,18 +65,18 @@ const NavFull = () => {
         };
     }
     return (
-        <nav className="hidden lg:flex">
-            <Link className="w-1/6 py-2 mx-auto flex" href="/">
+        <nav className="hidden lg:flex fixed top-0 left-0 right-0 bg-amber-50">
+            <Link className="w-1/6 py-2 flex" href="/">
                 <Image className="mx-auto h-16 w-auto hover:translate-y-cursor transition-all duration-300 ease-in-out" src={fotoPortada} onClick={() => cerrar()} alt="logo" priority />
             </Link>
-            <div className="flex w-4/6 h-auto mx-auto">
+            <div className="flex min-[1200px]:w-4/6 h-auto min-[1120px]:justify-center">
                 
                 {/* actividades */}
-                <div className="flex flex-col mr-3">
+                <div className="flex flex-col mr-2">
                     {isHacerOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
-                                <h4 onClick={() => setIsHacerOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Lo que hacemos</h4>
+                                <h4 onClick={() => setIsHacerOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Lo que hacemos</h4>
                             </div>
                             <div className="flex my-auto">
                                 <Image src={arrowDown} alt='Replegar' onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
@@ -103,11 +107,11 @@ const NavFull = () => {
                 </div>
 
                 {/* nosotros */}
-                <div className="flex flex-col mx-3">
+                <div className="flex flex-col mx-2">
                     {isNosOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
-                                <h4 onClick={() => setIsNosOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Nosotros</h4>
+                                <h4 onClick={() => setIsNosOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Nosotros</h4>
                             </div>
                             <div className="flex my-auto">
                                 <Image src={arrowDown} alt='Replegar' onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
@@ -138,11 +142,11 @@ const NavFull = () => {
                 </div>
 
                 {/* ayuda */}
-                <div className="flex flex-col mx-3">
+                <div className="flex flex-col mx-2">
                     {isAyudaOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
-                                <h4 onClick={() => setIsAyudaOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Cómo Ayudar</h4>
+                                <h4 onClick={() => setIsAyudaOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Cómo Ayudar</h4>
                             </div>
                             <div className="flex my-auto">
                                 <Image src={arrowDown} alt='Replegar' onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
@@ -173,11 +177,11 @@ const NavFull = () => {
                 </div>
 
                 {/* directorio */}
-                <div className="flex flex-col ml-3">
+                <div className="flex flex-col mx-2">
                     {isDirecOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
-                                <h4 onClick={() => setIsDirecOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Directorio Ecosostenible</h4>
+                                <h4 onClick={() => setIsDirecOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Directorio Ecosostenible</h4>
                             </div>
                             <div className="flex my-auto">
                                 <Image src={arrowDown} alt='Replegar' onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
@@ -205,6 +209,15 @@ const NavFull = () => {
                         </ul>
                     : ""
                     }
+                </div>
+
+                {/* contactanos */}
+                <div className="flex flex-col ml-2">
+                    <div className="flex mt-7">
+                        <div href='/' className="flex my-auto">
+                            <a onClick={() => cerrar()} href="/#footer"><h4 className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Contactanos</h4></a>
+                        </div>
+                    </div>
                 </div>
             </div>
     </nav>

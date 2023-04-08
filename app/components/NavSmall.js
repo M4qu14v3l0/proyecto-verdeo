@@ -9,22 +9,26 @@ import arrowDown from '../assets/img/arrowDown.svg';
 const hacemos = [
     {
         label: 'Talleres',
-        route: '/actividades'
+        route: '/actividades/#talleres'
     },
     {
         label: 'Proyectos',
-        route: '/actividades'
+        route: '/actividades/#proyectos'
     },
 ];
 const nosotros = [
     {
         label: 'Nuestro equipo',
-        route: '/nosotros'
+        route: '/nosotros/#equipo'
     },
     {
-        label: 'Nuestra Mision',
-        route: '/nosotros'
+        label: 'Nuestra mision',
+        route: '/nosotros/#mision'
     },
+    {
+        label: 'Nuestros valores',
+        route: '/nosotros/#valores'
+    }
 ];
 const ayuda = [
     {
@@ -36,7 +40,7 @@ const ayuda = [
         route: 'ayuda/#donaciones'
     },
     {
-        label: '10 Formas de ayudar',
+        label: '7 Formas de ayudar',
         route: 'ayuda/#consejos' 
     },
 ];
@@ -63,7 +67,7 @@ const NavSmall = () => {
         };
     }
     return (
-        <nav className="flex lg:hidden flex-col">
+        <nav className="flex lg:hidden flex-col fixed top-0 left-0 right-0 bg-amber-50">
             <div className="flex items-center">
                 {isNavOpen === false ?
                 <div className="flex flex-col w-1/6 pl-4">
@@ -91,7 +95,7 @@ const NavSmall = () => {
                 </div>
                 }
                 <div className="flex w-4/6 mr-auto">
-                    <Link className="flex h-24 w-24 mx-auto" href="/" onClick={() => cerrar()}>
+                    <Link className="flex h-20 w-20 mx-auto" href="/" onClick={() => cerrar()}>
                         <Image className="my-auto hover:translate-y-cursor transition-all duration-300 ease-in-out" src={fotoPortada} alt="logo" priority />
                     </Link>
                 </div>
@@ -110,7 +114,7 @@ const NavSmall = () => {
                     {isHacerOpen === true ? 
                         <div className="flex justify-between items-center">
                             <div onClick={() => setIsNavOpen(true)} href='/' className="mr-2 flex flex-col my-2 ml-4 w-3/6">
-                                <h4 onClick={() => setIsHacerOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Lo que hacemos</h4>
+                                <h4 onClick={() => setIsHacerOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Lo que hacemos</h4>
                             </div>
                             <div className="flex w-3/6">
                                 <Image src={arrowDown} alt='Replegar' onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
@@ -145,7 +149,7 @@ const NavSmall = () => {
                     {isNosOpen === true ? 
                         <div className="flex justify-between items-center">
                             <div onClick={() => setIsNavOpen(true)} href='/' className="mr-2 flex flex-col my-2 ml-4 w-3/6">
-                                <h4 onClick={() => setIsNosOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Nosotros</h4>
+                                <h4 onClick={() => setIsNosOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Nosotros</h4>
                             </div>
                             <div className="flex w-3/6">
                                 <Image src={arrowDown} alt='Replegar' onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
@@ -180,7 +184,7 @@ const NavSmall = () => {
                     {isAyudaOpen === true ? 
                         <div className="flex justify-between items-center">
                             <div onClick={() => setIsNavOpen(true)} href='/' className="mr-2 flex flex-col my-2 ml-4 w-3/6">
-                                <h4 onClick={() => setIsAyudaOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Cómo ayudar</h4>
+                                <h4 onClick={() => setIsAyudaOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Cómo ayudar</h4>
                             </div>
                             <div className="flex w-3/6">
                                 <Image src={arrowDown} alt='Replegar' onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
@@ -215,7 +219,7 @@ const NavSmall = () => {
                     {isDirecOpen === true ? 
                         <div className="flex justify-between items-center">
                             <div onClick={() => setIsNavOpen(true)} href='/' className="mr-2 flex flex-col my-2 ml-4 w-3/6">
-                                <h4 onClick={() => setIsDirecOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-verde">Directorio ecosostenible</h4>
+                                <h4 onClick={() => setIsDirecOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Directorio ecosostenible</h4>
                             </div>
                             <div className="flex w-3/6">
                                 <Image src={arrowDown} alt='Replegar' onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
@@ -245,6 +249,12 @@ const NavSmall = () => {
                         : ""
                         }
                     </div>
+                    {/* contactanos */}
+                    <div className="flex justify-between items-center">
+                            <div className="mr-2 flex flex-col my-2 ml-4 w-3/6">
+                                <a href="/#footer"><h4 onClick={() => cerrar()} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Contactanos</h4></a>
+                            </div>
+                        </div>  
                 </div>
             : ""}
         </nav>

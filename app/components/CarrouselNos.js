@@ -7,23 +7,23 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const images = [
     {
-        src: '/bosque.jpg',
+        src: '/equipo.jpeg',
         alt: 'Foto 1',
-        href: '/nosotros',
+        href: '/nosotros/#equipo',
         titulo: "Nuestro equipo",
         texto: "Somos un equipo de personas que buscamos compartir el conocimiento y el amor por la naturaleza y una vida en armonía.",
     },
     {
-        src: '/comunidad.jpg',
+        src: '/valores.jpg',
         alt: 'Foto 2',
-        href: '/nosotros',
+        href: '/nosotros/#valores',
         titulo: "Nuestros valores",
         texto: '"La integridad es hacer lo correcto aunque nadie te esté mirando".',
     },
     {
-        src: '/bosque.jpg',
+        src: '/mision.jpeg',
         alt: 'Foto 1',
-        href: '/nosotros',
+        href: '/nosotros/#mision',
         titulo: "Misión/Visión",
         texto: "Queremos llegar a ser uno de los proyectos líderes y referentes en educacion ambiental y preservación.",
     },
@@ -65,10 +65,10 @@ export default function Carosusel() {
                                 className="w-full h-full animate-fadeIn object-cover"
                                 />
                             </Link>
-                            <div className="col-start-1 col-end-2 row-start-1 row-end-2 mt-auto mx-auto mb-6 flex flex-col z-30">
+                            <Link className="col-start-1 col-end-2 row-start-1 row-end-2 mt-auto mx-auto mb-6 flex flex-col z-30" href={image.href}>
                                 <h4 className="text-center text-blanco font-bold text-xl px-8">{image.titulo}</h4>
                                 <p className="text-center text-blanco text-sm px-8 mt-3">{image.texto}</p>
-                            </div>
+                            </Link>
                         </div>
                     );
                     }

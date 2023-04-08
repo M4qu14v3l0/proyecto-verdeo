@@ -42,7 +42,7 @@ const Proyectos = () => {
                     <div className="flex space-x-3 md:justify-around items-center overflow-scroll scrollbar-hide w-5/6 m-auto">
                         {
                             imgs.map(item => (
-                                <div className="w-[180px] h-[232px] flex flex-col items-center gap-8">
+                                <div key={item.title} className="w-[180px] h-[232px] flex flex-col items-center gap-8">
                                     <div className="flex flex-col gap-1 item-center text-center bg-[#75C495] rounded-xl w-[160px] py-5 shadow-2xl">
                                         <div className="w-full h-[80px] relative">
                                             <Image

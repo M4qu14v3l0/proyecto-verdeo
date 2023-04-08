@@ -1,10 +1,10 @@
 'use client';
-import Actividades from './components/Actividades.js';
-import Nosotros from './components/Nosotros.js';
+import Actividades from './components/Actividades';
+import Nosotros from './components/Nosotros';
 import NosotrosFull from './components/NosotrosFull';
-import Directorio from './components/Directorio.js';
-import DirectorioFull from './components/DirectorioFull.js';
-import Ayuda from './components/Ayuda.js';
+import Directorio from './components/Directorio';
+import DirectorioFull from './components/DirectorioFull';
+import Ayuda from './components/Ayuda';
 import AyudaFull from './components/AyudaFull';
 import Hero from './components/Hero';
 

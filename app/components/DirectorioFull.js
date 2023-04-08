@@ -3,51 +3,66 @@ import Link from 'next/link';
 
 const images = [
     {
-        src: '/foto3.jpg',
-        alt: 'Foto 3',
-        href: '/directorio',
-        titulo: "Ejemplo",
-        texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.",
+        src: '/moda.jpg',
+        alt: 'Foto de Moda',
+        href: '/directorio/#moda',
+        titulo: "Moda y accesorios",
     },
     {
-        src: '/foto1.jpg',
-        alt: 'Foto 1',
-        href: '/directorio',
-        titulo: "Ejemplo",
-        texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.",
+        src: '/alimentacion.jpg',
+        alt: 'Foto de Alimentacion',
+        href: '/directorio/#alimentacion',
+        titulo: "Alimentación y nutrición",
     },
     {
-        src: '/foto4.jpg',
-        alt: 'Foto 4',
-        href: '/directorio',
-        titulo: "Ejemplo",
-        texto: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel, delectus nulla minima tempore sint corporis.",
+        src: '/social.jpg',
+        alt: 'Foto de Proyectos Sociales',
+        href: '/directorio/#sociales',
+        titulo: "Proyectos sociales",
+    },
+    {
+        src: '/hogar.jpg',
+        alt: 'Foto de Agricultura',
+        href: '/directorio/#agro',
+        titulo: "Agricultura",
+    },
+    {
+        src: '/personal.jpg',
+        alt: 'Foto de Cuidado Personal',
+        href: '/directorio/#personal',
+        titulo: "Cuidado personal y cosmético",
+    },
+    {
+        src: '/hogar.jpg',
+        alt: 'Foto de Otros',
+        href: '/directorio/#otros',
+        titulo: "Otros",
     },
 ]
 
 const DirectorioFull = () => {
     return (
-        <div className="hidden lg:flex flex-col h-auto pb-16 px-10 bg-verde">
-            <div className="w-9/12 h-2/10 mt-8 flex mx-auto flex-col mb-12">
+        <div className="hidden lg:flex flex-col h-auto pb-20 bg-[#217948]">
+            <div className="w-9/12 mt-8 flex mx-auto flex-col mb-12">
                 <h2 className="text-center text-blanco font-bold text-4xl mb-6 mt-3">Directorio Ecosostenible</h2>
-                <p className="text-center text-blanco text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aperiam quod, quam excepturi consequuntur voluptates recusandae quia. Necessitatibus vitae quaerat consequuntur beatae porro autem id commodi est illum veritatis. Provident.</p>
+                <p className="text-center text-blanco text-sm">¿Sabías que cambiar la forma en cómo vives puede ayudar al planeta?</p>
+                <p className="text-center text-blanco text-sm mt-6">Acá podrás ver diferentes categorías.</p>
             </div>
-            <div className='flex w-9/12 h-auto mx-auto justify-around gap-x-12'>
+            <div className='flex xl:w-11/12 h-auto mx-auto px-6 gap-y-12 gap-x-8 xl:gap-x-24 justify-center flex-wrap'>
                 {images.map ((image) => (
-                    <div key={image.alt} className="h-96 w-30 grid grid-cols-1 grid-rows-1">
-                        <Link className="col-start-1 col-end-1 row-start-1 row-end-1" href={image.href} >
+                    <Link href={image.href} key={image.titulo} className="h-56 w-72 flex flex-col rounded-xl">
+                        <div className="h-4/6 w-72 mb-auto" >
                             <Image width={150000}
                             height={150000}
                             alt={image.alt}
                             src={image.src}
-                            className="h-full w-auto rounded-xl object-cover"
+                            className="h-full w-72 object-cover rounded-t-xl"
                             />
-                        </Link>
-                        <div className="col-start-1 col-end-1 row-start-1 row-end-1 mt-auto mx-auto mb-6 flex flex-col z-30">
-                            <h4 className="text-center text-blanco font-bold text-xl px-8">{image.titulo}</h4>
-                            <p className="text-center text-blanco text-sm px-8 pt-6">{image.texto}</p>
                         </div>
-                    </div>
+                        <div className='flex w-full h-2/6 px-2 bg-amber-50 rounded-b-xl items-center justify-center'>
+                            <h4 className="text-center font-bold text-sm my-auto">{image.titulo}</h4>
+                        </div>
+                    </Link>
                 ))}
             </div>
         </div>

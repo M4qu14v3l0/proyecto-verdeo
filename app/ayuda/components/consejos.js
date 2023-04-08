@@ -1,18 +1,21 @@
 import Image from "next/image";
-import TituloConsejos from "./tituloConsejos";
+import TituloConsejos from "./TituloConsejos";
+import Link from "next/link";
 
 const tips= [
     {
         divClass: "flex flex-col lg:flex-row mb-6 lg:mb-12 lg:h-auto",
         img: "/espiritu.jpg",
+        svg: "/corazon.svg",
         titulo: "Cultiva tu espíritu y actúa",
-        texto: "La mejor forma de ayudar a la naturaleza es siendo mejores seres humanos, y esto se logra haciéndonos una autobservación, analizando, reflexionando y cuestionando todo lo que esta a nuestro alrededor para encontrar por nosotros mismos las respuestas. Recuerda que todo está en tu interior, no busques afuera. Cuando empecemos a ser y no solo hacer, podremos descubrir todo lo que hay al otro lado de la mirada humana de la sociedad y empezar a vivir en armonía, empatía, bondad y respeto hacia todas las criaturas del planeta tierra. Y si ya has empezado a cultivar tu espíritu, comparte lo que sabes con los que quieran escuchar y únete a los que están en el mismo camino que tú.",
+        texto: <p className="text-lg">La mejor forma de ayudar a la naturaleza es siendo mejores seres humanos, y esto se logra haciéndonos una autobservación, analizando, reflexionando y cuestionando todo lo que esta a nuestro alrededor para encontrar por nosotros mismos las respuestas. Recuerda que todo está en tu interior, no busques afuera. Cuando empecemos a ser y no solo hacer, podremos descubrir todo lo que hay al otro lado de la mirada humana de la sociedad y empezar a vivir en armonía, empatía, bondad y respeto hacia todas las criaturas del planeta tierra. Y si ya has empezado a cultivar tu espíritu, comparte lo que sabes con los que quieran escuchar y únete a los que están en el mismo camino que tú.</p>,
     },
     {
         divClass: "flex flex-col lg:flex-row-reverse mb-6 lg:mb-12 lg:h-auto",
         img: "/ropa.jpg",
+        svg: "/ropa.svg",
         titulo: "Ropa y calzado",
-        texto: "Vuestra ropa esconde mucho de vuestra belleza y, sin embargo, no cubre lo que no es bello”- Khalil Gibran La compra compulsiva de ropa se debe en gran parte a la obsesión por la moda y la necesidad de tener muchas opciones de outfit inspiradas por los medios y tendencias. La moda rápida solo es una parte de una de las formas más terribles del consumismo. 1. Intercambia ropa con alguien Para alargar la vida de una prenda, puedes regalarla o donarla a alguien que la necesite en lugar de desecharla si ya no te queda o no te gusta. Investiga de donde viene tu ropa La moda puede involucrar explotación y agotamiento de recursos en la producción. Al investigar la procedencia y materiales de tu ropa, puedes tomar conciencia y elegir mejor. Busca noticias de fábricas ilegales donde asilan a personas para producir ropa de bajo costo para grandes marcas. Te recomendamos el documental “The true cost”. Quiere tu ropa Reparar y reutilizar ropa es una alternativa en la moda para reducir emisiones de CO2 y ahorrar recursos como agua y materias primas. Conservar ropa por 1 o 2 años más reduce sus emisiones de CO2 en un 24%. Hacer una camiseta de algodón requiere aproximadamente 2700 litros de agua. No compres pieles ni nada de origen animal La moda utiliza animales en prendas como abrigos de piel, lo que representa una práctica cruel y aberrante. Antiguamente se consideraba lujo, pero hoy se reconoce su crueldad. Te presentamos una lista de cómo se utilizan los animales en la moda. Compra en tiendas de segunda mano, artesanía o ferias locales Estás ayudando a la localidad de tu entorno (pequeños emprendedores), reduciendo que se produzca más ropa y ayudando al planeta. No todo lo nuevo tiene significado de belleza. No caigas en la publicidad La publicidad engañosa de grandes campañas como Black Friday incentivan el consumismo sin conciencia de lo que queda atrás. La vida no se trata solo de consumir, sino de descubrir su esencia.",
+        texto: <p className="text-lg">Vuestra ropa esconde mucho de vuestra belleza y, sin embargo, no cubre lo que no es bello”- Khalil Gibran La compra compulsiva de ropa se debe en gran parte a la obsesión por la moda y la necesidad de tener muchas opciones de outfit inspiradas por los medios y tendencias. <Link href="https://www.greenpeace.org/mexico/blog/9514/fast-fashion/" target="_blank" className="underline">La moda rápida</Link> solo es una parte de una de las formas más terribles del <Link href="https://sds.uanl.mx/2022/12/14/consumismo-el-mal-del-ultimo-siglo/" target="_blank" className="underline">consumismo.</Link> <Link href="https://lasempresasverdes.com/el-fast-fashion-la-segunda-industria-mas-contaminante/" target="_blank" className="underline">Anualmente, el fast fashion consume aproximadamente 93 billones de litros de agua, la cantidad suficiente para abastecer a cinco millones de personas.</Link></p>,
         data:                            
             <ul>
                 <li className="flex flex-col my-4">
@@ -21,7 +24,7 @@ const tips= [
                 </li>
                 <li className="flex flex-col my-4">
                     <p className="text-lg text-verde">2. Investiga de donde viene tu ropa</p>
-                    <p className="indent-4 text-lg">La moda puede involucrar explotación y agotamiento de recursos en la producción. Al investigar la procedencia y materiales de tu ropa, puedes tomar conciencia y elegir mejor. Busca noticias de fábricas ilegales donde asilan a personas para producir ropa de bajo costo para grandes marcas. Te recomendamos el documental “The true cost”.</p>
+                    <p className="indent-4 text-lg">La moda puede involucrar explotación y agotamiento de recursos en la producción. Al investigar la procedencia y materiales de tu ropa, puedes tomar conciencia y elegir mejor. Busca noticias de fábricas ilegales donde asilan a personas para producir ropa de bajo costo para grandes marcas. Te recomendamos el documental <Link href="https://www.youtube.com/watch?v=5-0zHqYGnlo&ab_channel=ENDEVR" target="_blank" className="underline">“The true cost”.</Link></p>
                 </li>
                 <li className="flex flex-col my-4">
                     <p className="text-lg text-verde">3. Quiere tu ropa</p>
@@ -44,13 +47,14 @@ const tips= [
     {
         divClass: "flex flex-col lg:flex-row mb-6 lg:mb-12 lg:h-auto",
         img: "/plastico.jpg",
+        svg: "/botella.svg",
         titulo: "El uso del plástico",
-        texto: "En millones de años cuando el humano se extinga (posiblemente) quizá... lo único que habremos dejado será el plástico como muestra de nuestra existencia.",
+        texto: <p className="text-lg">En millones de años cuando el humano se extinga (posiblemente) quizá... lo único que habremos dejado será el plástico como muestra de nuestra existencia.</p>,
         data:                            
             <ul>
                 <li className="flex flex-col my-4">
                     <p className="text-lg text-verde">1. Evita productos que tengan envase plástico</p>
-                    <p className="indent-4 text-lg">Los productos con plástico innecesario existen porque hay leyes que lo permiten y no regulan su reemplazo, exijamos leyes que avancen hacia un mundo con menos plástico y seamos consumidores conscientes. ¿Este producto necesita plástico?</p>
+                    <p className="indent-4 text-lg">Los productos con plástico innecesario existen porque hay leyes que lo permiten y no regulan su reemplazo, exijamos leyes que avancen hacia un mundo con menos plástico y seamos consumidores conscientes. <Link href="https://lagulateca.com/frutas-peladas-y-envasadas-una-estupidez-que-genera-mas-residuos-o-nuevos-formatos-de-consumo/" target="_blank" className="underline">¿Este producto necesita plástico?</Link></p>
                 </li>
                 <li className="flex flex-col my-4">
                     <p className="text-lg text-verde">2. Compra tu comida por mayor y/o a granel y evita el exceso de bolsas plásticas</p>
@@ -76,8 +80,9 @@ const tips= [
     {
         divClass: "flex flex-col lg:flex-row-reverse mb-6 lg:mb-12 lg:h-auto",
         img: "/alimentacion.jpg",
+        svg: "/fruta.svg",
         titulo: "Alimentación",
-        texto: '“Que tu alimentación sea tu alimento” - Hipócrates',
+        texto: <p className="text-lg">“Que tu alimentación sea tu alimento” - Hipócrates</p>,
         data:                            
             <ul>
                 <li className="flex flex-col my-4">
@@ -90,11 +95,11 @@ const tips= [
                 </li>
                 <li className="flex flex-col my-4">
                     <p className="text-lg text-verde">3. Elimina a los animales de tu plato</p>
-                    <p className="indent-4 text-lg">El 85% de la deforestación en la Amazonía es causada por la ganadería y los cultivos. La ganadería emite el 14,5% de los gases de efecto invernadero. El consumo de animales como alimento afecta la biodiversidad del planeta. Todos merecemos respeto. Te compartimos una lista de platos vegetarianos y veganos.</p>
+                    <p className="indent-4 text-lg">El 85% de la deforestación en la Amazonía es causada por la ganadería y los cultivos. La ganadería emite el 14,5% de los gases de efecto invernadero. El consumo de animales como alimento afecta la biodiversidad del planeta. Todos merecemos respeto. <Link href="https://veganuary.com/es/guia-de-comidas/empezar/" target="_blank" className="underline">Te compartimos una lista de platos vegetarianos y veganos.</Link></p>
                 </li>
                 <li className="flex flex-col my-4">
                     <p className="text-lg text-verde">4. No desperdicies alimentos</p>
-                    <p className="indent-4 text-lg">Un estudio de la WWF indica que el 40% de los alimentos cultivados no se consume y termina en la basura, mientras hay gente muriendo de hambre en todo el mundo. No se trata de escasez de alimentos, sino de mala gestión de recursos, lo que produce obesidad en algunas poblaciones y hambruna en otras.</p>
+                    <p className="indent-4 text-lg"><Link href="https://www.youtube.com/watch?v=Y0MGlikVJBE&ab_channel=ComunicaRSE-TV" target="_blank" className="underline">Un estudio de la WWF</Link> indica que el 40% de los alimentos cultivados no se consume y termina en la basura, mientras hay gente muriendo de hambre en todo el mundo. No se trata de escasez de alimentos, sino de mala gestión de recursos, lo que produce obesidad en algunas poblaciones y hambruna en otras.</p>
                 </li>
                 <li className="flex flex-col my-4">
                     <p className="text-lg text-verde">5. Adquiere productos locales</p>
@@ -105,8 +110,9 @@ const tips= [
     {
         divClass: "flex flex-col lg:flex-row mb-6 lg:mb-12 lg:h-auto",
         img: "/agua.jpg",
+        svg: "/agua.svg",
         titulo: "Agua",
-        texto: "El 97.5% del agua en la tierra se encuentra en los océanos y mares de agua salada , únicamente el restante 2.5% es agua dulce, agua que consumimos.",
+        texto: <p className="text-lg">El 97.5% del agua en la tierra se encuentra en los océanos y mares de agua salada , únicamente el restante 2.5% es agua dulce, agua que consumimos.</p>,
         data:                            
             <ul>
                 <li className="flex flex-col my-4">
@@ -130,8 +136,9 @@ const tips= [
     {
         divClass: "flex flex-col lg:flex-row-reverse mb-6 lg:mb-12 lg:h-auto",
         img: "/tierra.jpg",
+        svg: "/planta.svg",
         titulo: "Tierra",
-        texto: "Todo, absolutamente todo tiene vida en nuestro planeta.",
+        texto: <p className="text-lg">Todo, absolutamente todo tiene vida en nuestro planeta.</p>,
         data:                            
             <ul>
                 <li className="flex flex-col my-4">
@@ -140,15 +147,16 @@ const tips= [
                 </li>
                 <li className="flex flex-col my-4">
                     <p className="text-lg text-verde">2. Compost</p>
-                    <p className="indent-4 text-lg">El compost ayuda a reducir la cantidad de basura que acaba en el vertedero y ayuda a recuperar la fertilidad del suelo, a través del abono natural... ¿Cómo hacerlo? Si tienes un jardín o un lugar verde en casa puedes instalar un compostador que esté en contacto con la tierra, y empezar a organizar residuos orgánicos (cáscara de frutas, verduras y etc). Aquí te dejamos el paso a paso.</p>
+                    <p className="indent-4 text-lg">El compost ayuda a reducir la cantidad de basura que acaba en el vertedero y ayuda a recuperar la fertilidad del suelo, a través del abono natural... ¿Cómo hacerlo? Si tienes un jardín o un lugar verde en casa puedes instalar un compostador que esté en contacto con la tierra, y empezar a organizar residuos orgánicos (cáscara de frutas, verduras y etc). <Link href="https://redcompostaje.carrd.co/?gclid=Cj0KCQjw8qmhBhClARIsANAtbofzyGEXWgkErM8D7SgUuDREE1eIcIOTW8cPAxNfQ9VPNSHtJp9GQ10aAtm5EALw_wcB" target="_blank" className="underline">Aquí te dejamos el paso a paso.</Link></p>
                 </li>
             </ul>
     },
     {
         divClass: "flex flex-col lg:flex-row mb-6 lg:mb-12 lg:h-auto",
         img: "/arboles.jpg",
+        svg: "/arbol.svg",
         titulo: "Arboles",
-        texto: "Todo, absolutamente todo tiene vida en nuestro planeta.",
+        texto: <p className="text-lg">Todo, absolutamente todo tiene vida en nuestro planeta.</p>,
         data:                            
             <ul>
                 <li className="flex flex-col my-4">
@@ -171,12 +179,13 @@ const consejos = () => {
             <TituloConsejos />
             {tips.map((tip) => (
                 <div className={tip.divClass} key={tip.titulo}>
-                    <div className="h-96 w-full lg:w-6/12 object-cover mb-3">
-                        <Image width={500} height={500} src={tip.img} className="h-full w-full object-cover lg:rounded-lg" alt={tip.titulo}/>
+                    <div className="h-96 w-full lg:w-6/12 object-cover mb-3 px-6 lg:px-2">
+                        <Image width={500} height={500} src={tip.img} className="h-full w-full object-cover rounded-xl" alt={tip.titulo}/>
                     </div>
-                    <div className="flex flex-col px-4 lg:w-6/12 lg:mx-auto">
-                        <h3 className="text-center font-bold text-xl mb-3">{tip.titulo}</h3>
-                        <p className="text-center text-lg lg:px-6">{tip.texto}</p>
+                    <div className="flex flex-col px-6 w-8/12 lg:w-6/12 lg:mx-auto">
+                        <Image width={100} height={100} src={tip.svg} className="w-1/12 mt-4 mx-auto" alt={tip.titulo}/>
+                        <h3 className="text-center font-bold text-2xl mb-3 py-3">{tip.titulo}</h3>
+                        {tip.texto}
                         {tip.data?
                             <div>
                                 {tip.data}

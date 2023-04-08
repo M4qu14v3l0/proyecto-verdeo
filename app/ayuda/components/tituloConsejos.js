@@ -40,7 +40,7 @@ const items= [
 
 const tituloConsejos = () => {
     return (
-        <div className="grid grid-cols-3 grid-rows-3 px-6 mb-4">
+        <div className="grid grid-cols-3 grid-rows-3 px-6 mb-6 lg:mb-10">
             {items.map((item) => (
                 <div key={item.titulo} className={item.class}>
                     <Image width={500} height={500} className="w-1/4 mx-auto" alt={item.titulo} src={item.img} />

@@ -10,7 +10,7 @@ const verdeoTeam = [
 
 export default function NuestroEquipo() {
   return (
-    <section className='mb-32'>
+    <section  id='equipo' className='mb-32'>
         <div className='flex flex-col text-center gap-10 mb-10'>
             <h2 className='text-3xl font-bold'>
                 Nosotros

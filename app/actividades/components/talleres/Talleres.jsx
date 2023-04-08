@@ -2,7 +2,7 @@ import React from 'react'
 
 const Talleres = () => {
     return (
-        <section className='flex flex-col gap-5 mb-10'>
+        <section id='talleres' className='flex flex-col gap-5 mb-10'>
             <div className='flex flex-col gap-5'>
                 <h1 className='text-center font-bold text-3xl'>
                     Lo que hacemos

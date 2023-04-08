@@ -1,28 +1,29 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { getArticle } from '../api/api.js';
+import Moda from './components/Moda.js';
+import Alimentos from './components/Alimentos.js';
+import Personal from './components/Personal.js';
+import Agro from './components/Agro.js';
+import Sociales from './components/Sociales.js';
+import Otros from './components/Otros.js';
 
 export default function Page() {
-  const [articulos, setArticulos] = useState([]);
+  const [empresas, setEmpresas] = useState([]);
   useEffect(() => {
-    getArticle().then(data => {
-        setArticulos(data)
-    })
+      getArticle().then(data => {
+          setEmpresas(data)
+      })
   }, []);
   return (
-    <div>
-      <p className='text-center'>Directorio Ecosostenible</p>
-      {articulos.length >= 1 ? 
-        <ul className="flex gap-7 mb-2 mx-auto">                        
-          {articulos.map((articulo) => (
-              <div key={articulo.titulo}>
-                  <h4>{articulo.titulo}</h4>
-                  <p>{articulo.cuerpo}</p>
-                  <p>{articulo.img}</p>
-              </div>
-          ))}
-        </ul>
-      : ""}
+    <div className='flex flex-col w-full bg-[#217948] h-auto'>
+      {empresas.length >= 1 ? <h2 className='text-bold text-5xl text-center mt-10 mb-6 px-4 text-blanco'>Directorio ecosostenible</h2> : ""}
+      <Moda />
+      <Alimentos />
+      <Personal />
+      <Agro />
+      <Sociales />
+      <Otros />
     </div>
   )
 }

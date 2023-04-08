@@ -1,10 +1,11 @@
 import Image from 'next/image'
+import Link from 'next/link';
 
-
+import { BsLinkedin } from "react-icons/bs";
 
 const verdeoTeam = [
-    {id:1 , name: 'Ana Rondón' ,img:'/anaRondon.svg', borderColor: 'border-[#175A34]'  , description: "Licenciada en Administración y Marketing con amplia experiencia laboral en startups, proyectos ambientales, digital media y branding. Enfocada en proyectos ambientales y de educación, con más de 8 años como voluntaria en distintas organizaciones del gobierno y privadas. Apasionada por la publicidad y los proyectos ambientales."},
-    {id:2 , name: 'Ronal Chavez Soto' ,img:'/ronalChavez.svg', borderColor: 'border-[#9F2E05]' , description: "Licenciado en Ingeniería y Gestión Ambiental con experiencia en el área de Gestión Ambiental y Cuencas, manejo del Sistema Integral de Residuos Sólidos. Interesado en temas de: Gestión de Residuos Sólidos, Seguridad, salud ocupacional y medio ambiente, Monitoreo Ambiental, Elaboración de Estudios de Impacto Ambiental, contaminación de Agua, Aire y Suelo, conservación de suelo y Recursos hídricos."}
+    {id:1 , name: 'Ana Rondón' ,img:'/anaRondon.svg'  , description: "Licenciada en Administración y Marketing con amplia experiencia laboral en startups, proyectos ambientales, digital media y branding. \n \nEnfocada en proyectos ambientales y de educación, con más de 8 años como voluntaria en distintas organizaciones del gobierno y privadas.\n \n Apasionada por la publicidad y los proyectos ambientales.",  linkedin: 'https://www.linkedin.com/in/anarondon/'},
+    {id:2 , name: 'Ronal Chavez Soto' ,img:'/ronalChavez.svg' , description: "Licenciado en Ingeniería y Gestión Ambiental con experiencia en el área de Gestión Ambiental y Cuencas, manejo del Sistema Integral de Residuos Sólidos.\n \n Interesado en temas de: Gestión de Residuos Sólidos, Seguridad, salud ocupacional y medio ambiente, Monitoreo Ambiental, Elaboración de Estudios de Impacto Ambiental, contaminación de Agua, Aire y Suelo, conservación de suelo y Recursos hídricos.\n" , linkedin: 'https://www.linkedin.com/in/ronal-chavez-soto-a95936149/'}
 ]
 
 export default function NuestroEquipo() {
@@ -21,7 +22,7 @@ export default function NuestroEquipo() {
         <div className='max-w-[90%] md:max-w-3xl m-auto flex flex-col gap-5 md:flex-row'>
             {
                 verdeoTeam.map(person => (
-                    <div key={person.id} className={`border-solid border-2 ${person.borderColor} rounded-xl p-4 flex flex-col gap-5 relative w-full`}>
+                    <div key={person.id} className={`border-solid border-2 border-[#175A34] rounded-xl p-4 flex flex-col gap-5 relative w-full shadow-xl`}>
                         <div className='w-full h-[220px] relative'>
                             <Image 
                             src={person.img}
@@ -30,8 +31,21 @@ export default function NuestroEquipo() {
                             className='rounded-xl'
                             />
                         </div>
-                        <h1 className='text-center text-xl font-semibold'>{person.name}</h1>
-                        <p className='text-center '>{person.description}</p>
+                        <h1 className='text-center text-3xl font-semibold'>{person.name}</h1>
+                        <p className='text-center '>{person.description.split('\n').map((description , index) => (
+                            <span key={index}>
+                                {description}
+                                <br />
+                            </span>
+                        ))}</p>
+                        <Link 
+                            className='flex justify-center items-center gap-5'
+                            href={person.linkedin}
+                            target='_blank'
+                        >
+                            <BsLinkedin className='text-[#175A34] text-[25px]'/>
+                            <p className='text-[12px] font-semibold'>Ver perfil en Linkedin</p>
+                        </Link>
                     </div>
                 ))
             }

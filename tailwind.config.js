@@ -41,7 +41,7 @@ module.exports = {
         'donar': "url('/foto4.jpg')",
         'ayuda': "url('/foto5.jpg')",
         'hero': "url('/hero.jpg')",
-        'abedul':"url('/abedul.png')",
+        'hacemosPortada':"url('/portadaHacemos.svg')",
         'alpaca':"url('/alpaca.svg')",
         'comunidad': "url('/comunidad.jpg')"
       },

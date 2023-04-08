@@ -1,4 +1,4 @@
-import CarrouselDir from '../components/CarrouselDir.js'
+import CarrouselDir from './CarrouselDir.js'
 
 const Directorio = () => {
     return (

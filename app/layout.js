@@ -2,7 +2,6 @@ import Footer from './components/Footer.js';
 import Navigation from './components/Navigation.js';
 import ScrollButton from './components/ScrollButton.js';
 import './globals.css';
-import React from 'react';
 
 export const metadata = {
   title: 'Proyecto Verdeo',

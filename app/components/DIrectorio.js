@@ -17,19 +17,19 @@ const images = [
     {
         src: '/social.jpg',
         alt: 'Foto de Proyectos Sociales',
-        href: '/directorio/#social',
+        href: '/directorio/#sociales',
         titulo: "Proyectos sociales",
     },
     {
         src: '/hogar.jpg',
         alt: 'Foto de Agricultura',
-        href: '/directorio/#hogar',
+        href: '/directorio/#agro',
         titulo: "Agricultura",
     },
     {
         src: '/personal.jpg',
         alt: 'Foto de Cuidado Personal',
-        href: '/directorio/#social',
+        href: '/directorio/#personal',
         titulo: "Cuidado personal y cosmético",
     },
     {

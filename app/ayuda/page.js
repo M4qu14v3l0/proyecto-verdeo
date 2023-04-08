@@ -1,6 +1,6 @@
-import Consejos from './components/Consejos';
-import Donaciones from './components/Donaciones';
-import Voluntariado from './components/Voluntariado';
+import Consejos from './components/Cons';
+import Donaciones from './components/Dona';
+import Voluntariado from './components/Volun';
 
 const ayuda = () => {
   return (

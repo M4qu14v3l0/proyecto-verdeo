@@ -182,7 +182,7 @@ const Consejos = () => {
                     <div className="h-96 w-full lg:w-6/12 object-cover mb-3 px-6 lg:px-2">
                         <Image width={500} height={500} src={tip.img} className="h-full w-full object-cover rounded-xl" alt={tip.titulo}/>
                     </div>
-                    <div className="flex flex-col px-6 w-8/12 lg:w-6/12 lg:mx-auto">
+                    <div className="flex flex-col px-6 w-full lg:w-6/12 lg:mx-auto">
                         <Image width={100} height={100} src={tip.svg} className="w-1/12 mt-4 mx-auto" alt={tip.titulo}/>
                         <h3 className="text-center font-bold text-2xl mb-3 py-3">{tip.titulo}</h3>
                         {tip.texto}

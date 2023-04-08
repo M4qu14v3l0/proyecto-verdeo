@@ -28,6 +28,7 @@ const Talleres = () => {
                     Trabajemos juntos
                 </button>
             </div>
+            {/* comment */}
         </section>
     )
 }

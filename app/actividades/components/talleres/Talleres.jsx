@@ -1,34 +1,152 @@
-import React from 'react'
+import Image from "next/image"
+
+const talleres = [
+    {id:1 , img:'/tallerCompostaje.svg' , titulo: '1. Taller de compostaje' , texto:'Dirigido a niños, niñas, adolescentes y público en general. Este taller busca informar y concientizar sobre la importancia de cómo nuestra alimentación influye en la naturaleza, y cómo optar por una alimentación saludable y basada en plantas puede ayudar a contribuir a la madre tierra.' , fecha:'Todo el año', duracion:'1 día (1h - 2h)', enfoque:'Educativo e inspiracional'},
+
+    {id:2 , img:'/tallerEcoladrillos.svg' , titulo: '2. Taller de ecoladrillos' , texto:'Dirigido a niños, niñas, adolescentes y público en general. Este taller busca concientizar sobre el uso del plástico y cómo afecta a los animales, a los ríos, mares y al ser humano. Demostramos que existe una “alternativa” transitoria hacia un mundo sin plástico a través de la creación de ecoladrillos.' , fecha:'Todo el año', duracion:'1 día (1h - 2h)', enfoque:'Educativo e inspiracional'},
+
+    {id:3 , img:'/tallerPlasticos.svg' , titulo: '3. Taller de importancia del plástico en los océanos' , texto:'Dirigido a niños, niñas, adolescentes y público en general. Este taller busca concientizar sobre el uso del plástico y cómo afecta a los animales, los ríos, mares y al ser humano. Demostramos poder reciclar algunos tipos de plástico y que formen parte un objeto artístico o juego.' , fecha:'Todo el año', duracion:'1 día (1h - 2h)', enfoque:'Educativo y artistico'},
+
+    {id:4 , img:'/tallerCartonero.svg' , titulo: '4. Taller de libro cartonero' , texto:'Dirigido a niños, niñas, adolescentes y público en general. Este taller busca informar y concientizar sobre la importancia de cómo nuestra alimentación influye en la naturaleza, y cómo optar por una alimentación saludable y basada en plantas puede ayudar a contribuir a la madre tierra.' , fecha:'Todo el año', duracion:'1 día (1h - 2h)', enfoque:'Educativo e inspiracional'},
+
+    {id:5 , img:'/tallerReciclaje.svg' , titulo: '5. Taller de reciclaje' , texto:'Dirigido a niños, niñas, adolescentes y público en general. Este taller busca informar y concientizar sobre la importancia de cómo nuestra alimentación influye en la naturaleza, y cómo optar por una alimentación saludable y basada en plantas puede ayudar a contribuir a la madre tierra.' , fecha:'Todo el año', duracion:'1 día (1h - 2h)', enfoque:'Educativo e inspiracional'},
+
+]
+
+// {id:6 , img:'/activismo.svg' , titulo: '6. Activismo constante' , texto:'Dirigido a niños, niñas, adolescentes y público en general. Este taller busca informar y concientizar sobre la importancia de cómo nuestra alimentación influye en la naturaleza, y cómo optar por una alimentación saludable y basada en plantas puede ayudar a contribuir a la madre tierra.'},
 
 const Talleres = () => {
     return (
-        <section id='talleres' className='flex flex-col gap-5 mb-10'>
-            <div className='flex flex-col gap-5'>
-                <h1 className='text-center font-bold text-3xl'>
-                    Lo que hacemos
-                </h1>
-                <p className='text-center font-bold text-xl'>Talleres</p>
-            </div>
-            <div className='m-auto max-w-xl rounded-3xl bg-[#F5A88C] px-10'>
-                <div className='p-3 md:gap-10 text-center flex flex-col gap-5'>
-                    <h2 className='font-semibold text-lg md:text-3xl'>¿De qué se trata?</h2>
-                    <p className='leading-none'>Colaboramos con otros Proyectos ambientales que nos convocan para participar en talleres.</p>
-                    <p className='leading-none'>Podemos aportar conocimiento en talleres sobre:</p>
-                    <ul className='flex flex-col gap-3 font-bold list-disc list-inside'>
-                        <li className='leading-none'>La importancia del plástico en los océanos</li>
-                        <li>Compostaje</li>
-                        <li>Ecoladrillos</li>
-                        <li>Libros cartoneros</li>
-                        <li className='leading-none'>Cualquier otro taller sobre educación ambiental</li>
-                    </ul>
+        <section id='talleres' className='flex flex-col gap-5 mb-10 bg-[#F5A88C]'>
+            <div className='flex flex-col gap-5 justify-center w-full'>
+                <h1 className='text-black text-center text-2xl'>Talleres ambientales</h1>
+                <div className='bg-[#F7C6B5] w-[80%] m-auto text-center flex flex-col gap-5 p-5 rounded-xl shadow-2xl'>
+                    <div className="w-full h-[250px] relative">
+                        <Image 
+                            src={'/objetivoPortada.svg'}
+                            alt={'redFlag'}
+                            fill
+                            style={{objectFit: 'contain'}}
+                        />
+                    </div>
+                    <h3 className='font-bold text-2xl'>Objetivo</h3>
+                    <p className='leading-1 font-semibold'>
+                    Creemos que solo se ama lo que se conoce por lo que buscamos inculcar a niños, niñas y adolescentes de casas hogares el amor a la naturaleza a través del conocimiento y de actividades lúdicas.
+                    </p>
                 </div>
+                <div className="flex flex-col gap-10 md:hidden w-[90%] m-auto">
+                {
+                    talleres.map((taller) => {
+                        return (
+                        <>
+                        {                            
+                        <div key={taller.id} className={`flex flex-col rounded-3xl h-fit bg-[#F7C6B5]`}>
+                            <div className="relative w-full h-[350px]">
+                                <Image 
+                                    src={taller.img}
+                                    fill
+                                    style={{objectFit:'cover'}}
+                                    alt={taller.titulo}
+                                    className={'rounded-t-2xl'}
+                                />
+                            </div>
+                            <div className="flex flex-col gap-5 justify-center items-center w-[80%] m-auto">
+                                <h1 className="text-xl font-semibold text-center">{taller.titulo}</h1>
+                                <p className="text-center">{taller.texto}</p>
+                                <div className="flex flex-col gap-1 text-center">
+                                    <p>Fecha: {taller.fecha}</p>
+                                    <p>Duración: {taller.duracion}</p>
+                                    <p>Enfoque: {taller.enfoque}</p>
+                                </div>
+                                <button className="rounded-full bg-[#9F2E05] w-[180px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
+                                    Quiero un taller
+                                </button>
+                            </div>
+                        </div>
+                        }
+                        </> 
+                    )})
+                    }
+                    <div className={`flex flex-col rounded-3xl h-fit bg-[#F7C6B5]`}>
+                        <div className="relative w-full h-[350px]">
+                            <Image 
+                                src={'/activismo.svg'}
+                                fill
+                                style={{objectFit:'cover'}}
+                                alt={'activismo'}
+                                className={'rounded-t-2xl'}
+                            />
+                        </div>
+                        <div className="flex flex-col gap-5 justify-center items-center w-[80%] m-auto">
+                            <h1 className="text-xl font-semibold text-center">6. Activismo constante</h1>
+                            <p className="text-center">Dirigido a niños, niñas, adolescentes y público en general. Este taller busca informar y concientizar sobre la importancia de cómo nuestra alimentación influye en la naturaleza, y cómo optar por una alimentación saludable y basada en plantas puede ayudar a contribuir a la madre tierra.</p>
+
+                            <button className="rounded-full bg-[#9F2E05] w-[240px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
+                                Enterarme en Instagram
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div className="hidden md:flex flex-col w-[90%] xl:w-[75%] m-auto gap-20">
+                    {
+                        talleres.map((taller) => {
+
+                            const alternate = taller.id % 2 !== 0;
+                            return (
+                            <>
+                            {                            
+                            <div key={taller.id} className={`gridForCards rounded-3xl h-[550px] bg-[#F7C6B5]`}>
+                                <div className="relative w-full h-full colForCard">
+                                    <Image 
+                                        src={taller.img}
+                                        fill
+                                        style={{objectFit:'cover'}}
+                                        alt={taller.titulo}
+                                        className={`${alternate ? `rounded-l-2xl` : `rounded-r-2xl` }`}
+                                    />
+                                </div>
+                                <div className="flex flex-col gap-5 justify-center items-center w-[80%] m-auto colForCard">
+                                    <h1 className="text-2xl font-semibold">{taller.titulo}</h1>
+                                    <p className="text-justify">{taller.texto}</p>
+                                    <div className="flex flex-col gap-1 text-center">
+                                        <p>Fecha: {taller.fecha}</p>
+                                        <p>Duración: {taller.duracion}</p>
+                                        <p>Enfoque: {taller.enfoque}</p>
+                                    </div>
+                                    <button className="rounded-full bg-[#9F2E05] w-[180px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
+                                    Quiero un taller
+                                </button>
+                                </div>
+                            </div>
+                            }
+                            </> 
+                        )})
+                    }
+                    <div className={`grid grid-cols-2 rounded-3xl h-[550px] bg-[#F7C6B5]`}>
+                        <div className="flex flex-col gap-5 justify-center items-center w-[80%] m-auto">
+                            <h1 className="text-2xl font-semibold">6. Activismo constante</h1>
+                            <p className="text-justify">Dirigido a niños, niñas, adolescentes y público en general. Este taller busca informar y concientizar sobre la importancia de cómo nuestra alimentación influye en la naturaleza, y cómo optar por una alimentación saludable y basada en plantas puede ayudar a contribuir a la madre tierra.</p>
+                            <button className="rounded-full bg-[#9F2E05] w-[250px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
+                            Enterarme en Instagram
+                        </button>
+                        </div>
+                        <div className="relative w-full h-full">
+                            <Image 
+                                src={'/activismo.svg'}
+                                fill
+                                style={{objectFit:'cover'}}
+                                alt={'Activismo'}
+                                className={`rounded-r-2xl`}
+                            />
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div className='flex justify-center'>
-                <button className='bg-rojo w-40 p-1 text-white rounded-3xl font-medium'>
-                    Trabajemos juntos
-                </button>
-            </div>
-            {/* comment */}
+
+
+
+
         </section>
     )
 }

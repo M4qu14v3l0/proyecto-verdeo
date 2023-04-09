@@ -28,3 +28,12 @@ p, button, Link {
     display: block;
     width: 100%;
   }
+
+.gridForCards{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.gridForCards:nth-child(even) .colForCard:last-child{
+  order: -1;
+}

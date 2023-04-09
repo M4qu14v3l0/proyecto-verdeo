@@ -15,7 +15,7 @@ const ayudas = [
         linkclass:"flex mx-auto rounded-3xl bg-rojo h-8 w-6/12 mb-3 hover:bg-red-600 transition-all duration-300 ease-in-out mb-8"
     },
     {
-        title: "Ayudar",
+        title: "7 Formas de ayudar",
         text: "Dedicación, disciplina y compromiso. ¡Únete para ser parte de Proyecto Verdeo!",
         route: '/ayuda/#consejos',
         divclass: "flex flex-col justify-center bg-tips bg-cover bg-no-repeat bg-center h-80 rounded-xl mb-4",

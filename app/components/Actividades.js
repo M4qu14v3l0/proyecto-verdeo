@@ -2,7 +2,7 @@
 const actividades = [
     {
         title: "TA",
-        subtitle: "Proyecto Abedules",
+        subtitle: "Programa Abedules",
         text: "Programa dirigido a niños, niñas y adolescentes de casas hogares.",
         route: '/actividades/#proyectos',
         divclass: "bg-verde rounded-2xl mb-4 py-24 sm:py-16 px-4 lg:h-full",
@@ -12,7 +12,7 @@ const actividades = [
     },
     {
         title: "PA",
-        subtitle: "Talleres",
+        subtitle: "Talleres Ambientales",
         text: "Dirigido a niños, adolescentes y público en general que busca reconectar con la naturaleza y aprender más sobre cómo podemos hacer algo desde donde estamos.",
         route: '/actividades/#talleres',
         divclass: "bg-rojo rounded-2xl mb-4 py-24 sm:py-16 px-4 lg:h-full",

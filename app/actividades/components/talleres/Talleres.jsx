@@ -23,15 +23,15 @@ const Talleres = () => {
                 <div className='bg-[#F7C6B5] w-[80%] m-auto text-center flex flex-col gap-5 p-5 rounded-xl shadow-2xl'>
                     <div className="w-full h-[250px] relative">
                         <Image 
-                            src={'/objetivoPortada.svg'}
+                            src={'/talleresAmbientales.svg'}
                             alt={'redFlag'}
                             fill
                             style={{objectFit: 'contain'}}
                         />
                     </div>
-                    <h3 className='font-bold text-2xl'>Objetivo</h3>
+                    <h3 className='font-bold text-2xl'>¿De qué se trata?</h3>
                     <p className='leading-1 font-semibold'>
-                    Creemos que solo se ama lo que se conoce por lo que buscamos inculcar a niños, niñas y adolescentes de casas hogares el amor a la naturaleza a través del conocimiento y de actividades lúdicas.
+                    Dirigido a niños, niñas, adolescentes y público en general que busca reconectar con la naturaleza. Buscamos desarrollar la conciencia sobre el cambio climático, impartir información sobre la importancia de los animales y de qué podemos hacer desde donde estamos.
                     </p>
                 </div>
                 <div className="flex flex-col gap-10 md:hidden w-[90%] m-auto">

@@ -35,34 +35,44 @@ const Proyectos = () => {
                     </p>
                 </div>
             </div>
-                <div className="flex flex-col gap-10">
+                <div className="flex flex-col gap-10 ">
                     <h2 className="text-center font-semibold text-2xl">
                         Consta de 3 ejes
                     </h2>
-                    <div className="flex space-x-3 justify-around overflow-scroll scrollbar-hide w-5/6 m-auto">
+                    <div className="flex space-x-10 md:justify-around overflow-scroll scrollbar-hide w-5/6 m-auto">
                         {
                             imgs.map(item => (
-                                <div key={item.title} className="w-[180px] h-[232px] flex flex-col items-center gap-8">
-                                    <div className="flex flex-col gap-1 item-center text-center bg-[#75C495] rounded-xl w-[160px] py-5 shadow-2xl">
-                                        <div className="w-full h-[80px] relative">
-                                            <Image
-                                                src={item.img}
-                                                alt = {item.title}
-                                                fill
-                                                style={{objectFit: 'contain'}}
-                                            />
+                                <div key={item.title} className="h-[300px] flex flex-col">
+                                    <div className="flex flex-col item-center text-center py-5 w-[190px]">
+                                        <div className="bg-[#75C495] rounded-t-xl h-[140px] flex flex-col justify-center items-center">
+                                            <div className="w-full h-[50px] relative">
+                                                <Image
+                                                    src={item.img}
+                                                    alt = {item.title}
+                                                    fill
+                                                    style={{objectFit: 'contain'}}
+                                                />
+                                            </div>
+                                            <h3 className='font-bold text-xl'>
+                                                {item.title}
+                                            </h3>
                                         </div>
-                                        <h3 className='font-bold text-xl'>
-                                            {item.title}
-                                        </h3>
+                                        <div className="bg-white rounded-b-xl h-[90px] flex justify-center items-center">
+                                            <p className='leading-1 text-center text-black px-5 font-medium text-xs'>
+                                                {item.p}
+                                            </p>
+                                        </div>
                                     </div>
-                                    <p className='leading-1 text-center'>
-                                        {item.p}
-                                    </p>
                                 </div>
                             ))
                         }
                     </div>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                    <button className="rounded-full bg-[#175A34] w-[180px] px-5 py-2 text-white font-medium m-5">
+                        Quiero informarme
+                    </button>
+
                 </div>
         </section>
     )

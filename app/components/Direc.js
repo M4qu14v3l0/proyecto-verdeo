@@ -15,10 +15,10 @@ const images = [
         titulo: "Alimentación y nutrición",
     },
     {
-        src: '/social.jpg',
-        alt: 'Foto de Proyectos Sociales',
-        href: '/directorio/#sociales',
-        titulo: "Proyectos sociales",
+        src: '/personal.jpg',
+        alt: 'Foto de Cuidado Personal',
+        href: '/directorio/#personal',
+        titulo: "Cuidado personal y cosmético",
     },
     {
         src: '/hogar.jpg',
@@ -27,16 +27,16 @@ const images = [
         titulo: "Agricultura",
     },
     {
-        src: '/personal.jpg',
-        alt: 'Foto de Cuidado Personal',
-        href: '/directorio/#personal',
-        titulo: "Cuidado personal y cosmético",
+        src: '/social.jpg',
+        alt: 'Foto de Proyectos Sociales',
+        href: '/directorio/#sociales',
+        titulo: "Proyectos sociales",
     },
     {
-        src: '/hogar.jpg',
+        src: '/otros.jpg',
         alt: 'Foto de Otros',
         href: '/directorio/#otros',
-        titulo: "Otros",
+        titulo: "Otros servicios",
     },
 ]
 
@@ -48,9 +48,9 @@ const Directorio = () => {
                 <p className="text-center text-blanco text-sm">¿Sabías que cambiar la forma en cómo vives puede ayudar al planeta?</p>
                 <p className="text-center text-blanco text-sm mt-6">Acá podrás ver diferentes categorías.</p>
             </div>
-            <div className='flex w-full h-48 px-4 gap-x-8 items-center overflow-x-scroll overflow-y-hidden'>
+            <div className='flex w-full h-62 px-4 gap-x-8 items-center overflow-x-scroll overflow-y-hidden'>
                 {images.map ((image) => (
-                    <Link href={image.href} key={image.titulo} className="h-full w-44 flex flex-col rounded-xl">
+                    <Link href={image.href} key={image.titulo} className="h-52 w-44 flex flex-col">
                         <div className="h-full w-44">
                             <Image width={150000}
                             height={150000}
@@ -59,7 +59,7 @@ const Directorio = () => {
                             className="h-full w-44 object-cover rounded-t-xl"
                             />
                         </div>
-                        <div className='flex w-full h-20 bg-amber-50 rounded-b-xl items-center justify-center'>
+                        <div className='flex w-full h-20 bg-amber-50 items-center justify-center rounded-b-xl'>
                             <h4 className="text-center font-bold text-sm my-auto px-1">{image.titulo}</h4>
                         </div>
                     </Link>

@@ -15,10 +15,10 @@ const images = [
         titulo: "Alimentación y nutrición",
     },
     {
-        src: '/social.jpg',
-        alt: 'Foto de Proyectos Sociales',
-        href: '/directorio/#sociales',
-        titulo: "Proyectos sociales",
+        src: '/personal.jpg',
+        alt: 'Foto de Cuidado Personal',
+        href: '/directorio/#personal',
+        titulo: "Cuidado personal y cosmético",
     },
     {
         src: '/hogar.jpg',
@@ -27,16 +27,16 @@ const images = [
         titulo: "Agricultura",
     },
     {
-        src: '/personal.jpg',
-        alt: 'Foto de Cuidado Personal',
-        href: '/directorio/#personal',
-        titulo: "Cuidado personal y cosmético",
+        src: '/social.jpg',
+        alt: 'Foto de Proyectos Sociales',
+        href: '/directorio/#sociales',
+        titulo: "Proyectos sociales",
     },
     {
-        src: '/hogar.jpg',
+        src: '/otros.jpg',
         alt: 'Foto de Otros',
         href: '/directorio/#otros',
-        titulo: "Otros",
+        titulo: "Otros servicios",
     },
 ]
 

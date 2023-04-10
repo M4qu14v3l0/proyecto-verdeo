@@ -22,11 +22,15 @@ const nosotros = [
         route: '/nosotros/#equipo'
     },
     {
-        label: 'Nuestros vlores y misión',
+        label: 'Nuestros valores',
+        route: '/nosotros/#valores'
+    },
+    {
+        label: 'Misión/Visión',
         route: '/nosotros/#mision'
     },
     {
-        label: 'Anuario Proyecto Verdeo',
+        label: 'Anuario',
         route: '/nosotros/#anuario'
     }
 ];

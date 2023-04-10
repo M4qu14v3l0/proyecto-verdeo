@@ -40,13 +40,13 @@ module.exports = {
         'voluntario': "url('/foto3.jpg')",
         'donar': "url('/foto4.jpg')",
         'donar2': "url('/donacion.jpg')",
-        'donar3': "url('/donar3.jpg')",
-        'tips': "url('/tips.jpg')",
+        'donar3': "url('/donar4.png')",
+        'tips': "url('/tips2.jpg')",
         'ayuda': "url('/foto5.jpg')",
         'hero': "url('/hero.jpg')",
         'hacemosPortada':"url('/portadaHacemos.svg')",
         'alpaca':"url('/alpaca.svg')",
-        'comunidad': "url('/comunidad.jpg')"
+        'comunidad': "url('/comunidad2.png')"
       },
       gridTemplateRows: {
         '16': 'repeat(3, auto)',

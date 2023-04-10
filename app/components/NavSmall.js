@@ -27,7 +27,7 @@ const nosotros = [
     },
     {
         label: 'Anuario Proyecto Verdeo',
-        route: '/nosotros/#valores'
+        route: '/nosotros/#anuario'
     }
 ];
 const ayuda = [

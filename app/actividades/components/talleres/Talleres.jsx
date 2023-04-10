@@ -19,7 +19,7 @@ const Talleres = () => {
     return (
         <section id='talleres' className='flex flex-col gap-5 mb-10 bg-[#F5A88C]'>
             <div className='flex flex-col gap-5 justify-center w-full'>
-                <h1 className='text-black text-center text-2xl'>Talleres ambientales</h1>
+                <h2 className='text-black text-center text-2xl font-titulos'>Talleres ambientales</h2>
                 <div className='bg-[#F7C6B5] w-[80%] m-auto text-center flex flex-col gap-5 p-5 rounded-xl shadow-2xl'>
                     <div className="w-full h-[250px] relative">
                         <Image 
@@ -51,7 +51,7 @@ const Talleres = () => {
                                 />
                             </div>
                             <div className="flex flex-col gap-5 justify-center items-center w-[80%] m-auto">
-                                <h1 className="text-xl font-semibold text-center">{taller.titulo}</h1>
+                                <h3 className="text-xl font-semibold text-center">{taller.titulo}</h3>
                                 <p className="text-center">{taller.texto}</p>
                                 <div className="flex flex-col gap-1 text-center">
                                     <p>Fecha: {taller.fecha}</p>

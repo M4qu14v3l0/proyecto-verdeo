@@ -4,15 +4,15 @@ import { useState } from "react";
 import fotoPortada from "../assets/img/logo-negro.png";
 import Link from "next/link";
 import arrowUp from '../assets/img/arrowUp.svg';
-import arrowDown from '../assets/img/arrowDown.svg';
+import arrowDownVerde from '../assets/img/arrowDownVerde.svg';
 
 const hacemos = [
     {
-        label: 'Talleres',
+        label: 'Talleres Ambientales',
         route: '/actividades/#talleres'
     },
     {
-        label: 'Proyectos',
+        label: 'Programa Abedules',
         route: '/actividades/#proyectos'
     },
 ];
@@ -22,12 +22,12 @@ const nosotros = [
         route: '/nosotros/#equipo'
     },
     {
-        label: 'Nuestra mision',
+        label: 'Nuestros valores y misión',
         route: '/nosotros/#mision'
     },
     {
-        label: 'Nuestros valores',
-        route: '/nosotros/#valores'
+        label: 'Anuario Proyecto Verdeo',
+        route: '/nosotros/#anuario'
     }
 ];
 const ayuda = [
@@ -69,17 +69,17 @@ const NavFull = () => {
             <Link className="w-1/6 py-2 flex" href="/">
                 <Image className="mx-auto h-16 w-auto hover:translate-y-cursor transition-all duration-300 ease-in-out" src={fotoPortada} onClick={() => cerrar()} alt="logo" priority />
             </Link>
-            <div className="flex min-[1200px]:w-4/6 h-auto min-[1120px]:justify-center">
+            <div className="flex min-[1300px]:w-4/6 h-auto min-[1120px]:justify-center min-[1120px]:gap-x-4">
                 
                 {/* actividades */}
-                <div className="flex flex-col mr-2">
+                <div className="flex flex-col mr-1">
                     {isHacerOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
                                 <h4 onClick={() => setIsHacerOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Lo que hacemos</h4>
                             </div>
                             <div className="flex my-auto">
-                                <Image src={arrowDown} alt='Replegar' onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
+                                <Image src={arrowDownVerde} alt='Replegar' onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
                             </div>
                         </div>
                         :
@@ -96,7 +96,7 @@ const NavFull = () => {
                         <ul className="animate-display2 pb-3">
                             {hacemos.map(({label, route}) => (
                                 <li className="flex mb-1" key={label}>
-                                    <a href={route} onClick={() => cerrar()} className="mb-1 font-thin hover:translate-y-cursor transition-all duration-250 ease-in-out">
+                                    <a href={route} onClick={() => cerrar()} className="mb-1 font-normal hover:translate-y-cursor transition-all duration-250 ease-in-out">
                                         {label}
                                     </a>
                                 </li>
@@ -107,14 +107,14 @@ const NavFull = () => {
                 </div>
 
                 {/* nosotros */}
-                <div className="flex flex-col mx-2">
+                <div className="flex flex-col mx-1">
                     {isNosOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
                                 <h4 onClick={() => setIsNosOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Nosotros</h4>
                             </div>
                             <div className="flex my-auto">
-                                <Image src={arrowDown} alt='Replegar' onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
+                                <Image src={arrowDownVerde} alt='Replegar' onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
                             </div>
                         </div>
                         :
@@ -131,7 +131,7 @@ const NavFull = () => {
                         <ul className="animate-display2 pb-3">
                             {nosotros.map(({label, route}) => (
                                 <li className="flex mb-1" key={label}>
-                                    <a href={route} onClick={() => cerrar()} className="mb-1 font-thin hover:translate-y-cursor transition-all duration-250 ease-in-out">
+                                    <a href={route} onClick={() => cerrar()} className="mb-1 font-normal hover:translate-y-cursor transition-all duration-250 ease-in-out">
                                         {label}
                                     </a>
                                 </li>
@@ -142,14 +142,14 @@ const NavFull = () => {
                 </div>
 
                 {/* ayuda */}
-                <div className="flex flex-col mx-2">
+                <div className="flex flex-col mx-1">
                     {isAyudaOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
                                 <h4 onClick={() => setIsAyudaOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Cómo Ayudar</h4>
                             </div>
                             <div className="flex my-auto">
-                                <Image src={arrowDown} alt='Replegar' onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
+                                <Image src={arrowDownVerde} alt='Replegar' onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
                             </div>
                         </div>
                         :
@@ -166,7 +166,7 @@ const NavFull = () => {
                         <ul className="animate-display2 pb-3">
                             {ayuda.map(({label, route}) => (
                                 <li className="flex mb-1" key={label}>
-                                    <a href={route} onClick={() => cerrar()} className="mb-1 font-thin hover:translate-y-cursor transition-all duration-250 ease-in-out">
+                                    <a href={route} onClick={() => cerrar()} className="mb-1 font-normal hover:translate-y-cursor transition-all duration-250 ease-in-out">
                                         {label}
                                     </a>
                                 </li>
@@ -177,14 +177,14 @@ const NavFull = () => {
                 </div>
 
                 {/* directorio */}
-                <div className="flex flex-col mx-2">
+                <div className="flex flex-col mx-1">
                     {isDirecOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
                                 <h4 onClick={() => setIsDirecOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Directorio Ecosostenible</h4>
                             </div>
                             <div className="flex my-auto">
-                                <Image src={arrowDown} alt='Replegar' onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
+                                <Image src={arrowDownVerde} alt='Replegar' onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
                             </div>
                         </div>
                         :
@@ -201,7 +201,7 @@ const NavFull = () => {
                         <ul className="animate-display2 pb-5">
                             {directorio.map(({label, route}) => (
                                 <li className="flex mb-1" key={label}>
-                                    <Link href={route} onClick={() => cerrar()} className="font-thin hover:translate-y-cursor transition-all duration-250 ease-in-out">
+                                    <Link href={route} onClick={() => cerrar()} className="mb-1 font-normal hover:translate-y-cursor transition-all duration-250 ease-in-out">
                                         {label}
                                     </Link>
                                 </li>
@@ -215,7 +215,7 @@ const NavFull = () => {
                 <div className="flex flex-col ml-2">
                     <div className="flex mt-7">
                         <div href='/' className="flex my-auto">
-                            <a onClick={() => cerrar()} href="/#footer"><h4 className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Contactanos</h4></a>
+                            <a onClick={() => cerrar()} href="/#footer"><h4 className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Contáctanos</h4></a>
                         </div>
                     </div>
                 </div>

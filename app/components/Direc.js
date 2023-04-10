@@ -44,7 +44,7 @@ const Directorio = () => {
     return (
         <div className="flex lg:hidden flex-col h-auto pb-16 px-4 bg-[#217948]">
             <div className="w-full h-2/10 mt-8 flex mx-auto flex-col mb-8">
-                <h2 className="text-center text-blanco font-bold text-4xl mb-6 mt-3">Directorio Ecosostenible</h2>
+                <h2 className="text-center text-blanco font-bold text-4xl mb-6 mt-3 font-titulos">Directorio Ecosostenible</h2>
                 <p className="text-center text-blanco text-sm">¿Sabías que cambiar la forma en cómo vives puede ayudar al planeta?</p>
                 <p className="text-center text-blanco text-sm mt-6">Acá podrás ver diferentes categorías.</p>
             </div>

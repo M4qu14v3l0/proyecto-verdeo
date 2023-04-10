@@ -15,11 +15,11 @@ const Proyectos = () => {
         <section id="proyectos" className=''>
             <div className='relative'>
                 <div className='bg-hacemosPortada bg-no-repeat w-full bg-cover h-[40vh] p-5'>
-                    <h2 className='text-center text-3xl text-white'>Lo que hacemos</h2>
+                    <h2 className='text-center text-3xl text-white font-titulos'>Lo que hacemos</h2>
                 </div>
             </div>
             <div className='flex flex-col gap-5 justify-center w-full relative bottom-[100px]'>
-                <h1 className='text-white text-center text-2xl'>Proyecto Abedul</h1>
+                <h2 className='text-white text-center text-2xl font-titulos'>Proyecto Abedul</h2>
                 <div className='bg-[#FFFBEB] w-[80%] m-auto text-center flex flex-col gap-5 p-5 rounded-xl shadow-2xl'>
                     <div className="w-full h-[250px] relative">
                         <Image 
@@ -36,7 +36,7 @@ const Proyectos = () => {
                 </div>
             </div>
                 <div className="flex flex-col gap-10 ">
-                    <h2 className="text-center font-semibold text-2xl">
+                    <h2 className="text-center font-semibold text-2xl font-titulos">
                         Consta de 3 ejes
                     </h2>
                     <div className="flex space-x-10 md:justify-around overflow-scroll scrollbar-hide w-5/6 m-auto">

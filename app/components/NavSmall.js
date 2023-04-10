@@ -4,15 +4,15 @@ import { useState } from "react";
 import fotoPortada from "../assets/img/logo-negro.png";
 import Link from "next/link";
 import arrowUp from '../assets/img/arrowUp.svg';
-import arrowDown from '../assets/img/arrowDown.svg';
+import arrowDownVerde from '../assets/img/arrowDownVerde.svg';
 
 const hacemos = [
     {
-        label: 'Talleres',
+        label: 'Talleres Ambintales',
         route: '/actividades/#talleres'
     },
     {
-        label: 'Proyectos',
+        label: 'Programa Abedules',
         route: '/actividades/#proyectos'
     },
 ];
@@ -22,11 +22,11 @@ const nosotros = [
         route: '/nosotros/#equipo'
     },
     {
-        label: 'Nuestra mision',
+        label: 'Nuestros vlores y misión',
         route: '/nosotros/#mision'
     },
     {
-        label: 'Nuestros valores',
+        label: 'Anuario Proyecto Verdeo',
         route: '/nosotros/#valores'
     }
 ];
@@ -117,7 +117,7 @@ const NavSmall = () => {
                                 <h4 onClick={() => setIsHacerOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Lo que hacemos</h4>
                             </div>
                             <div className="flex w-3/6">
-                                <Image src={arrowDown} alt='Replegar' onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
+                                <Image src={arrowDownVerde} alt='Replegar' onClick={() => setIsHacerOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
                             </div>
                         </div>  
                         :
@@ -135,7 +135,7 @@ const NavSmall = () => {
                             <ul className="animate-display2">
                                 {hacemos.map(({label, route}) => (
                                     <li className="flex" key={label}>
-                                        <a onClick={() => cerrar()} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                        <a onClick={() => cerrar()} href={route} className="font-normal ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
                                             {label}
                                         </a>
                                     </li>
@@ -152,7 +152,7 @@ const NavSmall = () => {
                                 <h4 onClick={() => setIsNosOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Nosotros</h4>
                             </div>
                             <div className="flex w-3/6">
-                                <Image src={arrowDown} alt='Replegar' onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
+                                <Image src={arrowDownVerde} alt='Replegar' onClick={() => setIsNosOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
                             </div>
                         </div>  
                         :
@@ -170,7 +170,7 @@ const NavSmall = () => {
                             <ul className="animate-display2">
                                 {nosotros.map(({label, route}) => (
                                     <li className="flex" key={label}>
-                                        <a onClick={() => cerrar()} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                        <a onClick={() => cerrar()} href={route} className="font-normal ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
                                             {label}
                                         </a>
                                     </li>
@@ -187,7 +187,7 @@ const NavSmall = () => {
                                 <h4 onClick={() => setIsAyudaOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Cómo ayudar</h4>
                             </div>
                             <div className="flex w-3/6">
-                                <Image src={arrowDown} alt='Replegar' onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
+                                <Image src={arrowDownVerde} alt='Replegar' onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
                             </div>
                         </div>  
                         :
@@ -205,7 +205,7 @@ const NavSmall = () => {
                             <ul className="animate-display2">
                                 {ayuda.map(({label, route}) => (
                                     <li className="flex" key={label}>
-                                        <a onClick={() => cerrar()} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                        <a onClick={() => cerrar()} href={route} className="font-normal ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
                                             {label}
                                         </a>
                                     </li>
@@ -222,7 +222,7 @@ const NavSmall = () => {
                                 <h4 onClick={() => setIsDirecOpen((prev) => !prev)} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F]">Directorio ecosostenible</h4>
                             </div>
                             <div className="flex w-3/6">
-                                <Image src={arrowDown} alt='Replegar' onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
+                                <Image src={arrowDownVerde} alt='Replegar' onClick={() => setIsDirecOpen((prev) => !prev)} className="cursor-pointer mr-auto" />
                             </div>
                         </div>  
                         :
@@ -240,7 +240,7 @@ const NavSmall = () => {
                             <ul className="animate-display2">
                                 {directorio.map(({label, route}) => (
                                     <li className="flex" key={label}>
-                                        <a onClick={() => cerrar()} href={route} className="font-thin ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                                        <a onClick={() => cerrar()} href={route} className="font-normal ml-3 hover:translate-y-cursor transition-all duration-150 ease-in-out">
                                             {label}
                                         </a>
                                     </li>
@@ -252,7 +252,7 @@ const NavSmall = () => {
                     {/* contactanos */}
                     <div className="flex justify-between items-center">
                             <div className="mr-2 flex flex-col my-2 ml-4 w-3/6">
-                                <a href="/#footer"><h4 onClick={() => cerrar()} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Contactanos</h4></a>
+                                <a href="/#footer"><h4 onClick={() => cerrar()} className="mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Contáctanos</h4></a>
                             </div>
                         </div>  
                 </div>

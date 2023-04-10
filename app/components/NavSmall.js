@@ -8,7 +8,7 @@ import arrowDownVerde from '../assets/img/arrowDownVerde.svg';
 
 const hacemos = [
     {
-        label: 'Talleres Ambintales',
+        label: 'Talleres Ambientales',
         route: '/actividades/#talleres'
     },
     {

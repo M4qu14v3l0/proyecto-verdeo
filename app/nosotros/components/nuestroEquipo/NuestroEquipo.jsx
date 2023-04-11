@@ -12,10 +12,10 @@ export default function NuestroEquipo() {
     return (
         <section id='equipo' className='mb-32'>
             <div className='flex flex-col text-center gap-10 mb-10'>
-                <h2 className='text-3xl font-bold font-titulos'>
+                <h2 className='text-3xl lg:text-4xl font-bold font-titulos'>
                     Nosotros
                 </h2>
-                <h2 className='text-3xl font-bold font-titulos'>
+                <h2 className='text-3xl lg:text-4xl font-bold font-titulos'>
                     Nuestro Equipo
                 </h2>
             </div>
@@ -31,8 +31,8 @@ export default function NuestroEquipo() {
                                 className='rounded-xl'
                                 />
                             </div>
-                            <h1 className='text-center text-3xl font-semibold'>{person.name}</h1>
-                            <p className='text-center '>{person.description.split('\n').map((description , index) => (
+                            <h1 className='font-botones text-center text-3xl font-semibold'>{person.name}</h1>
+                            <p className='font-botones text-center '>{person.description.split('\n').map((description , index) => (
                             <span key={index}>
                                 {description}
                                 <br />
@@ -44,7 +44,7 @@ export default function NuestroEquipo() {
                             target='_blank'
                         >
                             <BsLinkedin className='text-[#175A34] text-[25px]'/>
-                            <p className='text-[12px] font-semibold'>Ver perfil en Linkedin</p>
+                            <p className='font-botones text-[12px] font-semibold'>Ver perfil en Linkedin</p>
                         </Link>
                         </div>
                     ))

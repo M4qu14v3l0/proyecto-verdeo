@@ -61,14 +61,14 @@ export default function Footer() {
                             ))}
                         </ul>
                     </div>
-                    <a href="mailto:verdeoinformes@gmail.com" className="text-xs m-auto">{email}</a>
+                    <a href="mailto:verdeoinformes@gmail.com" className="font-botones text-xs m-auto">{email}</a>
                 </div>
             </div>
             <ul className="grid grid-cols-2 gap-3 pt-5 pb-5 w-11/12 mx-auto border-transparent border border-t-verde">
                 {links.map(({label, route}) => (
                     <li className="flex mx-auto" key={label}>
                         <Link href={route} className="text-sm hover:translate-y-cursor transition-all duration-150 ease-in-out">
-                            <p className="text-xs min-[360px]:text-sm">{label}</p>
+                            <p className="font-botones text-xs min-[360px]:text-sm">{label}</p>
                         </Link>
                     </li>
                 ))}

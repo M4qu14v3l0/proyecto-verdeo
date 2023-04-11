@@ -22,7 +22,7 @@ const Sociales = () => {
         :
         setVer(5);
     }
-    const sociales = empresas.filter(empresa => (empresa.rubro === "social"));
+    const sociales = empresas.filter(empresa => (empresa.rubro === "social")).sort((a, b) => a.titulo.localeCompare(b.titulo));
     return (
         <div id='sociales'>
             {sociales.length >= 1 ? 
@@ -35,8 +35,8 @@ const Sociales = () => {
                                 <div key={empresa.titulo} className="flex flex-col rounded-xl shadow-lg bg-amber-50 w-64 h-64 mx-2 my-2">
                                     <Image width={100} height={100} className="rounded-xl w-10 h-10 mx-auto mt-3" src={empresa.img} alt={empresa.titulo}/>
                                     <div className="flex flex-col mx-auto px-3 py-2 items-center">
-                                        <p className="font-bold text-center text-sm mb-2">{empresa.titulo}</p>
-                                        <p className="text-center text-xs mt-4">{empresa.descripcion}</p>
+                                        <p className="font-botones font-bold text-center text-sm mb-2">{empresa.titulo}</p>
+                                        <p className="font-botones text-center text-xs mt-4">{empresa.descripcion}</p>
                                     </div>
                                     <div className="flex justify-center items-center gap-x-4 mt-auto mb-4">
                                         {empresa.facebook?<Link href={empresa.facebook} target='_blank'><Image width={200} height={200} className='h-12 w-12' src={face} alt='Logo de Facebook' /></Link>:""}
@@ -47,7 +47,7 @@ const Sociales = () => {
                             ))}
                         </div>             
                     </div>
-                    {ver === 5 ? <button className='mx-auto mb-10 w-48 h-auto p-2 rounded-xl bg-verde hover:bg-verde2' onClick={handleClick}>Ver mas</button> : <button className='mx-auto mb-10 w-48 h-auto p-2 rounded-xl bg-verde hover:bg-verde2' onClick={handleClick}>Ver menos</button>}
+                    {ver === 5 ? <button className='mx-auto mb-10 w-[232px] h-[40px] lg:w-[238px] lg:h-[50px] p-2 rounded-xl bg-verde hover:bg-[#2F9D5F] text-blanco' onClick={handleClick}>Ver mas</button> : <button className='mx-auto mb-10 w-48 h-auto p-2 rounded-xl bg-verde hover:bg-verde2 text-blanco' onClick={handleClick}>Ver menos</button>}
                 </div>
             : ""}
         </div>

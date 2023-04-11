@@ -19,7 +19,7 @@ const Proyectos = () => {
                 </div>
             </div>
             <div className='flex flex-col gap-5 justify-center w-full relative bottom-[100px]'>
-                <h2 className='text-white text-center text-2xl font-titulos'>Proyecto Abedul</h2>
+                <h2 className='text-white text-center text-2xl font-titulos'>Programa Abedul</h2>
                 <div className='bg-[#FFFBEB] w-[80%] m-auto text-center flex flex-col gap-5 p-5 rounded-xl shadow-2xl'>
                     <div className="w-full h-[250px] relative">
                         <Image 
@@ -29,14 +29,14 @@ const Proyectos = () => {
                             style={{objectFit: 'contain'}}
                         />
                     </div>
-                    <h3 className='font-bold text-2xl'>Objetivo</h3>
-                    <p className='leading-1 font-semibold'>
+                    <h3 className='font-botones font-bold text-2xl'>Objetivo</h3>
+                    <p className='font-botones leading-1 font-semibold'>
                     Creemos que solo se ama lo que se conoce por lo que buscamos inculcar a niños, niñas y adolescentes de casas hogares el amor a la naturaleza a través del conocimiento y de actividades lúdicas.
                     </p>
                 </div>
             </div>
                 <div className="flex flex-col gap-10 ">
-                    <h2 className="text-center font-semibold text-2xl font-titulos">
+                    <h2 className="text-center font-semibold text-3xl lg:text-4xl font-titulos">
                         Consta de 3 ejes
                     </h2>
                     <div className="flex space-x-10 md:justify-around overflow-scroll scrollbar-hide w-5/6 m-auto">
@@ -58,7 +58,7 @@ const Proyectos = () => {
                                             </h3>
                                         </div>
                                         <div className="bg-white rounded-b-xl h-[90px] flex justify-center items-center">
-                                            <p className='leading-1 text-center text-black px-5 font-medium text-xs'>
+                                            <p className='font-botones leading-1 text-center text-black px-5 font-medium text-xs'>
                                                 {item.p}
                                             </p>
                                         </div>

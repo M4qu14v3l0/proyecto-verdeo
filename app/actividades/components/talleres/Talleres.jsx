@@ -19,7 +19,7 @@ const Talleres = () => {
     return (
         <section id='talleres' className='flex flex-col gap-5 mb-10 bg-[#F5A88C]'>
             <div className='flex flex-col gap-5 justify-center w-full'>
-                <h2 className='text-black text-center text-2xl font-titulos'>Talleres ambientales</h2>
+                <h2 className='text-black text-center text-3xl lg:text-4xl font-titulos'>Talleres ambientales</h2>
                 <div className='bg-[#F7C6B5] w-[80%] m-auto text-center flex flex-col gap-5 p-5 rounded-xl shadow-2xl'>
                     <div className="w-full h-[250px] relative">
                         <Image 
@@ -52,13 +52,13 @@ const Talleres = () => {
                             </div>
                             <div className="flex flex-col gap-5 justify-center items-center w-[80%] m-auto">
                                 <h3 className="text-xl font-semibold text-center">{taller.titulo}</h3>
-                                <p className="text-center">{taller.texto}</p>
+                                <p className="font-botones text-center">{taller.texto}</p>
                                 <div className="flex flex-col gap-1 text-center">
-                                    <p>Fecha: {taller.fecha}</p>
-                                    <p>Duración: {taller.duracion}</p>
-                                    <p>Enfoque: {taller.enfoque}</p>
+                                    <p className="font-botones">Fecha: {taller.fecha}</p>
+                                    <p className="font-botones">Duración: {taller.duracion}</p>
+                                    <p className="font-botones">Enfoque: {taller.enfoque}</p>
                                 </div>
-                                <button className="rounded-full bg-[#9F2E05] w-[180px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
+                                <button className="font-botones rounded-full bg-[#9F2E05] w-[180px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
                                     Quiero un taller
                                 </button>
                             </div>
@@ -79,9 +79,9 @@ const Talleres = () => {
                         </div>
                         <div className="flex flex-col gap-5 justify-center items-center w-[80%] m-auto">
                             <h1 className="text-xl font-semibold text-center">6. Activismo constante</h1>
-                            <p className="text-center">Dirigido a niños, niñas, adolescentes y público en general. Este taller busca informar y concientizar sobre la importancia de cómo nuestra alimentación influye en la naturaleza, y cómo optar por una alimentación saludable y basada en plantas puede ayudar a contribuir a la madre tierra.</p>
+                            <p className="font-botones text-center">Dirigido a niños, niñas, adolescentes y público en general. Este taller busca informar y concientizar sobre la importancia de cómo nuestra alimentación influye en la naturaleza, y cómo optar por una alimentación saludable y basada en plantas puede ayudar a contribuir a la madre tierra.</p>
 
-                            <button className="rounded-full bg-[#9F2E05] w-[240px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
+                            <button className="font-botones rounded-full bg-[#9F2E05] w-[240px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
                                 Enterarme en Instagram
                             </button>
                         </div>
@@ -106,14 +106,14 @@ const Talleres = () => {
                                     />
                                 </div>
                                 <div className="flex flex-col gap-5 justify-center items-center w-[80%] m-auto colForCard">
-                                    <h1 className="text-2xl font-semibold">{taller.titulo}</h1>
-                                    <p className="text-justify">{taller.texto}</p>
+                                    <h1 className="font-botones text-2xl font-semibold">{taller.titulo}</h1>
+                                    <p className="font-botones text-justify">{taller.texto}</p>
                                     <div className="flex flex-col gap-1 text-center">
-                                        <p>Fecha: {taller.fecha}</p>
-                                        <p>Duración: {taller.duracion}</p>
-                                        <p>Enfoque: {taller.enfoque}</p>
+                                        <p className="font-botones">Fecha: {taller.fecha}</p>
+                                        <p className="font-botones">Duración: {taller.duracion}</p>
+                                        <p className="font-botones">Enfoque: {taller.enfoque}</p>
                                     </div>
-                                    <button className="rounded-full bg-[#9F2E05] w-[180px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
+                                    <button className="font-botones rounded-full bg-[#9F2E05] w-[180px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
                                     Quiero un taller
                                 </button>
                                 </div>
@@ -124,8 +124,8 @@ const Talleres = () => {
                     }
                     <div className={`grid grid-cols-2 rounded-3xl h-[550px] bg-[#F7C6B5]`}>
                         <div className="flex flex-col gap-5 justify-center items-center w-[80%] m-auto">
-                            <h1 className="text-2xl font-semibold">6. Activismo constante</h1>
-                            <p className="text-justify">Dirigido a niños, niñas, adolescentes y público en general. Este taller busca informar y concientizar sobre la importancia de cómo nuestra alimentación influye en la naturaleza, y cómo optar por una alimentación saludable y basada en plantas puede ayudar a contribuir a la madre tierra.</p>
+                            <h1 className="font-botones text-2xl font-semibold">6. Activismo constante</h1>
+                            <p className="font-botones text-justify">Dirigido a niños, niñas, adolescentes y público en general. Este taller busca informar y concientizar sobre la importancia de cómo nuestra alimentación influye en la naturaleza, y cómo optar por una alimentación saludable y basada en plantas puede ayudar a contribuir a la madre tierra.</p>
                             <button className="rounded-full bg-[#9F2E05] w-[250px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
                             Enterarme en Instagram
                         </button>
@@ -141,12 +141,7 @@ const Talleres = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
-
-
         </section>
     )
 }

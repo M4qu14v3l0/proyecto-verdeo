@@ -32,7 +32,7 @@ const items= [
         class: "col-start-3 col-end-3 row-start-2 row-end-2 flex flex-col mt-3",
     },
     {
-        titulo: "Arboles",
+        titulo: "Árboles",
         img: "/arbol.svg",
         class: "col-start-2 col-end-2 row-start-3 row-end-3 flex flex-col mt-3",
     },
@@ -44,7 +44,7 @@ const TituloConsejos = () => {
             {items.map((item) => (
                 <div key={item.titulo} className={item.class}>
                     <Image width={500} height={500} className="w-1/4 mx-auto" alt={item.titulo} src={item.img} />
-                    <p className="text-center text-sm mt-1">{item.titulo}</p>
+                    <p className="font-botones text-center text-sm mt-1">{item.titulo}</p>
                 </div>
             ))}
         </div>

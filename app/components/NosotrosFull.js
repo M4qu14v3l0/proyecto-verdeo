@@ -3,21 +3,21 @@ import Link from 'next/link';
 
 const images = [
     {
-        src: '/equipo.jpeg',
+        src: '/equipo2.jpg',
         alt: 'Foto 3',
         href: '/nosotros/#equipo',
         titulo: "Nuestro Equipo",
         texto: "Somos un equipo de personas que buscamos compartir el conocimiento y el amor por la naturaleza y una vida en armonía.",
     },
     {
-        src: '/valores.jpg',
+        src: '/valores2.jpg',
         alt: 'Foto 1',
         href: '/nosotros/#valores',
         titulo: "Nuestros Valores",
         texto: '"La integridad es hacer lo correcto aunque nadie te esté mirando".',
     },
     {
-        src: '/mision.jpeg',
+        src: '/mision2.jpg',
         alt: 'Foto 4',
         href: '/nosotros/#mision',
         titulo: "Misión/Visión",
@@ -30,7 +30,7 @@ const NosotrosFull = () => {
         <div className="hidden lg:flex flex-col h-auto pb-20 px-10 bg-[#217948]">
             <div className="w-9/12 h-2/10 mt-8 flex mx-auto flex-col mb-12">
                 <h2 className="text-center text-blanco font-bold text-4xl mb-6 mt-3 font-titulos">Nosotros</h2>
-                <p className="text-center text-blanco text-sm">Buscamos hacer un cambio a traves del despertar interior</p>
+                <p className="font-botones text-center text-blanco text-sm">Buscamos hacer un cambio a traves del despertar interior</p>
             </div>
             <div className='flex w-9/12 mx-auto justify-around gap-x-12'>
                 {images.map ((image) => (
@@ -44,8 +44,8 @@ const NosotrosFull = () => {
                             />
                         </div>
                         <div className="col-start-1 col-end-1 row-start-1 row-end-1 h-3/6 2xl:h-2/6 mt-auto mx-auto flex flex-col z-30">
-                            <h4 className="text-center text-blanco font-bold text-xl mx-3">{image.titulo}</h4>
-                            <p className="text-center text-blanco text-sm mx-3 mt-4">{image.texto}</p>
+                            <h4 className="font-botones text-center text-blanco font-bold text-xl mx-3">{image.titulo}</h4>
+                            <p className="font-botones text-center text-blanco text-sm mx-3 mt-4">{image.texto}</p>
                         </div>
                     </Link>
                 ))}

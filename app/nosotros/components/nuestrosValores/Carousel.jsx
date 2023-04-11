@@ -56,7 +56,7 @@ return (
                       />
                   </div>
                     <div className="col-start-1 col-end-2 row-start-1 row-end-2 mt-auto mx-auto mb-6 flex flex-col z-30">
-                        <p className="text-center text-blanco text-sm px-8 mt-3">{item.titulo}</p>
+                        <p className="font-botones text-center text-blanco text-sm px-8 mt-3">{item.titulo}</p>
                     </div>
                 </div>
             );

@@ -43,10 +43,10 @@ module.exports = {
         'donar3': "url('/donar4.png')",
         'tips': "url('/tips2.jpg')",
         'ayuda': "url('/foto5.jpg')",
-        'hero': "url('/hero.jpg')",
+        'hero': "url('/hero2.jpg')",
         'hacemosPortada':"url('/portadaHacemos.svg')",
         'alpaca':"url('/alpaca.svg')",
-        'comunidad': "url('/comunidad2.png')"
+        'comunidad': "url('/comunidad3.jpg')"
       },
       gridTemplateRows: {
         '16': 'repeat(3, auto)',

@@ -5,7 +5,7 @@ export default function Anuario() {
   return (
     <section id="anuario" className="flex flex-col gap-5 text-center justify-center items-center">
         <h1 className="font-bold text-3xl font-titulos">Anuario Proyecto Verdeo</h1>
-        <p>Conoce todo sobre el proyecto desde sus comienzos</p>
+        <p className="font-botones">Conoce todo sobre el proyecto desde sus comienzos</p>
         <div className="relative h-[300px] w-2/3 m-auto">
             <Image
                 src={'/Anuario.svg'}

@@ -11,7 +11,7 @@ const images = [
         linkClass: "flex mx-auto rounded-3xl bg-verde w-[240px] h-[50px] hover:bg-[#2F9D5F] transition-all duration-300 ease-in-out"
     },
     {
-        src: '/tips2.png',
+        src: '/tips2.jpg',
         alt: 'Foto 1',
         href: '/ayuda/#donaciones',
         titulo: "Donar",
@@ -20,7 +20,7 @@ const images = [
         linkClass: "flex mx-auto rounded-3xl bg-rojo w-[240px] h-[50px] hover:bg-[#CF6842] transition-all duration-300 ease-in-out"
     },
     {
-        src: '/donar4.jpg',
+        src: '/donar4.png',
         alt: 'Foto 4',
         href: '/ayuda/#consejos',
         titulo: "7 formas de ayudar",

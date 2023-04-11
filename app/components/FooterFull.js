@@ -60,7 +60,7 @@ const FooterFull = () => {
             <ul className="flex pt-5 pb-10">
                 {links.map(({label, route}) => (
                     <li className="flex mx-8" key={label}>
-                        <Link href={route} className="font-botones text-sm hover:translate-y-cursor transition-all duration-150 ease-in-out">
+                        <Link href={route} className="font-botones text-sm font-semibold hover:translate-y-cursor transition-all duration-150 ease-in-out">
                             {label}
                         </Link>
                     </li>

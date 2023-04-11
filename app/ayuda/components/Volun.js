@@ -22,7 +22,7 @@ const voluntariado = () => {
     return (
         <div className='flex flex-col w-full'>
             <div className='flex bg-comunidad bg-center bg-no-repeat bg-cover h-[40vh] sm:h-[60vh]'>
-                <p className='font-botones mt-auto ml-auto p-2 text-blanco'>@mel.md.mel</p>
+                <Link href='https://www.instagram.com/mel.md.mel/' target="_blank" className='font-botones mt-auto ml-auto p-2 text-blanco'>@mel.md.mel</Link>
             </div>
             <h1 className='text-4xl lg:text-5xl text-center mt-7 lg:my-8 font-bold font-titulos'>Cómo ayudar</h1>
             <h2 id="voluntariado" className='text-center text-3xl lg:text-4xl my-7 lg:my-8 font-bold font-titulos'>Ser voluntario</h2>

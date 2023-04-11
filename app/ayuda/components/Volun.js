@@ -22,7 +22,7 @@ const voluntariado = () => {
     return (
         <div className='flex flex-col w-full'>
             <div className='flex bg-comunidad bg-center bg-no-repeat bg-cover h-[40vh] sm:h-[60vh]'>
-                <Link href='https://www.instagram.com/mel.md.mel/' target="_blank" className='font-botones mt-auto ml-auto p-2 text-blanco'>@mel.md.mel</Link>
+                <Link href='https://www.instagram.com/mel.md.mel/' target="_blank" className='p-3 text-xs lg:hidden font-botones ml-auto mt-auto text-blanco'>@mel.md.mel</Link>
             </div>
             <h1 className='text-4xl lg:text-5xl text-center mt-7 lg:my-8 font-bold font-titulos'>Cómo ayudar</h1>
             <h2 id="voluntariado" className='text-center text-3xl lg:text-4xl my-7 lg:my-8 font-bold font-titulos'>Ser voluntario</h2>
@@ -36,7 +36,7 @@ const voluntariado = () => {
                     ))}
                 </ol>
             </div>
-            <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfDg0qrqDcMfKo8W_12CqYupZxdYEBhnbxLxC5hUXokBli57w/viewform' target='_blank' className='w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] mx-auto mb-5 lg:mb-8 bg-verde hover:bg-[#2F9D5F] text-blanco text-lg text-center py-1 lg:py-2 px-3 rounded-xl'>Quiero ser voluntario</Link>
+            <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfDg0qrqDcMfKo8W_12CqYupZxdYEBhnbxLxC5hUXokBli57w/viewform' target='_blank' className='flex w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] mx-auto mb-5 lg:mb-8 bg-verde hover:bg-[#2F9D5F] rounded-xl'><p className='font-botones font-bold text-blanco text-center m-auto text-sm py-1 px-3'>Quiero ser voluntario</p></Link> 
         </div>
     )
 }

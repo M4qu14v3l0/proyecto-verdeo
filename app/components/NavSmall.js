@@ -256,7 +256,7 @@ const NavSmall = () => {
                     {/* contactanos */}
                     <div className="flex justify-between items-center">
                             <div className="mr-2 flex flex-col my-2 ml-4 w-3/6">
-                                <a href="/#footer"><h4 onClick={() => cerrar()} className="font-botones mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Contáctanos</h4></a>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRxUUKkLi_XG4SvFMsNZUzMdXjtc9jWRN0HrDXMPoVIgoNWw/viewform?usp=sf_link" target="_blank"><h4 onClick={() => cerrar()} className="font-botones mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Contáctanos</h4></a>
                             </div>
                         </div>  
                 </div>

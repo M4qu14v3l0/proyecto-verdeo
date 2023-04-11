@@ -219,7 +219,7 @@ const NavFull = () => {
                 <div className="flex flex-col pr-1 min-[1120px]:pr-2">
                     <div className="flex mt-7">
                         <div href='/' className="flex my-auto">
-                            <a onClick={() => cerrar()} href="/#footer"><h4 className="font-botones mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Contáctanos</h4></a>
+                            <a onClick={() => cerrar()} href="https://docs.google.com/forms/d/e/1FAIpQLSeRxUUKkLi_XG4SvFMsNZUzMdXjtc9jWRN0HrDXMPoVIgoNWw/viewform?usp=sf_link" target="_blank"><h4 className="font-botones mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out">Contáctanos</h4></a>
                         </div>
                     </div>
                 </div>

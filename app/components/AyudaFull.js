@@ -25,7 +25,7 @@ const images = [
         href: '/ayuda/#consejos',
         titulo: "Ayudar",
         textClass: "text-center font-botones font-bold m-auto text-sm",
-        texto: "Dedicación, disciplina y compromiso. ¡Únete para ser parte de Proyecto Verdeo!",
+        texto: "Dedicación, disciplina y compromiso. Cómo ayudar al planeta en tu día a día.",
         linkClass: "flex mx-auto rounded-3xl bg-amarillo w-[240px] h-[50px] hover:bg-[#F7CD7E] transition-all duration-300 ease-in-out"
     },
 ]

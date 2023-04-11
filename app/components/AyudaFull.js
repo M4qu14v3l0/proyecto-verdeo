@@ -8,7 +8,7 @@ const images = [
         titulo: "¡Quiero ser voluntario!",
         textClass: "text-blanco text-center font-botones font-bold m-auto text-sm",
         texto: "¿Encontrar el propósito de nuestras vidas a través de la preservación de la madre tierra?",
-        linkClass: "flex mx-auto rounded-3xl bg-verde w-[328px] h-[50px] hover:bg-[#2F9D5F] transition-all duration-300 ease-in-out"
+        linkClass: "flex mx-auto rounded-3xl bg-verde w-[240px] h-[50px] hover:bg-[#2F9D5F] transition-all duration-300 ease-in-out"
     },
     {
         src: '/donar4.png',
@@ -17,7 +17,7 @@ const images = [
         titulo: "Donar",
         textClass: "text-blanco text-center font-botones font-bold m-auto text-sm",
         texto: "Materiales de trabajo para los talleres e inversión monetaria para implementar nuestros proyectos.",
-        linkClass: "flex mx-auto rounded-3xl bg-rojo w-[328px] h-[50px] hover:bg-[#CF6842] transition-all duration-300 ease-in-out"
+        linkClass: "flex mx-auto rounded-3xl bg-rojo w-[240px] h-[50px] hover:bg-[#CF6842] transition-all duration-300 ease-in-out"
     },
     {
         src: '/tips2.jpg',
@@ -26,7 +26,7 @@ const images = [
         titulo: "Ayudar",
         textClass: "text-center font-botones font-bold m-auto text-sm",
         texto: "Dedicación, disciplina y compromiso. ¡Únete para ser parte de Proyecto Verdeo!",
-        linkClass: "flex mx-auto rounded-3xl bg-amarillo w-[328px] h-[50px] hover:bg-[#F7CD7E] transition-all duration-300 ease-in-out"
+        linkClass: "flex mx-auto rounded-3xl bg-amarillo w-[240px] h-[50px] hover:bg-[#F7CD7E] transition-all duration-300 ease-in-out"
     },
 ]
 
@@ -41,7 +41,7 @@ const AyudaFull = () => {
             <div className='flex w-9/12 h-auto mx-auto justify-around gap-x-12'>
                 {images.map ((image) => (
                     <div key={image.titulo} className="h-auto w-auto flex flex-col">
-                        <div className="h-56 w-72 grid mb-5 grid-cols-1 grid-rows-1">
+                        <div className="mx-auto h-56 w-72 grid mb-5 grid-cols-1 grid-rows-1">
                             <a className="col-start-1 col-end-1 row-start-1 row-end-1" href={image.href} >
                                 <Image width={150000}
                                 height={150000}

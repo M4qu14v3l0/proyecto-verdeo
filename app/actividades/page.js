@@ -4,7 +4,7 @@ import Talleres from './components/talleres/Talleres'
 
 const page = () => {
   return (
-    <main>
+    <main id='actividades'>
       <Proyectos />
       <Talleres />
       {/* comment */}

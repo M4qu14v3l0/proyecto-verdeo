@@ -28,7 +28,7 @@ const Sociales = () => {
             {sociales.length >= 1 ? 
                 <div className='flex flex-col bg-[#B0CBBB]'>
                     <Image width={100} height={200} className='h-16 w-16 mx-auto mt-4' src={social} alt='Imagen de Proyectos Sociales' />
-                    <h3 className='text-bold text-3xl text-center mt-2 mb-6 font-titulos'>Proyectos sociales</h3> 
+                    <h3 className='text-3xl lg:text-4xl font-bold text-center mt-2 mb-6 font-titulos'>Proyectos sociales</h3> 
                     <div className="flex justify-center gap-4 mb-2 flex-wrap px-2 pb-10">
                         <div className="flex justify-center gap-4 flex-wrap">
                             {sociales.slice(0, ver).map((empresa) => (

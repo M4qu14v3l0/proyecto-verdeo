@@ -28,7 +28,7 @@ const Moda = () => {
             {modas.length >= 1 ? 
                 <div className='flex flex-col'>
                     <Image width={100} height={200} className='h-16 w-16 mx-auto mt-4' src={moda} alt='Imagen de Moda' />
-                        <h3 className='text-bold text-3xl text-center mt-2 mb-6 text-blanco font-titulos'>Moda y accesorios</h3>  
+                        <h3 className='text-3xl lg:text-4xl font-bold text-center mt-2 mb-6 text-blanco font-titulos'>Moda y accesorios</h3>  
                         <div className="flex justify-center gap-4 mb-2 flex-wrap bg-[#217948] px-2 pb-10">
                         <div className="flex justify-center gap-4 flex-wrap">
                             {modas.slice(0, ver).map((empresa) => (

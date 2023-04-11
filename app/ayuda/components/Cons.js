@@ -155,7 +155,7 @@ const tips= [
         divClass: "flex flex-col lg:flex-row mb-6 lg:mb-12 lg:h-auto",
         img: "/arboles.jpg",
         svg: "/arbol.svg",
-        titulo: "Arboles",
+        titulo: "Árboles",
         texto: <p className="text-lg">Todo, absolutamente todo tiene vida en nuestro planeta.</p>,
         data:                            
             <ul>

@@ -6,7 +6,7 @@ import NuestrosValores from "./components/nuestrosValores/NuestrosValores"
 
 const Nosotros = () => {
   return (
-    <main>
+    <main id="nosotros">
       <NuestroEquipo />
       <NuestrosValores />
       <MisionVision />

@@ -4,7 +4,7 @@ import Voluntariado from './components/Volun';
 
 const ayuda = () => {
   return (
-    <div className='flex flex-col'>
+    <div id='ayuda' className='flex flex-col'>
       <Voluntariado />
       <Donaciones />
       <Consejos />

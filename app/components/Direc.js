@@ -3,25 +3,25 @@ import Link from 'next/link';
 
 const images = [
     {
-        src: '/moda.jpg',
+        src: '/moda2.jpg',
         alt: 'Foto de Moda',
         href: '/directorio/#moda',
         titulo: "Moda y accesorios",
     },
     {
-        src: '/alimentacion.jpg',
+        src: '/alimentacion3.jpg',
         alt: 'Foto de Alimentacion',
         href: '/directorio/#alimentacion',
         titulo: "Alimentación y nutrición",
     },
     {
-        src: '/personal.jpg',
+        src: '/personal2.jpg',
         alt: 'Foto de Cuidado Personal',
         href: '/directorio/#personal',
         titulo: "Cosmética y cuidado",
     },
     {
-        src: '/hogar.jpg',
+        src: '/hogar2.jpg',
         alt: 'Foto de Agricultura',
         href: '/directorio/#agro',
         titulo: "Agricultura",

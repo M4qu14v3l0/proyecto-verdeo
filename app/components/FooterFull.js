@@ -8,12 +8,12 @@ const links = [
         route: '/actividades'
     },
     {
-        label: 'Cómo ayudar',
-        route: '/ayuda'
-    },
-    {
         label: 'Nosotros',
         route: '/nosotros'
+    },
+    {
+        label: 'Cómo ayudar',
+        route: '/ayuda'
     },
     {
         label: 'Directorio ecosostenible',

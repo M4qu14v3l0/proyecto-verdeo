@@ -11,7 +11,7 @@ const images = [
         linkClass: "flex mx-auto rounded-3xl bg-verde w-[240px] h-[50px] hover:bg-[#2F9D5F] transition-all duration-300 ease-in-out"
     },
     {
-        src: '/donar4.png',
+        src: '/tips2.png',
         alt: 'Foto 1',
         href: '/ayuda/#donaciones',
         titulo: "Donar",
@@ -20,10 +20,10 @@ const images = [
         linkClass: "flex mx-auto rounded-3xl bg-rojo w-[240px] h-[50px] hover:bg-[#CF6842] transition-all duration-300 ease-in-out"
     },
     {
-        src: '/tips2.jpg',
+        src: '/donar4.jpg',
         alt: 'Foto 4',
         href: '/ayuda/#consejos',
-        titulo: "Ayudar",
+        titulo: "7 formas de ayudar",
         textClass: "text-center font-botones font-bold m-auto text-sm",
         texto: "Dedicación, disciplina y compromiso. Cómo ayudar al planeta en tu día a día.",
         linkClass: "flex mx-auto rounded-3xl bg-amarillo w-[240px] h-[50px] hover:bg-[#F7CD7E] transition-all duration-300 ease-in-out"

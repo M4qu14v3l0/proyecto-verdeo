@@ -29,7 +29,7 @@ const voluntariado = () => {
             <div className='bg-verde2 h-auto mb-5 lg:mb-8 w-11/12 lg:w-3/6 mx-auto p-4 lg:p-6 rounded-xl flex flex-col'>
                 <h4 className='font-botones font-bold mb-3 lg:mb-8 text-xl text-center'>¿De qué se trata?</h4>
                 <p className=' font-botonesmb-3 text-sm text-center'>Si eres una persona responsable, con ganas de aprender, formar parte de un equipo, desarrollar tus habilidades y contribuir a la sociedad ¡Esta es tu oportunidad!</p>
-                <p className=' font-botonesmb-3 text-sm text-center'>¿En qué puedes colaborar?</p>
+                <p className=' font-botonesmb-3 text-sm text-center my-4'>¿En qué puedes colaborar?</p>
                 <ol className='flex flex-col mb-2 mx-auto'>
                     {ejes.map(({titulo}) => (
                             <li key={titulo} className='font-botones font-bold text-sm text-center mb-3'>• {titulo}</li>

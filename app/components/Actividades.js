@@ -24,7 +24,7 @@ const actividades = [
 
 const Hacemos = () => {
     return (
-        <div className="w-11/12 flex mx-auto flex-col mt-6 lg:mt-10 lg:mb-10">
+        <div className="w-11/12 lg:w-9/12 flex mx-auto flex-col mt-6 lg:mt-10 lg:mb-10">
             <h2 className="text-center font-titulos font-bold text-3xl mb-4 lg:mb-6 lg:text-4xl">Lo que hacemos</h2>
             <p className="text-center font-botones text-sm mb-5 lg:mb-10">Compartimos, enseñamos y difundimos conocimiento sobre naturaleza, animales y cómo vivir en armonía a través de programas ambientales, talleres y charlas.</p>
             <div className="flex flex-col mb-8 lg:flex-row lg:justify-evenly">

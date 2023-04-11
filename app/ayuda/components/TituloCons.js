@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const items= [
     {
-        titulo: "Cultva tu espíritu y actúa",
+        titulo: "Cultiva tu espíritu y actúa",
         img: "/corazon.svg",
         class: "col-start-1 col-end-1 row-start-1 row-end-1 flex flex-col mt-3",
     },

@@ -15,7 +15,7 @@ const tips= [
         img: "/ropa.jpg",
         svg: "/ropa.svg",
         titulo: "Ropa y calzado",
-        texto: <p className="text-lg">Vuestra ropa esconde mucho de vuestra belleza y, sin embargo, no cubre lo que no es bello”- Khalil Gibran La compra compulsiva de ropa se debe en gran parte a la obsesión por la moda y la necesidad de tener muchas opciones de outfit inspiradas por los medios y tendencias. <Link href="https://www.greenpeace.org/mexico/blog/9514/fast-fashion/" target="_blank" className="underline">La moda rápida</Link> solo es una parte de una de las formas más terribles del <Link href="https://sds.uanl.mx/2022/12/14/consumismo-el-mal-del-ultimo-siglo/" target="_blank" className="underline">consumismo.</Link> <Link href="https://lasempresasverdes.com/el-fast-fashion-la-segunda-industria-mas-contaminante/" target="_blank" className="underline">Anualmente, el fast fashion consume aproximadamente 93 billones de litros de agua, la cantidad suficiente para abastecer a cinco millones de personas.</Link></p>,
+        texto: <p className="text-lg">“Vuestra ropa esconde mucho de vuestra belleza y, sin embargo, no cubre lo que no es bello” - Khalil Gibran. <br></br>La compra compulsiva de ropa se debe en gran parte a la obsesión por la moda y la necesidad de tener muchas opciones de outfit inspiradas por los medios y tendencias. <Link href="https://www.greenpeace.org/mexico/blog/9514/fast-fashion/" target="_blank" className="underline">La moda rápida</Link> solo es una parte de una de las formas más terribles del <Link href="https://sds.uanl.mx/2022/12/14/consumismo-el-mal-del-ultimo-siglo/" target="_blank" className="underline">consumismo.</Link> <Link href="https://lasempresasverdes.com/el-fast-fashion-la-segunda-industria-mas-contaminante/" target="_blank" className="underline">Anualmente, el fast fashion consume aproximadamente 93 billones de litros de agua, la cantidad suficiente para abastecer a cinco millones de personas.</Link></p>,
         data:                            
             <ul>
                 <li className="flex flex-col my-4">
@@ -23,7 +23,7 @@ const tips= [
                     <p className="indent-4 text-lg">Para alargar la vida de una prenda, puedes regalarla o donarla a alguien que la necesite en lugar de desecharla si ya no te queda o no te gusta.</p>
                 </li>
                 <li className="flex flex-col my-4">
-                    <p className="text-lg text-verde">2. Investiga de donde viene tu ropa</p>
+                    <p className="text-lg text-verde">2. Investiga de dónde viene tu ropa</p>
                     <p className="indent-4 text-lg">La moda puede involucrar explotación y agotamiento de recursos en la producción. Al investigar la procedencia y materiales de tu ropa, puedes tomar conciencia y elegir mejor. Busca noticias de fábricas ilegales donde asilan a personas para producir ropa de bajo costo para grandes marcas. Te recomendamos el documental <Link href="https://www.youtube.com/watch?v=5-0zHqYGnlo&ab_channel=ENDEVR" target="_blank" className="underline">“The true cost”.</Link></p>
                 </li>
                 <li className="flex flex-col my-4">
@@ -175,8 +175,8 @@ const Consejos = () => {
     return (
         <div id="consejos" className='flex flex-col lg:w-10/12 lg:mx-auto'>
             <h2 className='text-3xl lg:text-4xl text-center mt-5 lg:mt-8 font-bold px-2 font-titulos'>7 formas de ayudar</h2>
-            <p className='font-botones my-6 lg:my-10 text-lg text-center px-4'>¿Sabías que cambiar la forma en cómo vives puede ayudar al planeta?</p>
-            <p className='font-botones mb-8 lg:my-10 text-lg text-center px-4'>Te mostramos algunos pequeños cambios que podrás hacer donde estés.</p>
+            <p className='font-botones my-6 lg:my-6 text-lg text-center px-4'>¿Sabías que cambiar la forma en cómo vives puede ayudar al planeta?</p>
+            <p className='font-botones mb-8 lg:mb-10 text-lg text-center px-4'>Te mostramos algunos pequeños cambios que podrás hacer donde estés.</p>
             <TituloConsejos />
             {tips.map((tip) => (
                 <div className={tip.divClass} key={tip.titulo}>
@@ -185,7 +185,7 @@ const Consejos = () => {
                     </div>
                     <div className="flex flex-col px-6 w-full lg:w-6/12 lg:mx-auto">
                         <Image width={100} height={100} src={tip.svg} className="w-1/12 mt-4 mx-auto" alt={tip.titulo}/>
-                        <h3 className="text-center font-bold text-2xl mb-3 py-3">{tip.titulo}</h3>
+                        <h3 className="text-center font-titulos font-bold text-2xl mb-3 py-3">{tip.titulo}</h3>
                         {tip.texto}
                         {tip.data?
                             <div>

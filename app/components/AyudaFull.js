@@ -5,6 +5,7 @@ const images = [
         src: '/comunidad2.png',
         alt: 'Foto 3',
         href: '/ayuda/#voluntariado',
+        textoClass: "font-botones text-center text-blanco text-sm px-4",
         titulo: "¡Quiero ser voluntario!",
         textClass: "font-botones font-bold text-blanco text-center m-auto text-sm",
         texto: "¿Encontrar el propósito de nuestras vidas a través de la preservación de la madre tierra?",
@@ -14,6 +15,7 @@ const images = [
         src: '/tips2.jpg',
         alt: 'Foto 1',
         href: '/ayuda/#donaciones',
+        textoClass: "font-botones text-center text-blanco text-sm px-4",
         titulo: "Donar",
         textClass: "font-botones font-bold text-blanco text-center m-auto text-sm",
         texto: "Materiales de trabajo para los talleres e inversión monetaria para implementar nuestros proyectos.",
@@ -23,6 +25,7 @@ const images = [
         src: '/donar4.png',
         alt: 'Foto 4',
         href: '/ayuda/#consejos',
+        textoClass: "font-botones text-center text-blanco text-sm px-4 pb-5",
         titulo: "7 formas de ayudar",
         textClass: "font-botones font-bold text-center m-auto text-sm",
         texto: "Dedicación, disciplina y compromiso. Cómo ayudar al planeta en tu día a día.",
@@ -51,7 +54,7 @@ const AyudaFull = () => {
                                 />
                             </a>
                             <div className="col-start-1 col-end-1 row-start-1 row-end-1 mt-auto mx-auto mb-6 flex flex-col z-30">
-                                <p className="font-botones text-center text-blanco text-sm px-4">{image.texto}</p>
+                                <p className={image.textoClass}>{image.texto}</p>
                             </div>
                         </div>
                         <a href={image.href} className={image.linkClass}>

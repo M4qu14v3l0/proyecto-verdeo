@@ -10,8 +10,8 @@ const Donaciones = () => {
             <p className='font-botones my-6 lg:my-6 text-lg px-8 lg:px-32 text-center'>Si esta historia te resuena, tú puedes ayudar a que un próximo niño siga aprendiendo y construyendo monstruos que luchan por la naturaleza.</p>
             <p className='font-botones font-bold mb-4 lg:mb-4 text-sm px-8 lg:px-32 text-center'>Si te encuentras en otra parte del Perú o aquí mismo, pero en otra ciudad que no sea Lima, puedes apoyar a que más niños, niñas y adolescentes se beneficien de nuestros programas.</p>
             <div className='flex flex-col my-6 lg:my-8'>
-                <Link href='https://t.me/porlosbosques' target='_blank' className='flex mx-auto mb-6 bg-rojo hover:bg-[#CF6842] w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] rounded-xl'><p className='font-botones font-bold text-blanco text-center m-auto text-sm py-1 px-3'>Donar desde Perú</p></Link>
-                <Link href='https://t.me/porlosbosques' target='_blank' className='flex mx-auto mb-6 bg-rojo hover:bg-[#CF6842] w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] rounded-xl'><p className='font-botones font-bold text-blanco text-center m-auto text-sm py-1 px-3'>Donar desde el exterior</p></Link>
+                <Link href='https://t.me/porlosbosques' target='_blank' className='flex mx-auto mb-6 bg-rojo lg:hover:bg-[#CF6842] w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] rounded-xl'><p className='font-botones font-bold text-blanco text-center m-auto text-sm py-1 px-3'>Donar desde Perú</p></Link>
+                <Link href='https://t.me/porlosbosques' target='_blank' className='flex mx-auto mb-6 bg-rojo lg:hover:bg-[#CF6842] w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] rounded-xl'><p className='font-botones font-bold text-blanco text-center m-auto text-sm py-1 px-3'>Donar desde el exterior</p></Link>
             </div>
         </div>
     )

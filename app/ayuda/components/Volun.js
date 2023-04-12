@@ -36,7 +36,7 @@ const voluntariado = () => {
                     ))}
                 </ol>
             </div>
-            <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfDg0qrqDcMfKo8W_12CqYupZxdYEBhnbxLxC5hUXokBli57w/viewform' target='_blank' className='flex w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] mx-auto mb-5 lg:mb-8 bg-verde hover:bg-[#2F9D5F] rounded-xl'><p className='font-botones font-bold text-blanco text-center m-auto text-sm py-1 px-3'>¡Quiero ser voluntario!</p></Link> 
+            <Link href='https://docs.google.com/forms/d/e/1FAIpQLSfDg0qrqDcMfKo8W_12CqYupZxdYEBhnbxLxC5hUXokBli57w/viewform' target='_blank' className='flex w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] mx-auto mb-5 lg:mb-8 bg-verde lg:hover:bg-[#2F9D5F] rounded-xl'><p className='font-botones font-bold text-blanco text-center m-auto text-sm py-1 px-3'>¡Quiero ser voluntario!</p></Link> 
         </div>
     )
 }

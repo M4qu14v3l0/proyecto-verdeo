@@ -70,6 +70,11 @@ const NavSmall = () => {
             setIsNavOpen(false);
         };
     }
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+        });
+    };
     return (
         <nav className="shadow-[2px_2px_4px_0px_#00000040;] flex lg:hidden flex-col fixed top-0 left-0 right-0 bg-amber-50">
             <div className="flex items-center">
@@ -99,9 +104,9 @@ const NavSmall = () => {
                 </div>
                 }
                 <div className="flex w-4/6 mr-auto">
-                    <Link className="flex h-20 w-20 mx-auto" href="/" onClick={() => cerrar()}>
-                        <Image className="my-auto hover:translate-y-cursor transition-all duration-300 ease-in-out" src={fotoPortada} alt="logo" priority />
-                    </Link>
+                <Link className="flex h-20 w-20 mx-auto" href="/" onClick={() => { cerrar(); scrollToTop(); }}>
+                    <Image className="my-auto hover:translate-y-cursor transition-all duration-300 ease-in-out" src={fotoPortada} alt="logo" priority />
+                </Link>
                 </div>
             </div>
             {isNavOpen === true ?

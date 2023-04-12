@@ -23,17 +23,17 @@ const links = [
 const redes = [
     {
         label: 'Logo de Facebook',
-        img: "/facebook.png",
+        img: "/facebook.svg",
         route: 'https://www.facebook.com/ProyectoVerdeo/'
     },
     {
         label: 'Logo de Instagram',
-        img: "/instagram.png",
+        img: "/instagram.svg",
         route: 'https://www.instagram.com/proyectoverdeo/'
     },
     {
         label: 'Logo de Linktree',
-        img: "/linktree.png",
+        img: "/linktree.svg",
         route: 'https://linktr.ee/proyectoverdeo'
     }
 ]
@@ -51,11 +51,11 @@ const FooterFull = () => {
                 <Image width={500} height={500} className="w-auto h-20 hover:translate-y-cursor transition-all duration-200 ease-in-out" src={fotoPortada} alt="Foto de Portada" priority />
             </Link>
             <div className="flex my-auto flex-col ml-4"> 
-                <ul className="flex gap-7 mb-2 mx-auto">                        
+                <ul className="flex mx-auto">                        
                     {redes.map(({label, route, img}) => (
                         <li key={route}>
                             <Link href={route} target='_blank'>
-                                <Image width={500} height={500} className="w-6 h-6 hover:translate-y-cursor transition-all duration-150 ease-in-out" src={img} alt={label} />
+                                <Image width={500} height={500} className="w-12 h-12 hover:translate-y-cursor transition-all duration-150 ease-in-out" src={img} alt={label} />
                             </Link>
                         </li>
                     ))}

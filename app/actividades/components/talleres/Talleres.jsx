@@ -115,7 +115,7 @@ const Talleres = () => {
                                         <p className="font-botones">Enfoque: {taller.enfoque}</p>
                                     </div>
                                     <Link href={'https://docs.google.com/forms/d/e/1FAIpQLSeRxUUKkLi_XG4SvFMsNZUzMdXjtc9jWRN0HrDXMPoVIgoNWw/viewform'} target="_blank">
-                                        <button className="font-botones rounded-full bg-[#9F2E05] w-[180px] px-5 py-2 text-white font-medium flex justify-center items-center m-5 hover:bg-[#CF6842] transition-all duration-300 ease-in-out">
+                                        <button className="font-botones rounded-full bg-[#9F2E05] w-[180px] px-5 py-2 text-white font-medium flex justify-center items-center m-5 lg:hover:bg-[#CF6842] transition-all duration-300 ease-in-out">
                                         Quiero un taller
                                         </button>
                                     </Link>
@@ -130,7 +130,7 @@ const Talleres = () => {
                             <h1 className="font-botones text-2xl font-semibold">6. Activismo constante</h1>
                             <p className="font-botones text-justify">Como proyecto nos unimos a las diferentes causas sociales y ambientales por lo que constantemente participamos de manera libre e independiente en diversas manifestaciones. Puedes unirte al grupo cuando hacemos las convocatorias a través de nuestras redes sociales.</p>
                             <Link href={'https://www.instagram.com/proyectoverdeo/'} target="_blank">
-                                <button className="rounded-full bg-[#9F2E05] w-[250px] px-5 py-2 text-white font-medium flex justify-center items-center m-5 hover:bg-[#CF6842] transition-all duration-300 ease-in-out">
+                                <button className="rounded-full bg-[#9F2E05] w-[250px] px-5 py-2 text-white font-medium flex justify-center items-center m-5 lg:hover:bg-[#CF6842] transition-all duration-300 ease-in-out">
                                 Enterarme en Instagram
                                 </button>
                             </Link>

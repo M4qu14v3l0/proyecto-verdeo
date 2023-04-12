@@ -8,7 +8,7 @@ const images = [
         titulo: "¡Quiero ser voluntario!",
         textClass: "font-botones font-bold text-blanco text-center m-auto text-sm",
         texto: "¿Encontrar el propósito de nuestras vidas a través de la preservación de la madre tierra?",
-        linkClass: "flex mx-auto rounded-3xl bg-verde w-[240px] h-[50px] hover:bg-[#2F9D5F] transition-all duration-300 ease-in-out"
+        linkClass: "flex mx-auto rounded-3xl bg-verde w-[240px] h-[50px] lg:hover:bg-[#2F9D5F] transition-all duration-300 ease-in-out"
     },
     {
         src: '/tips2.jpg',
@@ -17,7 +17,7 @@ const images = [
         titulo: "Donar",
         textClass: "font-botones font-bold text-blanco text-center m-auto text-sm",
         texto: "Materiales de trabajo para los talleres e inversión monetaria para implementar nuestros proyectos.",
-        linkClass: "flex mx-auto rounded-3xl bg-rojo w-[240px] h-[50px] hover:bg-[#CF6842] transition-all duration-300 ease-in-out"
+        linkClass: "flex mx-auto rounded-3xl bg-rojo w-[240px] h-[50px] lg:hover:bg-[#CF6842] transition-all duration-300 ease-in-out"
     },
     {
         src: '/donar4.png',
@@ -26,7 +26,7 @@ const images = [
         titulo: "7 formas de ayudar",
         textClass: "font-botones font-bold text-center m-auto text-sm",
         texto: "Dedicación, disciplina y compromiso. Cómo ayudar al planeta en tu día a día.",
-        linkClass: "flex mx-auto rounded-3xl bg-amarillo w-[240px] h-[50px] hover:bg-[#F7CD7E] transition-all duration-300 ease-in-out"
+        linkClass: "flex mx-auto rounded-3xl bg-amarillo w-[240px] h-[50px] lg:hover:bg-[#F7CD7E] transition-all duration-300 ease-in-out"
     },
 ]
 

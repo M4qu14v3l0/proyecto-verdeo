@@ -68,9 +68,14 @@ const NavFull = () => {
             setIsDirecOpen(false)
         };
     }
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+        });
+    };
     return (
         <nav className="shadow-[2px_2px_4px_0px_#00000040;] hidden lg:flex fixed top-0 left-0 right-0 bg-amber-50">
-            <Link className="w-1/6 py-2 flex" href="/">
+            <Link className="w-1/6 py-2 flex" href="/" onClick={() => { cerrar(); scrollToTop(); }}>
                 <Image className="mx-auto h-16 w-auto hover:translate-y-cursor transition-all duration-300 ease-in-out" src={fotoPortada} onClick={() => cerrar()} alt="logo" priority />
             </Link>
             <div className="flex min-[1300px]:w-4/6 h-auto min-[1120px]:justify-center min-[1120px]:gap-x-3">

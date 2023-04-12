@@ -24,7 +24,7 @@ const ScrollButton = () =>{
         });
     };
     return (
-            <Image className='m-auto hover:animate-pulse fixed w-10 h-10 right-1 lg:right-4 bottom-20 min-[450px]:bottom-36 lg:bottom-8 z-50 cursor-pointer' onClick={bottomToTop} style={{display: visible ? 'inline' : 'none'}} src={arrowUp} alt="Flecha Subir" priority/>
+            <Image className='m-auto hover:animate-pulse fixed w-10 h-10 right-1 lg:right-4 bottom-16 mb-3 lg:mb-0 min-[450px]:bottom-36 min-[450px]:mb-1 lg:bottom-8 z-50 cursor-pointer' onClick={bottomToTop} style={{display: visible ? 'inline' : 'none'}} src={arrowUp} alt="Flecha Subir" priority/>
     );
 }
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import face from '../../assets/img/facebook.svg';
-import inst from '../../assets/img/instagram.svg';
+import face from '../../assets/img/facebook2.svg';
+import inst from '../../assets/img/instagram2.svg';
 import web from '../../assets/img/web2.svg';
 import agricultura from '../../assets/img/agricultura.svg';
 import {useState, useEffect} from 'react';
@@ -48,7 +48,7 @@ const Agro = () => {
                             ))}
                         </div>              
                     </div>
-                    {ver === 5 ? <button className='flex mx-auto mb-10 w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] rounded-xl bg-verde hover:bg-verde2 text-blanco' onClick={handleClick}><p className='font-botones font-bold text-blanco text-center m-auto text-sm'>Ver más</p></button> : <button className='flex mx-auto mb-10 w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] rounded-xl bg-verde hover:bg-verde2 text-blanco' onClick={handleClick}><p className='font-botones font-bold text-blanco text-center m-auto text-sm'>Ver menos</p></button>}
+                    {ver === 5 ? <button className='flex mx-auto mb-10 w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] rounded-xl bg-verde lg:hover:bg-verde2 text-blanco' onClick={handleClick}><p className='font-botones font-bold text-blanco text-center m-auto text-sm'>Ver más</p></button> : <button className='flex mx-auto mb-10 w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] rounded-xl bg-verde lg:hover:bg-verde2 text-blanco' onClick={handleClick}><p className='font-botones font-bold text-blanco text-center m-auto text-sm'>Ver menos</p></button>}
                 </div>
             : ""}
         </div>

@@ -69,7 +69,7 @@ const Proyectos = () => {
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                    <button className="rounded-full bg-[#175A34] w-[180px] px-5 py-2 text-white font-medium m-5 hover:bg-[#2F9D5F] transition-all duration-300 ease-in-out lg:mb-0">
+                    <button className="rounded-full bg-[#175A34] w-[180px] px-5 py-2 text-white font-medium m-5 lg:hover:bg-[#2F9D5F] transition-all duration-300 ease-in-out lg:mb-0">
                         Quiero informarme
                     </button>
 

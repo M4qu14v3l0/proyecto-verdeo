@@ -79,7 +79,7 @@ const tips= [
     },
     {
         divClass: "flex flex-col lg:flex-row-reverse mb-6 lg:mb-12 lg:h-auto",
-        img: "/alimentacion.jpg",
+        img: "/alimentacion3.jpg",
         svg: "/fruta.svg",
         titulo: "Alimentación",
         texto: <p className="text-lg">“Que tu alimentación sea tu alimento” - Hipócrates</p>,

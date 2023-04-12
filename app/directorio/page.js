@@ -17,7 +17,7 @@ export default function Page() {
   }, []);
   return (
     <div className='flex flex-col w-full bg-[#217948] h-auto'>
-      {empresas.length >= 1 ? <h2 className='text-bold text-4xl lg:text-5xl text-center mt-10 mb-6 px-4 text-blanco font-titulos'>Directorio ecosostenible</h2> : ""}
+      {empresas.length >= 1 ? <h2 className='text-bold text-4xl lg:text-5xl text-center mt-10 mb-6 px-4 text-blanco font-titulos'>Directorio Ecosostenible</h2> : ""}
       <Moda />
       <Alimentos />
       <Personal />

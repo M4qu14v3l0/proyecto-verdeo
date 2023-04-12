@@ -8,7 +8,7 @@ const actividades = [
         divclass: "flex flex-col items-center bg-verde rounded-2xl mb-4 py-20 px-4 w-auto h-[456px] lg:w-11/12 lg:h-full",
         titleclass: "text-center text-blanco text-8xl font-bold font-titulos",
         textClass: "font-botones font-bold text-blanco text-center m-auto text-sm",
-        linkclass:"flex mx-auto mb-8 rounded-3xl bg-verde w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] hover:bg-[#2F9D5F] transition-all duration-300 ease-in-out lg:mb-0"
+        linkclass:"flex mx-auto mb-8 rounded-3xl bg-verde w-[232px] h-[40px] lg:w-[328px] lg:h-[60px] hover:bg-[#2F9D5F] transition-all duration-300 ease-in-out lg:mb-0"
     },
     {
         title: "TA",
@@ -18,7 +18,7 @@ const actividades = [
         divclass: "flex flex-col items-center bg-rojo rounded-2xl mb-4 py-20 px-4 w-auto h-[456px] lg:w-11/12 lg:h-full",
         titleclass: "text-center text-blanco text-8xl font-bold font-titulos",
         textClass: "font-botones font-bold text-blanco text-center m-auto text-sm",
-        linkclass:"flex mx-auto rounded-3xl bg-rojo w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] hover:bg-[#CF6842] transition-all duration-300 ease-in-out"
+        linkclass:"flex mx-auto rounded-3xl bg-rojo w-[232px] h-[40px] lg:w-[328px] lg:h-[60px] hover:bg-[#CF6842] transition-all duration-300 ease-in-out"
     },
 ]
 

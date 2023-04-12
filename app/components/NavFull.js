@@ -150,7 +150,7 @@ const NavFull = () => {
                     {isAyudaOpen === true ? 
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
-                                <h4 onClick={() => setIsAyudaOpen((prev) => !prev)} className="font-botones mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F] pr-3">Cómo Ayudar</h4>
+                                <h4 onClick={() => setIsAyudaOpen((prev) => !prev)} className="font-botones mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out text-[#56B87F] pr-3">Cómo ayudar</h4>
                             </div>
                             <div className="flex my-auto">
                                 <Image src={arrowDownVerde} alt='Replegar' onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />
@@ -159,7 +159,7 @@ const NavFull = () => {
                         :
                         <div className="flex mt-5">
                             <div href='/' className="flex my-auto">
-                                <h4 onClick={() => setIsAyudaOpen((prev) => !prev)} className="font-botones mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out pr-3">Cómo Ayudar</h4>
+                                <h4 onClick={() => setIsAyudaOpen((prev) => !prev)} className="font-botones mr-auto hover:translate-y-cursor cursor-pointer font-bold transition-all duration-150 ease-in-out pr-3">Cómo ayudar</h4>
                             </div>
                             <div className="flex my-auto">
                                 <Image src={arrowUp} alt='Desplegar' onClick={() => setIsAyudaOpen((prev) => !prev)} className="cursor-pointer mb-auto mr-auto" />

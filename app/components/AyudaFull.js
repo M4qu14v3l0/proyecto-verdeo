@@ -35,7 +35,7 @@ const AyudaFull = () => {
         <div className="hidden lg:flex flex-col h-auto pb-16 px-10">
             <div className="w-9/12 h-2/10 mt-8 flex mx-auto flex-col mb-12">
                 <h2 className="text-center font-bold text-4xl mb-6 mt-3 font-titulos">Cómo Ayudar</h2>
-                <p className="font-botones text-center text-sm">Queremos que lo que difundimos y hacemos llegue a muchas más personas en todo el mundo, por eso tu apoyo siendo nuestro embajador de las redes sociales es importante en nuestra labor.</p>
+                <p className="font-botones text-center text-sm">Queremos que lo que difundimos y hacemos llegue a muchas más personas en todo el mundo. Por eso tu apoyo siendo nuestro embajador de las redes sociales y es importante en nuestra labor.</p>
                 <p className="font-botones text-center text-sm mt-6">¡Habla de la naturaleza y comparte!</p>
             </div>
             <div className='flex w-9/12 h-auto mx-auto justify-around gap-x-12'>

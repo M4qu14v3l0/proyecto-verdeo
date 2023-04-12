@@ -18,7 +18,7 @@ const ayudas = [
     },
     {
         title: "7 formas de ayudar",
-        text: "Dedicación, disciplina y compromiso. Cómo ayudar al planeta en tu día a día",
+        text: "Dedicación, disciplina y compromiso. Cómo ayudar al planeta en tu día a día.",
         route: '/ayuda/#consejos',
         divclass: "flex flex-col justify-center bg-donar3 bg-cover bg-no-repeat bg-center h-80 rounded-xl mb-4",
         textClass: "font-botones font-bold text-center m-auto text-sm",
@@ -30,7 +30,7 @@ const Ayuda = () => {
     return (
         <div className="lg:hidden w-11/12 flex mx-auto flex-col my-6">
             <h2 className="text-center font-bold text-3xl mb-4 font-titulos">Cómo Ayudar</h2>
-            <p className="font-botones text-center text-sm">Queremos que lo que difundimos y hacemos llegue a muchas más personas en todo el mundo, por eso tu apoyo siendo nuestro embajador de las redes sociales es importante en nuestra labor.</p>
+            <p className="font-botones text-center text-sm">Queremos que lo que difundimos y hacemos llegue a muchas más personas en todo el mundo. Por eso tu apoyo siendo nuestro embajador de las redes sociales y es importante en nuestra labor.</p>
             <p className="font-botones text-center text-sm my-6">¡Habla de la naturaleza y comparte!</p>
             {ayudas.map(({title, text, route, divclass, linkclass, textClass}) => (
                 <div className="flex flex-col justify-center" key={title}>

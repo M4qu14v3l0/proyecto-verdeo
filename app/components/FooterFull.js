@@ -16,7 +16,7 @@ const links = [
         route: '/ayuda#ayuda'
     },
     {
-        label: 'Directorio ecosostenible',
+        label: 'Directorio Ecosostenible',
         route: '/directorio',
     },
 ]

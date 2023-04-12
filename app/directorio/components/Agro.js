@@ -48,7 +48,7 @@ const Agro = () => {
                             ))}
                         </div>              
                     </div>
-                    {ver === 5 ? <button className='mx-auto mb-10 w-[232px] h-[40px] lg:w-[238px] lg:h-[50px] p-2 rounded-xl bg-verde hover:bg-[#2F9D5F] text-blanco' onClick={handleClick}>Ver más</button> : <button className='mx-auto mb-10 w-48 h-auto p-2 rounded-xl bg-verde hover:bg-verde2 text-blanco' onClick={handleClick}>Ver menos</button>}
+                    {ver === 5 ? <button className='flex mx-auto mb-10 w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] rounded-xl bg-verde hover:bg-verde2 text-blanco' onClick={handleClick}><p className='font-botones font-bold text-blanco text-center m-auto text-sm'>Ver más</p></button> : <button className='flex mx-auto mb-10 w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] rounded-xl bg-verde hover:bg-verde2 text-blanco' onClick={handleClick}><p className='font-botones font-bold text-blanco text-center m-auto text-sm'>Ver menos</p></button>}
                 </div>
             : ""}
         </div>

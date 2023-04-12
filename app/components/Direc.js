@@ -41,6 +41,11 @@ const images = [
 ]
 
 const Directorio = () => {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+        });
+    };
     return (
         <div className="flex lg:hidden flex-col h-auto pb-16 px-4 bg-[#217948]">
             <div className="w-full h-2/10 mt-8 flex mx-auto flex-col mb-8">
@@ -50,7 +55,7 @@ const Directorio = () => {
             </div>
             <div className='flex w-full h-62 px-4 gap-x-8 items-center overflow-x-scroll overflow-y-hidden'>
                 {images.map ((image) => (
-                    <Link href={image.href} key={image.titulo} className="h-52 w-44 flex flex-col">
+                    <Link onClick={scrollToTop} href={image.href} key={image.titulo} className="h-52 w-44 flex flex-col">
                         <div className="h-full w-44">
                             <Image width={150000}
                             height={150000}

@@ -47,7 +47,7 @@ const Otros = () => {
                             ))}
                         </div>              
                     </div>
-                    {ver === 5 ? <button className='flex mx-auto mb-10 w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] rounded-xl bg-verde lg:hover:bg-verde2 text-blanco' onClick={handleClick}><p className='font-botones font-bold text-blanco text-center m-auto text-sm'>Ver más</p></button> : <button className='flex mx-auto mb-10 w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] rounded-xl bg-verde lg:hover:bg-verde2 text-blanco' onClick={handleClick}><p className='font-botones font-bold text-blanco text-center m-auto text-sm'>Ver menos</p></button>}
+                    {ver === 5 ? <button className='flex mx-auto mb-10 w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] rounded-xl bg-verde lg:hover:bg-verde2 text-blanco' onClick={handleClick}><p className='font-botones font-bold text-blanco text-center m-auto text-sm'>Ver más</p></button> : <a href="/directorio#otros" className='flex mx-auto mb-10 w-[232px] h-[40px] lg:w-[328px] lg:h-[50px] rounded-xl bg-verde lg:hover:bg-verde2 text-blanco' onClick={handleClick}><p className='font-botones font-bold text-blanco text-center m-auto text-sm'>Ver menos</p></a>}
                 </div>
             : ""}
         </div>

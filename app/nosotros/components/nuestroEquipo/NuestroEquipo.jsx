@@ -19,7 +19,7 @@ export default function NuestroEquipo() {
                     Nuestro Equipo
                 </h2>
             </div>
-            <div className='max-w-[90%] md:max-w-3xl m-auto flex flex-col gap-5 md:flex-row'>
+            <div className='max-w-[90%] gap-10 md:max-w-3xl lg:max-w-5xl m-auto flex flex-col md:gap-24 lg:gap-40 md:flex-row'>
                 {
                     verdeoTeam.map(person => (
                         <div key={person.id} className={`border-solid border-2 border-[#175A34] rounded-xl p-4 flex flex-col gap-5 relative w-full shadow-xl`}>

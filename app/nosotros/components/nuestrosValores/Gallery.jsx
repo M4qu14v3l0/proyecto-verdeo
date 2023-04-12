@@ -16,7 +16,7 @@ const listItems = [
 
 export default function Gallery() {
   return (
-    <div className="mt-[150px] w-[80%] m-auto grid grid-cols-3 gap-3">
+    <div className="mt-[150px] w-[80%] 2xl:w-[50%] m-auto grid grid-cols-3 gap-3 md:gap-9">
       {
         listItems.map((item , index) => (
           <div key={index} className="relative w-full h-[230px]">

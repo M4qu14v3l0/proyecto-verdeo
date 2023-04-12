@@ -16,7 +16,7 @@ export default function Anuario() {
             />
         </div>
         <Link 
-          className="w-64 h-12 rounded-full font-bold bg-[#F2AC29] flex justify-center items-center mb-20"
+          className="w-64 h-12 rounded-full font-bold bg-[#F2AC29] flex justify-center items-center mb-20 hover:bg-[#F7CD7E] transition-all duration-300 ease-in-out lg:mb-0"
           href={'https://drive.google.com/file/d/1GdBnjjDn1pXUhzicm5NgnNBzCcqdz1Q4/view'}
           target="_blank"
           >

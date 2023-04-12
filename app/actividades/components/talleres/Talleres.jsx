@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const talleres = [
     {id:1 , img:'/tallerCompostaje.svg' , titulo: '1. Taller de compostaje' , texto:'Dirigido a niños, niñas, adolescentes y público en general. Este taller busca informar y concientizar sobre la importancia de cómo nuestra alimentación influye en la naturaleza, y cómo optar por una alimentación saludable y basada en plantas puede ayudar a contribuir a la madre tierra.' , fecha:'Todo el año', duracion:'1 día (1h - 2h)', enfoque:'Educativo e inspiracional'},
@@ -7,9 +8,9 @@ const talleres = [
 
     {id:3 , img:'/tallerPlasticos.svg' , titulo: '3. Taller de importancia del plástico en los océanos' , texto:'Dirigido a niños, niñas, adolescentes y público en general. Este taller busca concientizar sobre el uso del plástico y cómo afecta a los animales, los ríos, mares y al ser humano. Demostramos poder reciclar algunos tipos de plástico y que formen parte un objeto artístico o juego.' , fecha:'Todo el año', duracion:'1 día (1h - 2h)', enfoque:'Educativo y artistico'},
 
-    {id:4 , img:'/tallerCartonero.svg' , titulo: '4. Taller de libro cartonero' , texto:'Dirigido a niños, niñas, adolescentes y público en general. Este taller busca informar y concientizar sobre la importancia de cómo nuestra alimentación influye en la naturaleza, y cómo optar por una alimentación saludable y basada en plantas puede ayudar a contribuir a la madre tierra.' , fecha:'Todo el año', duracion:'1 día (1h - 2h)', enfoque:'Educativo e inspiracional'},
+    {id:4 , img:'/tallerCartonero.svg' , titulo: '4. Taller de libro cartonero' , texto:'Dirigido a niños, niñas, adolescentes y público en general. Este taller busca re valorar el uso del cartón y cómo su transformación a través del arte puede ser un vehículo para la imaginación y desarrollo de habilidades.' , fecha:'Todo el año', duracion:'1 día (1h - 2h)', enfoque:'Educativo e inspiracional'},
 
-    {id:5 , img:'/tallerReciclaje.svg' , titulo: '5. Taller de reciclaje' , texto:'Dirigido a niños, niñas, adolescentes y público en general. Este taller busca informar y concientizar sobre la importancia de cómo nuestra alimentación influye en la naturaleza, y cómo optar por una alimentación saludable y basada en plantas puede ayudar a contribuir a la madre tierra.' , fecha:'Todo el año', duracion:'1 día (1h - 2h)', enfoque:'Educativo e inspiracional'},
+    {id:5 , img:'/tallerReciclaje.svg' , titulo: '5. Taller de reciclaje' , texto:'Dirigido a niños, niñas, adolescentes y público en general. Este taller busca concientizar sobre el consumismo en el mundo y cómo este a afectado a la contaminación de nuestro planeta tierra.' , fecha:'Todo el año', duracion:'1 día (1h - 2h)', enfoque:'Educativo e inspiracional'},
 
 ]
 
@@ -17,10 +18,10 @@ const talleres = [
 
 const Talleres = () => {
     return (
-        <section id='talleres' className='flex flex-col gap-5 mb-10 bg-[#F5A88C]'>
-            <div className='flex flex-col gap-5 justify-center w-full'>
-                <h2 className='text-black text-center text-3xl lg:text-4xl font-titulos'>Talleres ambientales</h2>
-                <div className='bg-[#F7C6B5] w-[80%] m-auto text-center flex flex-col gap-5 p-5 rounded-xl shadow-2xl'>
+        <section id='talleres' className='flex flex-col gap-5 mb-10 bg-[#F5A88C] mt-10 pt-14'>
+            <div className='flex flex-col gap-10 justify-center w-full'>
+                <h2 className='text-black text-center text-3xl lg:text-4xl font-titulos font-semibold'>Talleres ambientales</h2>
+                <div className='bg-[#F7C6B5] w-[80%] m-auto text-center flex flex-col gap-5 p-5 rounded-xl shadow-2xl mb-20'>
                     <div className="w-full h-[250px] relative">
                         <Image 
                             src={'/talleresAmbientales.svg'}
@@ -95,7 +96,7 @@ const Talleres = () => {
                             return (
                             <>
                             {                            
-                            <div key={taller.id} className={`gridForCards rounded-3xl h-[550px] bg-[#F7C6B5]`}>
+                            <div key={taller.id} className={`gridForCards rounded-3xl h-[430px] bg-[#F7C6B5]`}>
                                 <div className="relative w-full h-full colForCard">
                                     <Image 
                                         src={taller.img}
@@ -113,26 +114,30 @@ const Talleres = () => {
                                         <p className="font-botones">Duración: {taller.duracion}</p>
                                         <p className="font-botones">Enfoque: {taller.enfoque}</p>
                                     </div>
-                                    <button className="font-botones rounded-full bg-[#9F2E05] w-[180px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
-                                    Quiero un taller
-                                </button>
+                                    <Link href={'https://docs.google.com/forms/d/e/1FAIpQLSeRxUUKkLi_XG4SvFMsNZUzMdXjtc9jWRN0HrDXMPoVIgoNWw/viewform'} target="_blank">
+                                        <button className="font-botones rounded-full bg-[#9F2E05] w-[180px] px-5 py-2 text-white font-medium flex justify-center items-center m-5 hover:bg-[#CF6842] transition-all duration-300 ease-in-out">
+                                        Quiero un taller
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                             }
                             </> 
                         )})
                     }
-                    <div className={`grid grid-cols-2 rounded-3xl h-[550px] bg-[#F7C6B5]`}>
+                    <div className={`grid grid-cols-2 rounded-3xl h-[430px] bg-[#F7C6B5] mb-20`}>
                         <div className="flex flex-col gap-5 justify-center items-center w-[80%] m-auto">
                             <h1 className="font-botones text-2xl font-semibold">6. Activismo constante</h1>
-                            <p className="font-botones text-justify">Dirigido a niños, niñas, adolescentes y público en general. Este taller busca informar y concientizar sobre la importancia de cómo nuestra alimentación influye en la naturaleza, y cómo optar por una alimentación saludable y basada en plantas puede ayudar a contribuir a la madre tierra.</p>
-                            <button className="rounded-full bg-[#9F2E05] w-[250px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
-                            Enterarme en Instagram
-                        </button>
+                            <p className="font-botones text-justify">Como proyecto nos unimos a las diferentes causas sociales y ambientales por lo que constantemente participamos de manera libre e independiente en diversas manifestaciones. Puedes unirte al grupo cuando hacemos las convocatorias a través de nuestras redes sociales.</p>
+                            <Link href={'https://www.instagram.com/proyectoverdeo/'} target="_blank">
+                                <button className="rounded-full bg-[#9F2E05] w-[250px] px-5 py-2 text-white font-medium flex justify-center items-center m-5 hover:bg-[#CF6842] transition-all duration-300 ease-in-out">
+                                Enterarme en Instagram
+                                </button>
+                            </Link>
                         </div>
                         <div className="relative w-full h-full">
                             <Image 
-                                src={'/activismo.svg'}
+                                src={'/activismoConstante.jpg'}
                                 fill
                                 style={{objectFit:'cover'}}
                                 alt={'Activismo'}

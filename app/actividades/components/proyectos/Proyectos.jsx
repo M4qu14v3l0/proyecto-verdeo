@@ -15,11 +15,11 @@ const Proyectos = () => {
         <section id="proyectos" className=''>
             <div className='relative'>
                 <div className='bg-hacemosPortada bg-no-repeat w-full bg-cover h-[40vh] p-5'>
-                    <h2 className='text-center text-3xl text-white font-titulos'>Lo que hacemos</h2>
+                    <h2 className='text-center text-5xl md:text-8xl text-white font-titulos'>Lo que hacemos</h2>
                 </div>
             </div>
             <div className='flex flex-col gap-5 justify-center w-full relative bottom-[100px]'>
-                <h2 className='text-white text-center text-2xl font-titulos'>Programa Abedul</h2>
+                <h2 className='text-white text-center text-5xl md:text-7xl font-titulos'>Programa Abedules</h2>
                 <div className='bg-[#FFFBEB] w-[80%] m-auto text-center flex flex-col gap-5 p-5 rounded-xl shadow-2xl'>
                     <div className="w-full h-[250px] relative">
                         <Image 
@@ -29,7 +29,7 @@ const Proyectos = () => {
                             style={{objectFit: 'contain'}}
                         />
                     </div>
-                    <h3 className='font-botones font-bold text-2xl'>Objetivo</h3>
+                    <h3 className='font-botones font-bold text-3xl md:text-5xl'>Objetivo</h3>
                     <p className='font-botones leading-1 font-semibold'>
                     Creemos que solo se ama lo que se conoce por lo que buscamos inculcar a niños, niñas y adolescentes de casas hogares el amor a la naturaleza a través del conocimiento y de actividades lúdicas.
                     </p>
@@ -69,7 +69,7 @@ const Proyectos = () => {
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                    <button className="rounded-full bg-[#175A34] w-[180px] px-5 py-2 text-white font-medium m-5">
+                    <button className="rounded-full bg-[#175A34] w-[180px] px-5 py-2 text-white font-medium m-5 hover:bg-[#2F9D5F] transition-all duration-300 ease-in-out lg:mb-0">
                         Quiero informarme
                     </button>
 

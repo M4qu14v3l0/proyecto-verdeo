@@ -1,7 +1,7 @@
 
 export default function MisionVision() {
     return (
-        <section id="mision" className="mt-10 mb-10 flex flex-col gap-5 h-[100vh] md:h-[50vh] justify-center items-center bg-[#FBE6BF] w-full md:flex-row">
+        <section id="mision" className="mt-10 mb-10 flex flex-col gap-5 md:gap-20 h-[100vh] md:h-[50vh] justify-center items-center bg-[#FBE6BF] w-full md:flex-row">
             <div className="flex flex-col p-5 rounded-xl bg-[#F4B847] h-[280px] w-[280px] shadow-xl">
                 <h1 className="text-center font-bold text-3xl lg:text-4xl font-titulos">Misión</h1>
                 <p className="font-botones text-center mt-8">

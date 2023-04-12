@@ -45,7 +45,7 @@ export default function Carosusel() {
         <div className="h-full w-11/12 mx-auto grid grid-cols-1 grid-rows-1">
             <AiOutlineLeft
                 onClick={handlePrevSlide}
-                className="col-start-1 col-end-2 row-start-1 row-end-2 ml-1 mr-auto my-auto text-4xl cursor-pointer text-blanco z-20"
+                className="col-start-1 col-end-2 row-start-1 row-end-2 ml-1 mr-auto my-auto text-4xl cursor-pointer fill-blanco text-blanco z-20"
             /> 
             <div className="col-start-1 col-end-2 row-start-1 row-end-2 w-full h-full flex overflow-hidden">
                 <Swipe
@@ -77,7 +77,7 @@ export default function Carosusel() {
             </div>
             <AiOutlineRight
                 onClick={handleNextSlide}
-                className="col-start-1 col-end-2 row-start-1 row-end-2 ml-auto my-auto text-4xl cursor-pointer text-blanco z-20"
+                className="col-start-1 col-end-2 row-start-1 row-end-2 ml-auto my-auto text-4xl cursor-pointer text-blanco z-20 fill-blanco"
             />
         </div>
     );

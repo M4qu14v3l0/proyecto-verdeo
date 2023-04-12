@@ -21,8 +21,8 @@ const ejes= [
 const voluntariado = () => {
     return (
         <div className='flex flex-col w-full'>
-            <div className='flex bg-comunidad bg-center bg-no-repeat bg-cover h-[40vh] sm:h-[60vh]'>
-                <Link href='https://www.instagram.com/mel.md.mel/' target="_blank" className='p-3 text-xs lg:hidden font-botones ml-auto mt-auto text-blanco'>@mel.md.mel</Link>
+            <div className='flex bg-comunidad bg-no-repeat bg-cover bg-[center_top_4rem] h-[70vh] sm:h-[70vh]'>
+                <Link href='https://www.instagram.com/mel.md.mel/' target="_blank" className='p-3 text-xs font-botones ml-auto mt-auto text-blanco'>@mel.md.mel</Link>
             </div>
             <h1 className='text-4xl lg:text-5xl text-center mt-7 lg:my-8 font-bold font-titulos'>Cómo ayudar</h1>
             <h2 id="voluntariado" className='text-center text-3xl lg:text-4xl my-7 lg:my-8 font-bold font-titulos'>Ser voluntario</h2>

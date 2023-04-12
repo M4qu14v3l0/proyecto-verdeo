@@ -55,7 +55,7 @@ const DirectorioFull = () => {
             </div>
             <div className='flex xl:w-11/12 h-auto mx-auto px-6 gap-y-12 gap-x-8 xl:gap-x-24 justify-center flex-wrap'>
                 {images.map ((image) => (
-                    <Link onClick={scrollToTop} href={image.href} key={image.titulo} className="h-56 w-72 flex flex-col rounded-xl">
+                    <Link onClick={scrollToTop} href={image.href} key={image.titulo} className="h-56 w-72 flex flex-col rounded-xl hover:scale-105 duration-300">
                         <div className="h-4/6 w-72 mb-auto" >
                             <Image width={150000}
                             height={150000}

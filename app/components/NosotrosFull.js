@@ -40,7 +40,7 @@ const NosotrosFull = () => {
                             height={150000}
                             alt={image.alt}
                             src={image.src}
-                            className="h-full rounded-xl object-cover"
+                            className="h-full rounded-xl object-cover hover:scale-105 duration-300"
                             />
                         </div>
                         <div className="col-start-1 col-end-1 row-start-1 row-end-1 h-3/6 2xl:h-2/6 mt-auto mx-auto flex flex-col z-30">

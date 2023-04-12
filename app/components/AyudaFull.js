@@ -50,7 +50,7 @@ const AyudaFull = () => {
                                 height={150000}
                                 alt={image.alt}
                                 src={image.src}
-                                className="h-full w-full rounded-xl object-cover"
+                                className="h-full w-full rounded-xl object-cover hover:scale-105 duration-300"
                                 />
                             </a>
                             <div className="col-start-1 col-end-1 row-start-1 row-end-1 mt-auto mx-auto mb-6 flex flex-col z-30">

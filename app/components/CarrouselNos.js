@@ -11,6 +11,7 @@ const images = [
         alt: 'Foto 1',
         href: '/nosotros/#equipo',
         titulo: "Nuestro equipo",
+        linkClass: "col-start-1 col-end-2 row-start-1 row-end-2 mt-auto mx-auto mb-6 flex flex-col z-30",
         texto: "Somos un equipo de personas que buscamos compartir el conocimiento y el amor por la naturaleza y una vida en armonía.",
     },
     {
@@ -18,6 +19,7 @@ const images = [
         alt: 'Foto 2',
         href: '/nosotros/#valores',
         titulo: "Nuestros valores",
+        linkClass: "col-start-1 col-end-2 row-start-1 row-end-2 mt-auto mx-auto mb-[2.7rem] md:mb-6 flex flex-col z-30",
         texto: '"La integridad es hacer lo correcto aunque nadie te esté mirando".',
     },
     {
@@ -25,6 +27,7 @@ const images = [
         alt: 'Foto 1',
         href: '/nosotros/#mision',
         titulo: "Misión/Visión",
+        linkClass: "col-start-1 col-end-2 row-start-1 row-end-2 mt-auto mx-auto mb-6 min-[384px]:mb-[2.7rem] md:mb-6 flex flex-col z-30",
         texto: "Queremos llegar a ser uno de los proyectos líderes y referentes en educacion ambiental y preservación.",
     },
 ]
@@ -65,9 +68,9 @@ export default function Carosusel() {
                                 className="rounded-xl w-full h-full animate-fadeIn object-cover"
                                 />
                             </Link>
-                            <Link className="col-start-1 col-end-2 row-start-1 row-end-2 mt-auto mx-auto mb-6 flex flex-col z-30" href={image.href}>
-                                <h4 className="text-center text-blanco font-bold text-xl px-8">{image.titulo}</h4>
-                                <p className="text-center text-blanco text-sm px-8 mt-3">{image.texto}</p>
+                            <Link className={image.linkClass} href={image.href}>
+                                <h4 className="text-center text-blanco font-bold text-xl px-4">{image.titulo}</h4>
+                                <p className="text-center text-blanco text-sm px-4 mt-3">{image.texto}</p>
                             </Link>
                         </div>
                     );

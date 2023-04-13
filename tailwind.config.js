@@ -46,7 +46,7 @@ module.exports = {
         'hero': "url('/hero2.jpg')",
         'hacemosPortada':"url('/portadaHacemos.svg')",
         'alpaca':"url('/alpaca.svg')",
-        'comunidad': "url('/donacion.jpg')"
+        'comunidad': "url('/donacion3.jpg')"
       },
       gridTemplateRows: {
         '16': 'repeat(3, auto)',

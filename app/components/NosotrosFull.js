@@ -1,5 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import {useEffect} from 'react';
+import { animateScroll as scroll, scroller } from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const images = [
     {
@@ -26,13 +30,32 @@ const images = [
 ]
 
 const NosotrosFull = () => {
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll); // Agrega el evento de desplazamiento
+        return () => window.removeEventListener("scroll", handleScroll); // Elimina el evento de desplazamiento al desmontar el componente
+    });
+
+    const handleScroll = () => {
+        const element = document.getElementById("nosotros-full"); // Obtiene el elemento que contiene los elementos que deseas animar
+        const elementPosition = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementPosition < windowHeight) { // Si el elemento está en la ventana visible del navegador, activa la animación
+            AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+            });
+            window.removeEventListener("scroll", handleScroll); // Elimina el evento de desplazamiento una vez que se ha activado la animación
+        }
+    };
     return (
         <div className="hidden lg:flex flex-col h-auto pb-20 px-10 bg-[#217948]">
             <div className="w-9/12 h-2/10 mt-8 flex mx-auto flex-col mb-12">
                 <h2 className="text-center text-blanco font-bold text-4xl mb-6 mt-3 font-titulos">Nosotros</h2>
                 <p className="font-botones text-center text-blanco text-sm">Buscamos hacer un cambio a través del despertar interior</p>
             </div>
-            <div className='flex w-9/12 mx-auto justify-around gap-x-12'>
+            <div id='nosotros-full' className='flex w-9/12 mx-auto justify-around gap-x-12' data-aos="fade-left">
                 {images.map ((image) => (
                     <Link href={image.href} key={image.alt} className="min-[1300px]:h-96 min-[1300px]:w-96 h-80 w-80 grid grid-cols-1 grid-rows-1">
                         <div className="col-start-1 col-end-1 row-start-1 row-end-1" >

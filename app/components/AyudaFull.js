@@ -1,4 +1,8 @@
 import Image from 'next/image';
+import { animateScroll as scroll, scroller } from 'react-scroll';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const images = [
     {
@@ -34,6 +38,25 @@ const images = [
 ]
 
 const AyudaFull = () => {
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll); // Agrega el evento de desplazamiento
+        return () => window.removeEventListener("scroll", handleScroll); // Elimina el evento de desplazamiento al desmontar el componente
+    });
+
+    const handleScroll = () => {
+        const element = document.getElementById("ayuda-full"); // Obtiene el elemento que contiene los elementos que deseas animar
+        const elementPosition = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementPosition < windowHeight) { // Si el elemento está en la ventana visible del navegador, activa la animación
+            AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+            });
+            window.removeEventListener("scroll", handleScroll); // Elimina el evento de desplazamiento una vez que se ha activado la animación
+        }
+    };
     return (
         <div className="hidden lg:flex flex-col h-auto pb-16 px-10">
             <div className="w-9/12 h-2/10 mt-8 flex mx-auto flex-col mb-12">
@@ -41,7 +64,7 @@ const AyudaFull = () => {
                 <p className="font-botones text-center text-sm">Queremos que lo que difundimos y hacemos llegue a muchas más personas en todo el mundo. Por eso tu apoyo siendo nuestro embajador de las redes sociales y es importante en nuestra labor.</p>
                 <p className="font-botones text-center text-sm mt-6">¡Habla de la naturaleza y comparte!</p>
             </div>
-            <div className='flex w-9/12 h-auto mx-auto justify-around gap-x-12'>
+            <div id='ayuda-full' className='flex w-9/12 h-auto mx-auto justify-around gap-x-12' data-aos="fade-right">
                 {images.map ((image) => (
                     <div key={image.titulo} className="h-auto w-auto flex flex-col">
                         <div className="mx-auto h-56 w-72 grid mb-5 grid-cols-1 grid-rows-1">

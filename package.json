@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@rooks/use-window-size": "^4.11.2",
+    "aos": "^2.3.4",
     "encoding": "^0.1.13",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
@@ -19,6 +20,7 @@
     "react-dom": "18.2.0",
     "react-easy-swipe": "^0.0.23",
     "react-icons": "^4.8.0",
+    "react-scroll": "^1.8.9",
     "swiper": "^9.1.1",
     "tailwind-scrollbar-hide": "^1.1.7"
   },

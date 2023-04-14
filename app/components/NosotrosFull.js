@@ -31,22 +31,22 @@ const images = [
 
 const NosotrosFull = () => {
     useEffect(() => {
-        window.addEventListener("scroll", handleScroll); // Agrega el evento de desplazamiento
-        return () => window.removeEventListener("scroll", handleScroll); // Elimina el evento de desplazamiento al desmontar el componente
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
     });
 
     const handleScroll = () => {
-        const element = document.getElementById("nosotros-full"); // Obtiene el elemento que contiene los elementos que deseas animar
+        const element = document.getElementById("nosotros-full");
         const elementPosition = element.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
 
-        if (elementPosition < windowHeight) { // Si el elemento está en la ventana visible del navegador, activa la animación
+        if (elementPosition < windowHeight) {
             AOS.init({
             duration: 1000,
             once: true,
             offset: 100
             });
-            window.removeEventListener("scroll", handleScroll); // Elimina el evento de desplazamiento una vez que se ha activado la animación
+            window.removeEventListener("scroll", handleScroll);
         }
     };
     return (

@@ -19,7 +19,7 @@ export default function NuestrosValores() {
             </div>
             <div className="h-[455px] sm:h-[480px] lg:p-28 lg:h-[550px] xl:h-[600px] 2xl:h-[700px] w-full bg-[#F4B847] flex justify-center items-center ">
               <div className="flex flex-col justify-center items-center w-[80%] md:w-[95%] m-auto">
-                <h1 className="text-center font-bold text-3xl lg:text-5xl font-titulos">Nuestros valores</h1>
+                <h1 className="text-center text-3xl lg:text-4xl font-bold font-titulos">Nuestros valores</h1>
                 <p className="font-botones text-center mt-8">Ser fieles a nuestras responsabilidades e ideales como integrantes de este proyecto y ciudadanos, es algo que buscamos a través de lo que hacemos.
                   Además, la humildad, la ética y la colaboración son valores importantes para este proyecto, ya que buscamos fomentar una participación activa y comprometida de la sociedad en la lucha por un futuro más sostenible y en armonía con todos los seres del planeta.
                 </p>

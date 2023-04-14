@@ -15,8 +15,8 @@ const Proyectos = () => {
     return (
         <section id="proyectos" className=''>
             <div className='relative'>
-                <div className='bg-hacemosPortada bg-no-repeat w-full bg-cover h-[45vh] md:h-[60vh] p-5'>
-                    <h2 className='text-4xl lg:text-5xl text-center mt-7 font-bold text-white font-titulos pt-20'>Lo que hacemos</h2>
+                <div className='bg-hacemosPortada bg-no-repeat w-full bg-cover h-[60vh] lg:h-[80vh] p-5'>
+                    <h2 className='text-4xl lg:text-5xl text-center mt-7 font-bold text-white font-titulos pt-20 lg:my-8'>Lo que hacemos</h2>
                 </div>
             </div>
             <div className='flex flex-col gap-5 justify-center w-full relative bottom-[100px]'>
@@ -30,14 +30,14 @@ const Proyectos = () => {
                             style={{objectFit: 'contain'}}
                         />
                     </div>
-                    <h3 className='font-titulos font-bold text-3xl md:text-5xl'>Objetivo</h3>
+                    <h3 className='font-titulos font-bold text-2xl text-center pt-2'>Objetivo</h3>
                     <p className='font-botones text-center text-lg'>
                     Creemos que solo se ama lo que se conoce por lo que buscamos inculcar a niños, niñas y adolescentes de casas hogares el amor a la naturaleza a través del conocimiento y de actividades lúdicas.
                     </p>
                 </div>
             </div>
                 <div className="flex flex-col gap-10 ">
-                    <h2 className="text-center font-semibold text-3xl lg:text-4xl font-titulos">
+                    <h2 className="font-titulos font-bold text-2xl text-center">
                         Consta de 3 ejes
                     </h2>
                     <div className="flex space-x-10 md:justify-center md:items-center overflow-scroll scrollbar-hide w-5/6 m-auto">

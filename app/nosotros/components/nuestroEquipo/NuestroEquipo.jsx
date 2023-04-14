@@ -49,6 +49,7 @@ export default function NuestroEquipo() {
                                     src={'linkedin.svg'}
                                     fill
                                     style={{objectFit:'cover'}}
+                                    alt='linkedin'
                                 />
                             </div>
                             <p className='font-botones text-[15px]'>Ver perfil en Linkedin</p>

@@ -30,7 +30,7 @@ const Talleres = () => {
                             style={{objectFit: 'contain'}}
                         />
                     </div>
-                    <h3 className='font-bold text-3xl font-titulos'>¿De qué se trata?</h3>
+                    <h3 className='text-center text-3xl lg:text-4xl font-bold font-titulos'>¿De qué se trata?</h3>
                     <p className='font-botones text-center text-lg'>
                     Dirigido a niños, niñas, adolescentes y público en general que busca reconectar con la naturaleza. Buscamos desarrollar la conciencia sobre el cambio climático, impartir información sobre la importancia de los animales y de qué podemos hacer desde donde estamos.
                     </p>

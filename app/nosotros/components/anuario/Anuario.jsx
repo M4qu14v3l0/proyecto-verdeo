@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function Anuario() {
   return (
     <section id="anuario" className="flex flex-col gap-5 text-center justify-center items-center">
-        <h1 className="font-bold text-2xl lg:text-4xl font-titulos">Anuario Proyecto Verdeo</h1>
+        <h1 className="text-center font-bold text-3xl lg:text-5xl font-titulos">Anuario Proyecto Verdeo</h1>
         <p className="font-botones">Conoce todo sobre el proyecto desde sus comienzos</p>
         <div className="relative w-[95%] h-[200px] md:h-[400px] m-auto rounded-2xl">
             <Image

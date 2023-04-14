@@ -15,13 +15,13 @@ const Proyectos = () => {
     return (
         <section id="proyectos" className=''>
             <div className='relative'>
-                <div className='bg-hacemosPortada bg-no-repeat w-full bg-cover h-[40vh] p-5'>
+                <div className='bg-hacemosPortada bg-no-repeat w-full bg-cover h-[45vh] md:h-[60vh] p-5'>
                     <h2 className='text-4xl lg:text-5xl text-center mt-7 font-bold text-white font-titulos pt-20'>Lo que hacemos</h2>
                 </div>
             </div>
             <div className='flex flex-col gap-5 justify-center w-full relative bottom-[100px]'>
                 <h2 className='text-center text-3xl lg:text-4xl font-bold font-titulos text-white'>Programa Abedules</h2>
-                <div className='bg-[#FFFBEB] w-[80%] md:w-[60%] lg:w-[50%] xl:w-[30%] mx-auto text-center flex flex-col gap-5 p-5 rounded-xl shadow-2xl'>
+                <div className='bg-[#FFFBEB] w-[80%] md:w-[60%] lg:w-[50%] xl:w-[30%] mx-auto text-center flex flex-col gap-10 p-5 rounded-xl shadow-2xl'>
                     <div className="w-full h-[250px] relative">
                         <Image 
                             src={'/objetivoPortada.svg'}

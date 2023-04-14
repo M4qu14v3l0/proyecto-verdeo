@@ -19,7 +19,7 @@ const talleres = [
 const Talleres = () => {
     return (
         <section id='talleres' className='flex flex-col gap-5 mb-10 bg-[#F5A88C] mt-10 pt-14'>
-            <div className='flex flex-col gap-10 justify-center w-full'>
+            <div className='flex flex-col gap-14 justify-center w-full'>
                 <h2 className='text-center text-3xl font-titulos font-semibold  md:text-5xl '>Talleres ambientales</h2>
                 <div className='bg-[#F7C6B5] w-[80%] md:w-[60%] lg:w-[50%] xl:w-[30%] mx-auto text-center flex flex-col gap-5 p-5 rounded-xl shadow-2xl mb-20'>
                     <div className="w-full h-[250px] relative">
@@ -59,9 +59,11 @@ const Talleres = () => {
                                     <p className="font-botones">Duración: {taller.duracion}</p>
                                     <p className="font-botones">Enfoque: {taller.enfoque}</p>
                                 </div>
-                                <button className="font-botones rounded-full bg-[#9F2E05] w-[180px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
-                                    Quiero un taller
-                                </button>
+                                <Link href={'https://docs.google.com/forms/d/e/1FAIpQLSeRxUUKkLi_XG4SvFMsNZUzMdXjtc9jWRN0HrDXMPoVIgoNWw/viewform'} target="_blank">
+                                    <button className="font-botones rounded-full bg-[#9F2E05] w-[180px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
+                                        Quiero un taller
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                         }
@@ -81,10 +83,11 @@ const Talleres = () => {
                         <div className="flex flex-col gap-5 justify-center items-center w-[80%] m-auto mt-10">
                             <h1 className="text-3xl md:text-4xl font-semibold font-titulos text-center">6. Activismo constante</h1>
                             <p className="font-botones text-center">Dirigido a niños, niñas, adolescentes y público en general. Este taller busca informar y concientizar sobre la importancia de cómo nuestra alimentación influye en la naturaleza, y cómo optar por una alimentación saludable y basada en plantas puede ayudar a contribuir a la madre tierra.</p>
-
-                            <button className="font-botones rounded-full bg-[#9F2E05] w-[240px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
-                                Enterarme en Instagram
-                            </button>
+                            <Link href={'https://www.instagram.com/proyectoverdeo/'} target="_blank">
+                                <button className="font-botones rounded-full bg-[#9F2E05] w-[240px] px-5 py-2 text-white font-medium flex justify-center items-center m-5">
+                                    Enterarme en Instagram
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -107,7 +110,7 @@ const Talleres = () => {
                                     />
                                 </div>
                                 <div className="flex flex-col gap-5 justify-center items-center w-[80%] m-auto colForCard h-full">
-                                    <h1 className="font-botones text-2xl font-semibold">{taller.titulo}</h1>
+                                    <h1 className="font-titulos text-2xl font-semibold">{taller.titulo}</h1>
                                     <p className="font-botones text-justify">{taller.texto}</p>
                                     <div className="flex flex-col gap-1 text-center">
                                         <p className="font-botones">Fecha: {taller.fecha}</p>
@@ -127,7 +130,7 @@ const Talleres = () => {
                     }
                     <div className={`grid grid-cols-1 md:grid-cols-2 rounded-3xl h-[560px] bg-[#F7C6B5] mb-20`}>
                         <div className="flex flex-col gap-5 justify-center items-center w-[80%] m-auto h-full">
-                            <h1 className="font-botones text-2xl font-semibold mt-10">6. Activismo constante</h1>
+                            <h1 className="font-titulos text-2xl font-semibold mt-10">6. Activismo constante</h1>
                             <p className="font-botones text-justify">Como proyecto nos unimos a las diferentes causas sociales y ambientales por lo que constantemente participamos de manera libre e independiente en diversas manifestaciones. Puedes unirte al grupo cuando hacemos las convocatorias a través de nuestras redes sociales.</p>
                             <Link href={'https://www.instagram.com/proyectoverdeo/'} target="_blank">
                                 <button className="rounded-full font-botones bg-[#9F2E05] w-[250px] px-5 py-2 text-white font-medium flex justify-center items-center m-5 lg:hover:bg-[#CF6842] transition-all duration-300 ease-in-out">

@@ -5,7 +5,7 @@ import { BsLinkedin } from "react-icons/bs";
 
 const verdeoTeam = [
     {id:1 , name: 'Ana Rondón' ,img:'/anaRondon.svg'  , description: "Licenciada en Administración y Marketing con amplia experiencia laboral en startups, proyectos ambientales, digital media y branding. \n \nEnfocada en proyectos ambientales y de educación, con más de 8 años como voluntaria en distintas organizaciones del gobierno y privadas.\n \n Apasionada por la publicidad y los proyectos ambientales.",  linkedin: 'https://www.linkedin.com/in/anarondon/'},
-    {id:2 , name: 'Ronal Chavez Soto' ,img:'/ronalChavez.svg' , description: "Licenciado en Ingeniería y Gestión Ambiental con experiencia en el área de Gestión Ambiental y Cuencas, manejo del Sistema Integral de Residuos Sólidos.\n \n Interesado en temas de: Gestión de Residuos Sólidos, Seguridad, salud ocupacional y medio ambiente, Monitoreo Ambiental, Elaboración de Estudios de Impacto Ambiental, contaminación de Agua, Aire y Suelo, conservación de suelo y Recursos hídricos.\n" , linkedin: 'https://www.linkedin.com/in/ronal-chavez-soto-a95936149/'}
+    {id:2 , name: 'Ronal Chavez Soto' ,img:'/ronalChavez.svg' , description: "Licenciado en Ingeniería y Gestión Ambiental con experiencia en el área de Gestión Ambiental y Cuencas, manejo del Sistema Integral de Residuos Sólidos.\n \n Interesado en temas de: Gestión de Residuos Sólidos, Seguridad, salud ocupacional y medio ambiente, Monitoreo Ambiental, Elaboración de Estudios de Impacto Ambiental, contaminación de Agua, Aire y Suelo, conservación de suelo y Recursos hídricos." , linkedin: 'https://www.linkedin.com/in/ronal-chavez-soto-a95936149/'}
 ]
 
 export default function NuestroEquipo() {

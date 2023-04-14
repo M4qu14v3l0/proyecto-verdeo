@@ -29,7 +29,7 @@ const ayudas = [
 const Ayuda = () => {
     return (
         <div className="lg:hidden w-11/12 flex mx-auto flex-col my-6">
-            <h2 className="text-center font-bold text-3xl mb-4 font-titulos">Cómo Ayudar</h2>
+            <h2 className="text-center font-bold text-3xl mb-4 font-titulos">Cómo ayudar</h2>
             <p className="font-botones text-center text-sm">Queremos que lo que difundimos y hacemos llegue a muchas más personas en todo el mundo. Por eso tu apoyo siendo nuestro embajador de las redes sociales y es importante en nuestra labor.</p>
             <p className="font-botones text-center text-sm my-6">¡Habla de la naturaleza y comparte!</p>
             {ayudas.map(({title, text, route, divclass, linkclass, textClass}) => (

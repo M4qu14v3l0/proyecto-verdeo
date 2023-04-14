@@ -12,10 +12,10 @@ export default function NuestroEquipo() {
     return (
         <section id='equipo' className='mb-32'>
             <div className='flex flex-col text-center gap-10 mb-10 mt-28'>
-                <h2 className='text-3xl lg:text-5xl font-bold font-titulos'>
+                <h2 className='text-4xl lg:text-5xl text-center mt-7 font-bold font-titulos'>
                     Nosotros
                 </h2>
-                <h2 className='text-3xl lg:text-5xl font-bold font-titulos'>
+                <h2 className='text-center text-3xl lg:text-4xl font-bold font-titulos'>
                     Nuestro Equipo
                 </h2>
             </div>

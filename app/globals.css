@@ -6,13 +6,13 @@
 *{
   color: #161616;
 }
-h1 , h2 , h3 {
+h1 , h2 , h3, h4, h5, h6 {
   color: #161616;
 };
 body{
   margin-top: 5rem;
 };
-p, button, Link {
+p, button, Link, li, a {
     color: #161616;
     font-family: 'Noto Sans, sans-serif';
 }

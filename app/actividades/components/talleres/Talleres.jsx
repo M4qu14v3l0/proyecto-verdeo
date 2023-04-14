@@ -20,7 +20,7 @@ const Talleres = () => {
     return (
         <section id='talleres' className='flex flex-col gap-5 mb-10 bg-[#F5A88C] mt-10 pt-14'>
             <div className='flex flex-col gap-14 justify-center w-full'>
-                <h2 className='text-center text-3xl font-titulos font-semibold  md:text-5xl '>Talleres ambientales</h2>
+                <h2 className='text-center text-3xl lg:text-4xl font-bold font-titulos'>Talleres ambientales</h2>
                 <div className='bg-[#F7C6B5] w-[80%] md:w-[60%] lg:w-[50%] xl:w-[30%] mx-auto text-center flex flex-col gap-5 p-5 rounded-xl shadow-2xl mb-20'>
                     <div className="w-full h-[250px] relative">
                         <Image 
@@ -30,7 +30,7 @@ const Talleres = () => {
                             style={{objectFit: 'contain'}}
                         />
                     </div>
-                    <h3 className='text-center text-3xl lg:text-4xl font-bold font-titulos'>¿De qué se trata?</h3>
+                    <h3 className='font-titulos font-bold text-2xl text-center'>¿De qué se trata?</h3>
                     <p className='font-botones text-center text-lg'>
                     Dirigido a niños, niñas, adolescentes y público en general que busca reconectar con la naturaleza. Buscamos desarrollar la conciencia sobre el cambio climático, impartir información sobre la importancia de los animales y de qué podemos hacer desde donde estamos.
                     </p>

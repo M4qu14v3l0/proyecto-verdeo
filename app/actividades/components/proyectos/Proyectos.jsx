@@ -15,12 +15,12 @@ const Proyectos = () => {
         <section id="proyectos" className=''>
             <div className='relative'>
                 <div className='bg-hacemosPortada bg-no-repeat w-full bg-cover h-[40vh] p-5'>
-                    <h2 className='text-center text-5xl md:text-8xl text-white font-titulos'>Lo que hacemos</h2>
+                    <h2 className='text-center text-3xl md:text-5xl text-white font-titulos pt-20'>Lo que hacemos</h2>
                 </div>
             </div>
             <div className='flex flex-col gap-5 justify-center w-full relative bottom-[100px]'>
-                <h2 className='text-white text-center text-5xl md:text-7xl font-titulos'>Programa Abedules</h2>
-                <div className='bg-[#FFFBEB] w-[80%] m-auto text-center flex flex-col gap-5 p-5 rounded-xl shadow-2xl'>
+                <h2 className='text-white text-center text-3xl md:text-5xl font-titulos'>Programa Abedules</h2>
+                <div className='bg-[#FFFBEB] w-[80%] md:w-[60%] lg:w-[50%] xl:w-[30%] mx-auto text-center flex flex-col gap-5 p-5 rounded-xl shadow-2xl'>
                     <div className="w-full h-[250px] relative">
                         <Image 
                             src={'/objetivoPortada.svg'}
@@ -30,7 +30,7 @@ const Proyectos = () => {
                         />
                     </div>
                     <h3 className='font-botones font-bold text-3xl md:text-5xl'>Objetivo</h3>
-                    <p className='font-botones leading-1 font-semibold'>
+                    <p className='font-botones leading-1 font-bold'>
                     Creemos que solo se ama lo que se conoce por lo que buscamos inculcar a niños, niñas y adolescentes de casas hogares el amor a la naturaleza a través del conocimiento y de actividades lúdicas.
                     </p>
                 </div>
@@ -39,7 +39,7 @@ const Proyectos = () => {
                     <h2 className="text-center font-semibold text-3xl lg:text-4xl font-titulos">
                         Consta de 3 ejes
                     </h2>
-                    <div className="flex space-x-10 md:justify-around overflow-scroll scrollbar-hide w-5/6 m-auto">
+                    <div className="flex space-x-10 md:justify-center md:items-center overflow-scroll scrollbar-hide w-5/6 m-auto">
                         {
                             imgs.map(item => (
                                 <div key={item.title} className="h-[300px] flex flex-col">

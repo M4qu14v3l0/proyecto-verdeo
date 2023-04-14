@@ -3,7 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat&family=Noto+Sans&display=swap');
 
-* {
+h1 , h2 , h3 {
   color: #161616;
 };
 body{
@@ -12,6 +12,9 @@ body{
 p, button, Link {
     color: #161616;
     font-family: 'Noto Sans, sans-serif';
+}
+.arrows{
+  color: aliceblue !important ;
 }
 
 .swiper {

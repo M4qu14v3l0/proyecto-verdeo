@@ -11,15 +11,15 @@ const verdeoTeam = [
 export default function NuestroEquipo() {
     return (
         <section id='equipo' className='mb-32'>
-            <div className='flex flex-col text-center gap-10 mb-10'>
-                <h2 className='text-3xl lg:text-4xl font-bold font-titulos'>
+            <div className='flex flex-col text-center gap-10 mb-10 mt-28'>
+                <h2 className='text-3xl lg:text-5xl font-bold font-titulos'>
                     Nosotros
                 </h2>
-                <h2 className='text-3xl lg:text-4xl font-bold font-titulos'>
+                <h2 className='text-3xl lg:text-5xl font-bold font-titulos'>
                     Nuestro Equipo
                 </h2>
             </div>
-            <div className='max-w-[90%] gap-10 md:max-w-3xl lg:max-w-5xl m-auto flex flex-col md:gap-24 lg:gap-40 md:flex-row'>
+            <div className='max-w-[90%] gap-5 md:max-w-3xl lg:max-w-5xl m-auto flex flex-col md:gap-24 lg:gap-40 md:flex-row'>
                 {
                     verdeoTeam.map(person => (
                         <div key={person.id} className={`border-solid border-2 border-[#175A34] rounded-xl p-4 flex flex-col gap-5 relative w-full shadow-xl`}>
@@ -31,8 +31,8 @@ export default function NuestroEquipo() {
                                 className='rounded-xl'
                                 />
                             </div>
-                            <h1 className='font-botones text-center text-3xl font-semibold'>{person.name}</h1>
-                            <p className='font-botones text-center '>{person.description.split('\n').map((description , index) => (
+                            <h1 className='font-titulos text-center text-3xl md:5xl font-semibold'>{person.name}</h1>
+                            <p className='font-botones text-center text-lg'>{person.description.split('\n').map((description , index) => (
                             <span key={index}>
                                 {description}
                                 <br />
@@ -44,7 +44,7 @@ export default function NuestroEquipo() {
                             target='_blank'
                         >
                             <BsLinkedin className='text-[#175A34] text-[25px]'/>
-                            <p className='font-botones text-[12px] font-semibold'>Ver perfil en Linkedin</p>
+                            <p className='font-botones text-[15px]'>Ver perfil en Linkedin</p>
                         </Link>
                         </div>
                     ))

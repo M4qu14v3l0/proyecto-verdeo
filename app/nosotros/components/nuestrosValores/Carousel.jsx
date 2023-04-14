@@ -32,10 +32,10 @@ export default function Carousel() {
 
 
 return (
-  <div className="w-5/12 mx-auto h-full grid grid-cols-1 grid-rows-1">
+  <div className="w-11/12 sm:w-5/12 mx-auto h-full grid grid-cols-1 grid-rows-1">
     <AiOutlineLeft
         onClick={handlePrevSlide}
-        className="col-start-1 col-end-2 row-start-1 row-end-2 ml-1 mr-auto my-auto text-2xl md:text-5xl cursor-pointer text-green-400 z-20"
+        className="w-4/12 col-start-1 col-end-2 row-start-1 row-end-2 ml-1 mr-auto my-auto text-2xl md:text-5xl cursor-pointer z-20  text-white"
     /> 
   <div className="col-start-1 col-end-2 row-start-1 row-end-2 w-full h-full flex overflow-hidden">
       <Swipe
@@ -66,7 +66,7 @@ return (
   </div>
     <AiOutlineRight
         onClick={handleNextSlide}
-        className="col-start-1 col-end-2 row-start-1 row-end-2 ml-auto my-auto text-2xl md:text-5xl cursor-pointer text-green-400 z-20"
+        className="w-4/12 col-start-1 col-end-2 row-start-1 row-end-2 ml-auto my-auto text-2xl md:text-5xl cursor-pointer text-white z-20"
     />
   </div>
 

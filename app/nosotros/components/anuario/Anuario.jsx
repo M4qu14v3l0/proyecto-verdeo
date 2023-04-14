@@ -6,13 +6,14 @@ export default function Anuario() {
     <section id="anuario" className="flex flex-col gap-5 text-center justify-center items-center">
         <h1 className="font-bold text-3xl font-titulos">Anuario Proyecto Verdeo</h1>
         <p className="font-botones">Conoce todo sobre el proyecto desde sus comienzos</p>
-        <div className="relative h-[300px] w-2/3 m-auto">
+        <div className="relative w-[95%] h-[400px] xs:h-[300px] xs:w-2/3 m-auto rounded-2xl">
             <Image
                 src={'/Anuario.svg'}
                 alt={'Verdeo Anuario'}
                 fill
-                style={{objectFit:'cover'}}
+                style={{objectFit:'contain'}}
                 quality={100}
+                className="rounded-2xl"
             />
         </div>
         <Link 

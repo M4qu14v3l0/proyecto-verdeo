@@ -70,7 +70,7 @@ export default function Footer() {
                 {links.map(({label, route}) => (
                     <li className="flex mx-auto" key={label}>
                         <Link href={route} onClick={route === "/directorio" ? scrollToTop : ""} scroll={false} className="text-sm hover:translate-y-cursor transition-all duration-150 ease-in-out">
-                            <p className="font-botones text-xs min-[360px]:text-sm">{label}</p>
+                            <p className="font-botones font-semibold text-xs min-[360px]:text-sm">{label}</p>
                         </Link>
                     </li>
                 ))}

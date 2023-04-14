@@ -39,11 +39,18 @@ export default function NuestroEquipo() {
                             </span>
                         ))}</p>
                         <Link 
-                            className='flex justify-center items-center gap-5'
+                            className='flex justify-center items-center gap-2'
                             href={person.linkedin}
                             target='_blank'
                         >
-                            <BsLinkedin className='text-[#175A34] text-[25px]'/>
+                            {/* <BsLinkedin className='text-[#175A34] text-[25px]'/> */}
+                            <div className='relative w-[30px] h-[30px]'>
+                                <Image 
+                                    src={'linkedin.svg'}
+                                    fill
+                                    style={{objectFit:'cover'}}
+                                />
+                            </div>
                             <p className='font-botones text-[15px]'>Ver perfil en Linkedin</p>
                         </Link>
                         </div>

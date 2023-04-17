@@ -50,8 +50,8 @@ const DirectorioFull = () => {
         <div className="hidden lg:flex flex-col h-auto pb-20 bg-[#217948]">
             <div className="w-9/12 mt-8 flex mx-auto flex-col mb-12">
                 <h2 className="text-center text-blanco font-bold text-4xl mb-6 mt-3 font-titulos">Directorio Ecosostenible</h2>
-                <p className="font-botones text-center text-blanco text-sm">¿Sabías que cambiar la forma en cómo vives puede ayudar al planeta?</p>
-                <p className="font-botones text-center text-blanco text-sm mt-6">Acá podrás ver diferentes categorías.</p>
+                <p className="font-botones text-center text-blanco text-lg">¿Sabías que cambiar la forma en cómo vives puede ayudar al planeta?</p>
+                <p className="font-botones text-center text-blanco text-lg mt-6">Acá podrás ver diferentes categorías.</p>
             </div>
             <div className='flex xl:w-11/12 h-auto mx-auto px-6 gap-y-12 gap-x-8 xl:gap-x-24 justify-center flex-wrap'>
                 {images.map ((image) => (

@@ -53,7 +53,7 @@ const NosotrosFull = () => {
         <div className="hidden lg:flex flex-col h-auto pb-20 px-10 bg-[#217948]">
             <div className="w-9/12 h-2/10 mt-8 flex mx-auto flex-col mb-12">
                 <h2 className="text-center text-blanco font-bold text-4xl mb-6 mt-3 font-titulos">Nosotros</h2>
-                <p className="font-botones text-center text-blanco text-sm">Buscamos hacer un cambio a través del despertar interior</p>
+                <p className="font-botones text-center text-blanco text-lg">Buscamos hacer un cambio a través del despertar interior</p>
             </div>
             <div id='nosotros-full' className='flex w-9/12 mx-auto justify-around gap-x-12' data-aos="fade-left">
                 {images.map ((image) => (

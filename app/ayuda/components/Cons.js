@@ -174,7 +174,7 @@ const tips= [
 const Consejos = () => {
     return (
         <div id="consejos" className='flex flex-col lg:w-10/12 lg:mx-auto'>
-            <h2 className='text-3xl lg:text-4xl text-center mt-5 lg:mt-8 font-bold px-2 font-titulos'>7 formas de ayudar</h2>
+            <h2 className='text-3xl lg:text-4xl text-center mt-5 lg:mt-8 font-bold px-2 font-titulos'>7 Formas de ayudar</h2>
             <p className='font-botones my-6 lg:my-6 text-lg text-center px-4'>¿Sabías que cambiar la forma en cómo vives puede ayudar al planeta?</p>
             <p className='font-botones mb-8 lg:mb-10 text-lg text-center px-4'>Te mostramos algunos pequeños cambios que podrás hacer donde estés.</p>
             <TituloConsejos />

@@ -33,7 +33,7 @@ const Hacemos = () => {
                         <div className={actividad.divclass}>
                             <h3 className={actividad.titleclass}>{actividad.title}</h3>
                             <h4 className="text-center font-titulos text-blanco text-3xl font-bold my-5 lg:my-8">{actividad.subtitle}</h4>
-                            <p className="text-center font-botones text-blanco my-6 lg:my-8">{actividad.text}</p>
+                            <p className="text-center font-botones text-blanco lg:text-lg my-6 lg:my-8">{actividad.text}</p>
                         </div>
                         <a href={actividad.route} className={actividad.linkclass}>
                             <p className={actividad.textClass}>Ver más</p>

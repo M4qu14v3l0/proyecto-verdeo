@@ -30,7 +30,7 @@ const images = [
         alt: 'Foto 4',
         href: '/ayuda/#consejos',
         textoClass: "font-botones text-center text-blanco text-sm px-4 pb-5",
-        titulo: "7 formas de ayudar",
+        titulo: "7 Formas de ayudar",
         textClass: "font-botones font-bold text-center m-auto text-sm",
         texto: "Dedicación, disciplina y compromiso. Cómo ayudar al planeta en tu día a día.",
         linkClass: "flex mx-auto rounded-3xl bg-amarillo w-[240px] h-[50px] lg:hover:bg-[#F7CD7E] transition-all duration-300 ease-in-out"

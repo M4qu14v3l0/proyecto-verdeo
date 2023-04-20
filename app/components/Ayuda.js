@@ -17,7 +17,7 @@ const ayudas = [
         linkclass:"flex mx-auto rounded-3xl bg-rojo w-[232px] h-[40px] mb-3 hover:bg-red-600 transition-all duration-300 ease-in-out mb-8"
     },
     {
-        title: "7 formas de ayudar",
+        title: "7 Formas de ayudar",
         text: "Dedicación, disciplina y compromiso. Cómo ayudar al planeta en tu día a día.",
         route: '/ayuda/#consejos',
         divclass: "flex flex-col justify-center bg-donar3 bg-cover bg-no-repeat bg-center h-80 rounded-xl mb-4",
